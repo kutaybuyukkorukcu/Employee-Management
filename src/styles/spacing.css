@@ -1,0 +1,21 @@
+:root {
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+
+  --spacing-small: var(--space-4);
+  --spacing-medium: var(--space-5);
+  --spacing-large: var(--space-6);
+
+  --gap-small: var(--space-1);
+  --gap-medium: var(--space-2);
+  --gap-large: var(--space-3);
+  --gap-x-large: var(--space-4);
+
+  --radius-small: var(--space-1);
+}

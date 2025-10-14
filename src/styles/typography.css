@@ -1,0 +1,16 @@
+:root {
+  --font-family-sans: sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  --font-size-50: 0.75rem;
+  --font-size-100: 0.875rem;
+  --font-size-200: 1rem;
+  --font-size-300: 1.125rem;
+  --font-size-400: 1.25rem;
+  --font-size-500: 1.5rem;
+
+  --size-small: 1rem;
+  --size-medium: 1.5rem;
+}
