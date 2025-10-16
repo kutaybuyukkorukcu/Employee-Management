@@ -7,7 +7,6 @@ export class EmsInput extends LitElement {
     placeholder: { type: String },
     disabled: { type: Boolean },
     required: { type: Boolean },
-    id: { type: String },
     label: { type: String },
   };
 
@@ -31,15 +30,13 @@ export class EmsInput extends LitElement {
     this.placeholder = "";
     this.disabled = false;
     this.required = false;
-    this.id = "";
   }
 
   render() {
-    return html` <label for=${this.id}>${this.label}</label>
+    return html` <label ?hidden=${!this.label} for=${this.name}>${this.label}</label>
       <input
         class="ems-input"
         type=${this.type}
-        id=${this.id}
         name=${this.name}
         placeholder=${this.placeholder}
         ?disabled=${this.disabled}

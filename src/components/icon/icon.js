@@ -5,8 +5,8 @@ import { icons } from "./icons.js";
 export class EmsIcon extends LitElement {
   static properties = {
     name: { type: String },
-    color: { type: String }, // primary, secondary, info, error
-    size: { type: String }, // small, medium
+    color: { type: String, reflect: true }, // primary, secondary, info, error
+    size: { type: String, reflect: true }, // small, medium
   };
 
   static styles = css`
@@ -14,32 +14,33 @@ export class EmsIcon extends LitElement {
       display: inline-block;
     }
 
-    .icon[color="primary"] {
-      color: var(--color-primary);
-      fill: var(--color-primary);
+    :host([size="small"]) {
+      --icon-size: var(--size-small);
     }
 
-    .icon[color="secondary"] {
-      color: var(--color-secondary);
-      fill: var(--color-secondary);
+    :host([size="medium"]) {
+      --icon-size: var(--size-medium);
     }
 
-    .icon[color="info"] {
-      color: var(--color-info);
-      fill: var(--color-info);
+    :host([color="primary"]) {
+      --icon-color: var(--color-primary);
     }
 
-    .icon[color="error"] {
-      color: var(--color-error);
-      fill: var(--color-error);
+    :host([color="secondary"]) {
+      --icon-color: var(--color-secondary);
     }
 
-    .icon[size="small"] {
-      font-size: var(--size-small);
+    :host([color="info"]) {
+      --icon-color: var(--color-info);
     }
 
-    .icon[size="medium"] {
-      font-size: var(--size-medium);
+    :host([color="error"]) {
+      --icon-color: var(--color-error);
+    }
+
+    .ems-icon {
+      color: var(--icon-color);
+      width: var(--icon-size);
     }
   `;
 

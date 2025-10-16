@@ -6,6 +6,7 @@ export class EmsButton extends LitElement {
     label: { type: String },
     variant: { type: String, reflect: true }, // outlined, filled, text
     color: { type: String, reflect: true }, // primary, secondary, info, error
+    maxWidth: { type: Boolean, reflect: true },
   };
 
   static styles = css`
@@ -26,10 +27,21 @@ export class EmsButton extends LitElement {
       --button-border-color: var(--color-black);
     }
 
-    :host([type="menu"][variant="text"]) {
+    :host([type="menu"][variant="text"][color="primary"]) {
       --button-background: var(--color-white);
       --button-color: var(--color-text-primary);
       --button-border-radius: var(--radius-small);
+    }
+
+    :host([type="menu"][variant="text"][color="secondary"]) {
+      --button-background: var(--color-white);
+      --button-color: var(--color-text-secondary);
+      --button-border-radius: var(--radius-small);
+    }
+
+    :host([maxWidth]) {
+      width: 100%;
+      max-width: 100%;
     }
 
     button {
@@ -39,12 +51,14 @@ export class EmsButton extends LitElement {
       justify-content: center;
       cursor: pointer;
       gap: var(--gap-small);
-      padding: var(--space-2) var(--space-4);
+      padding: var(--spacing-x-small);
       color: var(--button-color);
       background: var(--button-background);
       background-color: var(--button-background);
       border-radius: var(--button-border-radius);
       border: 1px solid var(--button-border-color);
+      width: 100%;
+      height: 100%;
     }
   `;
 
@@ -58,7 +72,10 @@ export class EmsButton extends LitElement {
   }
 
   render() {
-    return html` <button type=${this.type}>${this.label}</button>`;
+    return html` <button type=${this.type}>
+      <slot name="icon"></slot>
+      ${this.label}
+    </button>`;
   }
 }
 

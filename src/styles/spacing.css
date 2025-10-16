@@ -8,8 +8,9 @@
   --space-6: 2rem;
   --space-7: 3rem;
 
-  --spacing-small: var(--space-4);
-  --spacing-medium: var(--space-5);
+  --spacing-x-small: var(--space-1);
+  --spacing-small: var(--space-2);
+  --spacing-medium: var(--space-4);
   --spacing-large: var(--space-6);
 
   --gap-small: var(--space-1);
