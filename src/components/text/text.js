@@ -3,7 +3,7 @@ import { LitElement, css, html } from "lit";
 export class EmsText extends LitElement {
   static properties = {
     variant: { type: String, reflect: true }, // title, subtitle, body, caption
-    color: { type: String, reflect: true }, // primary, secondary, info, error
+    color: { type: String, reflect: true }, // primary, secondary, tertiary
     weight: { type: Boolean, reflect: true }, // true, false
   };
 
@@ -14,51 +14,51 @@ export class EmsText extends LitElement {
     }
 
     :host([variant="title"]) {
-      font-size: var(--font-size-500);
+      font-size: var(--font-size-large);
       font-weight: var(--font-weight-regular);
-      line-height: var(--line-height-500);
+      line-height: var(--line-height-large);
     }
 
     :host([variant="subtitle"]) {
-      font-size: var(--font-size-400);
+      font-size: var(--font-size-medium);
       font-weight: var(--font-weight-regular);
-      line-height: var(--line-height-400);
+      line-height: var(--line-height-medium);
     }
 
     :host([variant="body"]) {
-      font-size: var(--font-size-300);
+      font-size: var(--font-size-regular);
       font-weight: var(--font-weight-regular);
-      line-height: var(--line-height-300);
+      line-height: var(--line-height-regular);
     }
 
     :host([variant="caption"]) {
-      font-size: var(--font-size-200);
+      font-size: var(--font-size-small);
       font-weight: var(--font-weight-regular);
-      line-height: var(--line-height-200);
+      line-height: var(--line-height-small);
     }
 
     :host([color="primary"]) {
-      color: var(--color-text-primary);
+      color: var(--color-primary);
     }
 
     :host([color="secondary"]) {
-      color: var(--color-text-secondary);
+      color: var(--color-secondary);
     }
 
-    :host([color="info"]) {
-      color: var(--color-text-info);
-    }
-
-    :host([color="error"]) {
-      color: var(--color-text-error);
+    :host([color="tertiary"]) {
+      color: var(--color-tertiary);
     }
 
     :host([color="black"]) {
-      color: var(--color-text-black);
+      color: var(--color-black);
     }
 
     :host([color="white"]) {
-      color: var(--color-text-white);
+      color: var(--color-white);
+    }
+
+    :host([color="inherit"]) {
+      color: inherit;
     }
 
     :host([weight]) {

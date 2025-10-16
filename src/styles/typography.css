@@ -19,13 +19,15 @@
   --line-height-500: 2rem;
 
   --font-size-small: var(--font-size-50);
-  --font-size-medium: var(--font-size-200);
+  --font-size-regular: var(--font-size-200);
+  --font-size-medium: var(--font-size-400);
   --font-size-large: var(--font-size-500);
 
   --line-height-small: var(--line-height-50);
-  --line-height-medium: var(--line-height-200);
+  --line-height-regular: var(--line-height-200);
+  --line-height-medium: var(--line-height-400);
   --line-height-large: var(--line-height-500);
 
-  --size-small: 1rem;
-  --size-medium: 1.5rem;
+  --icon-size-small: 1rem;
+  --icon-size-medium: 1.5rem;
 }

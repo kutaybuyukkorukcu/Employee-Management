@@ -5,6 +5,7 @@ import "./components/header/index.js";
 import "./components/text/index.js";
 import "./components/select/index.js";
 import "./components/dialog/index.js";
+import "./components/pagination/index.js";
 import "./patterns/layout/index.js";
 
 import { LitElement, css, html } from "lit";
@@ -22,7 +23,15 @@ export class EmsApp extends LitElement {
         <ems-header slot="header"></ems-header>
         <div style="padding: 2rem; display: flex; flex-direction: column; gap: 2rem;">
           <section>
-            <h3>Form Components</h3>
+            <ems-icon name="add-record" color="primary" size="medium"></ems-icon>
+            <ems-icon name="edit-record" color="primary" size="medium"></ems-icon>
+            <ems-icon name="delete-record" color="primary" size="medium"></ems-icon>
+            <ems-icon name="employee-badge" color="primary" size="medium"></ems-icon>
+            <ems-icon name="chevron-left" color="primary" size="medium"></ems-icon>
+            <ems-icon name="chevron-right" color="primary" size="medium"></ems-icon>
+            <ems-icon name="turkey-flag" color="primary" size="medium"></ems-icon>
+            <ems-icon name="usa-flag" color="primary" size="medium"></ems-icon>
+            <ems-icon name="calendar" color="primary" size="medium"></ems-icon>
             <ems-select
               label="Position"
               name="position"
@@ -35,7 +44,8 @@ export class EmsApp extends LitElement {
               ]}
             ></ems-select>
             <ems-input label="First Name"></ems-input>
-            <ems-icon name="add-record" color="primary" size="small"></ems-icon>
+            
+            <ems-pagination current-page="5" total-pages="99"></ems-pagination>
           </section>
         </div>
 

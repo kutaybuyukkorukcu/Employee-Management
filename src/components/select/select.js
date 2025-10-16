@@ -20,7 +20,7 @@ export class EmsSelect extends LitElement {
     select {
       padding: var(--spacing-small);
       border: 1px solid #ccc;
-      font-size: var(--font-size-medium);
+      font-size: var(--font-size-small);
       border-radius: var(--radius-small);
       outline: none;
     }

@@ -26,6 +26,7 @@ export class EmsHeader extends LitElement {
       display: flex;
       flex-direction: row;
       align-items: center;
+      justify-content: center;
       gap: var(--spacing-small);
     }
 
@@ -34,6 +35,7 @@ export class EmsHeader extends LitElement {
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      gap: var(--spacing-small);
     }
   `;
 
@@ -46,17 +48,19 @@ export class EmsHeader extends LitElement {
     return html`
       <div class="ems-details">
         <img src="/public/logo.webp" alt="EMS Logo" />
-        <ems-text variant="caption" color="black">${this.title}</ems-text>
+        <ems-text variant="body" color="black">${this.title}</ems-text>
       </div>
       <div class="menu-items">
-        <ems-button type="menu" label="Employees" variant="text" color="primary">
-          <ems-icon slot="icon" name="add-record" size="medium"></ems-icon>
+        <ems-button type="menu" variant="text" color="primary">
+          <ems-icon slot="icon" name="employee-badge" size="medium"></ems-icon>
+          <ems-text variant="body" color="primary">Employees</ems-text>
         </ems-button>
-        <ems-button type="menu" label="Add new" variant="text" color="secondary">
-          <ems-icon slot="icon" name="add-record" size="medium" color="secondary"></ems-icon>
+        <ems-button type="menu" variant="text" color="secondary">
+          <ems-icon slot="icon" name="add-record" size="medium" color="primary"></ems-icon>
+          <ems-text variant="body" color="primary">Add new</ems-text>
         </ems-button>
         <ems-button type="menu" variant="text" color="primary">
-          <ems-icon slot="icon" name="add-record" size="medium"></ems-icon>
+          <ems-icon slot="icon" name="turkey-flag" size="medium"></ems-icon>
         </ems-button>
       </div>
     `;

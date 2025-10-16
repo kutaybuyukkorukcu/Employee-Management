@@ -5,7 +5,7 @@ import { icons } from "./icons.js";
 export class EmsIcon extends LitElement {
   static properties = {
     name: { type: String },
-    color: { type: String, reflect: true }, // primary, secondary, info, error
+    color: { type: String, reflect: true }, // primary, secondary, tertiary
     size: { type: String, reflect: true }, // small, medium
   };
 
@@ -15,11 +15,11 @@ export class EmsIcon extends LitElement {
     }
 
     :host([size="small"]) {
-      --icon-size: var(--size-small);
+      --icon-size: var(--icon-size-small);
     }
 
     :host([size="medium"]) {
-      --icon-size: var(--size-medium);
+      --icon-size: var(--icon-size-medium);
     }
 
     :host([color="primary"]) {
@@ -30,17 +30,15 @@ export class EmsIcon extends LitElement {
       --icon-color: var(--color-secondary);
     }
 
-    :host([color="info"]) {
-      --icon-color: var(--color-info);
+    :host([color="tertiary"]) {
+      --icon-color: var(--color-tertiary);
     }
 
-    :host([color="error"]) {
-      --icon-color: var(--color-error);
-    }
-
-    .ems-icon {
+    svg {
       color: var(--icon-color);
       width: var(--icon-size);
+      height: var(--icon-size);
+      display: block;
     }
   `;
 
