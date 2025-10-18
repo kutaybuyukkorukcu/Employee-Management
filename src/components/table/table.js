@@ -1,4 +1,5 @@
 import { LitElement, css, html } from "lit";
+import { formatDate, formatPhoneNumber, formatText } from "../../utils/index.js";
 
 // TODO: Height jumps happen due to pagination and data difference.
 export class EmsTable extends LitElement {
@@ -158,7 +159,7 @@ export class EmsTable extends LitElement {
   }
 
   _renderCell(row, column, rowIndex) {
-    if (column.key === "actions") {
+    if (column.key === "action") {
       return html`
         <div class="actions-cell">
           <ems-button
@@ -181,7 +182,21 @@ export class EmsTable extends LitElement {
       `;
     }
 
-    return row[column.key] || "";
+    const value = row[column.key];
+
+    if (column.type === "date" && value) {
+      return formatDate(value);
+    }
+
+    if (column.type === "phone" && value) {
+      return formatPhoneNumber(value);
+    }
+
+    if (column.type === "text" && value) {
+      return formatText(value);
+    }
+
+    return value || "";
   }
 
   _handleAction(action, row, rowIndex) {

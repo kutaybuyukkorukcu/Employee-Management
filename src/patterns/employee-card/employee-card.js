@@ -2,6 +2,7 @@ import "../../components/card/card.js";
 import "../../components/text/text.js";
 import "../../components/button/button.js";
 import "../../components/icon/icon.js";
+import { formatDate, formatPhoneNumber } from "../../utils/utils.js";
 
 import { LitElement, css, html } from "lit";
 
@@ -73,17 +74,17 @@ export class EmsEmployeeCard extends LitElement {
 
           <div class="employee-field">
             <ems-text variant="caption" disabled>Date of Employment</ems-text>
-            <ems-text variant="body" color="black">${this.employee.dateOfEmployment}</ems-text>
+            <ems-text variant="body" color="black">${formatDate(this.employee.dateOfEmployment)}</ems-text>
           </div>
 
           <div class="employee-field">
             <ems-text variant="caption" disabled>Date of Birth</ems-text>
-            <ems-text variant="body" color="black">${this.employee.dateOfBirth}</ems-text>
+            <ems-text variant="body" color="black">${formatDate(this.employee.dateOfBirth)}</ems-text>
           </div>
 
           <div class="employee-field">
             <ems-text variant="caption" disabled>Phone</ems-text>
-            <ems-text variant="body" color="black">${this.employee.phone}</ems-text>
+            <ems-text variant="body" color="black">${formatPhoneNumber(this.employee.phone)}</ems-text>
           </div>
 
           <div class="employee-field">

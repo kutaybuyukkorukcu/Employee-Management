@@ -21,15 +21,15 @@ export class EmsEmployeeTable extends LitElement {
     super();
     this.employees = [];
     this.columns = [
-      { key: "firstName", label: "First Name" },
-      { key: "lastName", label: "Last Name" },
-      { key: "dateOfEmployment", label: "Date of Employment" },
-      { key: "dateOfBirth", label: "Date of Birth" },
-      { key: "phone", label: "Phone" },
-      { key: "email", label: "Email" },
-      { key: "department", label: "Department" },
-      { key: "position", label: "Position" },
-      { key: "actions", label: "Actions" },
+      { key: "firstName", label: "First Name", type: "text" },
+      { key: "lastName", label: "Last Name", type: "text" },
+      { key: "dateOfEmployment", label: "Date of Employment", type: "date" },
+      { key: "dateOfBirth", label: "Date of Birth", type: "date" },
+      { key: "phone", label: "Phone", type: "phone" },
+      { key: "email", label: "Email", type: "email" },
+      { key: "department", label: "Department", type: "text" },
+      { key: "position", label: "Position", type: "text" },
+      { key: "actions", label: "Actions", type: "action" },
     ];
   }
 

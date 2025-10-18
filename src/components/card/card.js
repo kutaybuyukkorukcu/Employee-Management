@@ -14,7 +14,7 @@ export class EmsCard extends LitElement {
     .card-footer {
       display: flex;
       flex-direction: row;
-      gap: var(--spacing-small);
+      gap: var(--spacing-medium);
       width: 100%;
       align-items: center;
       justify-content: flex-start;

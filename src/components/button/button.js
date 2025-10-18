@@ -62,7 +62,6 @@ export class EmsButton extends LitElement {
 
     :host([disabled]) button {
       opacity: 0.5;
-      background-color: var(--color-disabled);
       cursor: not-allowed;
     }
 
