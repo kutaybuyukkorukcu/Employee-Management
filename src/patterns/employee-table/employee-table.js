@@ -14,22 +14,6 @@ export class EmsEmployeeTable extends LitElement {
     :host {
       display: block;
     }
-
-    .table-row {
-      display: contents;
-    }
-
-    .actions-cell {
-      display: flex;
-      gap: var(--spacing-x-small);
-      align-items: center;
-    }
-
-    input[type="checkbox"] {
-      width: 1rem;
-      height: 1rem;
-      cursor: pointer;
-    }
   `;
 
   constructor() {
@@ -50,7 +34,7 @@ export class EmsEmployeeTable extends LitElement {
 
   _handleEdit(employee) {
     this.dispatchEvent(
-      new CustomEvent("edit", {
+      new CustomEvent("employee-edit", {
         detail: { employee },
       }),
     );
@@ -58,60 +42,44 @@ export class EmsEmployeeTable extends LitElement {
 
   _handleDelete(employee) {
     this.dispatchEvent(
-      new CustomEvent("delete", {
+      new CustomEvent("employee-delete", {
         detail: { employee },
       }),
     );
   }
 
-  _handleSelectAll(e) {
+  _handleSelectionChange(e) {
+    const { selectedRows, selectedIndices, areAllSelected } = e.detail;
+
     this.dispatchEvent(
-      new CustomEvent("select-all", {
-        detail: { checked: e.target.checked },
+      new CustomEvent("employee-selection-change", {
+        detail: {
+          selectedEmployees: selectedRows,
+          selectedIndices,
+          areAllSelected,
+        },
       }),
     );
   }
 
-  _handleSelectRow(employee, e) {
-    this.dispatchEvent(
-      new CustomEvent("select-row", {
-        detail: { employee, checked: e.target.checked },
-      }),
-    );
+  _handleRowActionFromTable(e) {
+    const { action, row } = e.detail;
+    if (action === "edit") {
+      this._handleEdit(row);
+    } else if (action === "delete") {
+      this._handleDelete(row);
+    }
   }
 
   render() {
     return html`
-      <ems-table .columns=${this.columns} selectable>
-        <input slot="header-checkbox" type="checkbox" @change=${this._handleSelectAll} />
-
-        ${this.employees.map(
-          (employee) => html`
-            <tr class="table-row" slot="body">
-              <td>
-                <input type="checkbox" @change=${(e) => this._handleSelectRow(employee, e)} />
-              </td>
-              <td><ems-text variant="body" color="black">${employee.firstName}</ems-text></td>
-              <td><ems-text variant="body" color="black">${employee.lastName}</ems-text></td>
-              <td><ems-text variant="body" color="black">${employee.dateOfEmployment}</ems-text></td>
-              <td><ems-text variant="body" color="black">${employee.dateOfBirth}</ems-text></td>
-              <td><ems-text variant="body" color="black">${employee.phone}</ems-text></td>
-              <td><ems-text variant="body" color="black">${employee.email}</ems-text></td>
-              <td><ems-text variant="body" color="black">${employee.department}</ems-text></td>
-              <td><ems-text variant="body" color="black">${employee.position}</ems-text></td>
-              <td>
-                <div class="actions-cell">
-                  <ems-button type="icon" variant="text" color="secondary" @click=${() => this._handleEdit(employee)}>
-                    <ems-icon slot="icon" name="edit-record" size="small" color="secondary"></ems-icon>
-                  </ems-button>
-                  <ems-button type="icon" variant="text" color="tertiary" @click=${() => this._handleDelete(employee)}>
-                    <ems-icon slot="icon" name="delete-record" size="small" color="tertiary"></ems-icon>
-                  </ems-button>
-                </div>
-              </td>
-            </tr>
-          `,
-        )}
+      <ems-table
+        .columns=${this.columns}
+        .data=${this.employees}
+        selectable
+        @selection-change=${this._handleSelectionChange}
+        @row-action=${this._handleRowActionFromTable}
+      >
       </ems-table>
     `;
   }

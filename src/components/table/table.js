@@ -2,8 +2,10 @@ import { LitElement, css, html } from "lit";
 
 export class EmsTable extends LitElement {
   static properties = {
-    columns: { type: Array }, // Array of column definitions
-    selectable: { type: Boolean }, // Show checkboxes
+    columns: { type: Array },
+    selectable: { type: Boolean },
+    data: { type: Array },
+    selectedRows: { type: Array },
   };
 
   static styles = css`
@@ -65,9 +67,15 @@ export class EmsTable extends LitElement {
 
     .checkbox-cell {
       width: 40px;
+      cursor: pointer;
     }
 
-    /* Responsive */
+    .actions-cell {
+      display: flex;
+      gap: var(--spacing-x-small);
+      align-items: center;
+    }
+
     @media (max-width: 768px) {
       th,
       td {
@@ -81,6 +89,91 @@ export class EmsTable extends LitElement {
     super();
     this.columns = [];
     this.selectable = false;
+    this.data = [];
+    this.selectedRows = [];
+  }
+
+  _handleSelectRow(e, rowIndex) {
+    const isChecked = e.target.checked;
+
+    if (isChecked) {
+      this.selectedRows = [...this.selectedRows, rowIndex];
+    } else {
+      this.selectedRows = this.selectedRows.filter((index) => index !== rowIndex);
+    }
+
+    this.dispatchEvent(
+      new CustomEvent("selection-change", {
+        detail: {
+          selectedRows: this.selectedRows.map((index) => this.data[index]),
+          selectedIndices: this.selectedRows,
+          areAllSelected: this.selectedRows.length === this.data.length,
+        },
+      }),
+    );
+  }
+
+  _handleSelectAll(e) {
+    const isChecked = e.target.checked;
+
+    if (isChecked) {
+      this.selectedRows = this.data.map((_, index) => index);
+    } else {
+      this.selectedRows = [];
+    }
+
+    this.dispatchEvent(
+      new CustomEvent("selection-change", {
+        detail: {
+          selectedRows: this.selectedRows.map((index) => this.data[index]),
+          selectedIndices: this.selectedRows,
+          areAllSelected: isChecked,
+        },
+      }),
+    );
+  }
+
+  _isRowSelected(rowIndex) {
+    return this.selectedRows.includes(rowIndex);
+  }
+
+  _areAllRowsSelected() {
+    return this.data.length > 0 && this.selectedRows.length === this.data.length;
+  }
+
+  _renderCell(row, column, rowIndex) {
+    if (column.key === "actions") {
+      return html`
+        <div class="actions-cell">
+          <ems-button
+            type="icon"
+            variant="text"
+            color="primary"
+            @click=${() => this._handleAction("edit", row, rowIndex)}
+          >
+            <ems-icon slot="icon" name="edit-record" size="small"></ems-icon>
+          </ems-button>
+          <ems-button
+            type="icon"
+            variant="text"
+            color="primary"
+            @click=${() => this._handleAction("delete", row, rowIndex)}
+          >
+            <ems-icon slot="icon" name="delete-record" size="small"></ems-icon>
+          </ems-button>
+        </div>
+      `;
+    }
+
+    return row[column.key] || "";
+  }
+
+  _handleAction(action, row, rowIndex) {
+    this.dispatchEvent(
+      new CustomEvent("row-action", {
+        detail: { action, row, rowIndex },
+      }),
+    );
   }
 
   render() {
@@ -92,21 +185,30 @@ export class EmsTable extends LitElement {
               ${this.selectable
                 ? html`
                     <th class="checkbox-cell">
-                      <slot name="header-checkbox"></slot>
+                      <input type="checkbox" .checked=${this._areAllRowsSelected()} @change=${this._handleSelectAll} />
                     </th>
                   `
                 : null}
-              ${this.columns.map(
-                (column) => html`
-                  <th>
-                    <slot name="header-${column.key}">${column.label}</slot>
-                  </th>
-                `,
-              )}
+              ${this.columns.map((column) => html`<th>${column.label}</th>`)}
             </tr>
           </thead>
           <tbody>
-            <slot name="body"></slot>
+            ${this.data.map(
+              (row, rowIndex) => html`
+                <tr>
+                  ${this.selectable
+                    ? html`<td>
+                        <input
+                          type="checkbox"
+                          .checked=${this._isRowSelected(rowIndex)}
+                          @change=${(e) => this._handleSelectRow(e, rowIndex)}
+                        />
+                      </td>`
+                    : null}
+                  ${this.columns.map((column) => html`<td>${this._renderCell(row, column, rowIndex)}</td>`)}
+                </tr>
+              `,
+            )}
           </tbody>
         </table>
       </div>

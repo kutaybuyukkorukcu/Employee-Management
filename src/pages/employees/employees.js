@@ -1,9 +1,12 @@
 import { LitElement, css, html } from "lit";
+import { useAppStore } from "../../store/store.js";
 
 export class EmsEmployeesPage extends LitElement {
   static properties = {
     employees: { type: Array },
     viewMode: { type: String }, // table or grid
+    currentPage: { type: Number },
+    itemsPerPage: { type: Number },
   };
 
   static styles = css`
@@ -35,48 +38,103 @@ export class EmsEmployeesPage extends LitElement {
 
   constructor() {
     super();
-    this.employees = [
-      {
-        firstName: "Ahmet",
-        lastName: "Sourtimes",
-        dateOfEmployment: "23/09/2022",
-        dateOfBirth: "23/09/2022",
-        phone: "+(90) 532 123 45 67",
-        email: "ahmet@sourtimes.org",
-        department: "Analytics",
-        position: "Junior",
-      },
-    ];
+    this.employees = [];
     this.viewMode = "table";
+    this.currentPage = 1;
+    this.itemsPerPage = 9;
+  }
+
+  connectedCallback() {
+    super.connectedCallback();
+    this.employees = useAppStore.getState().employees;
+    this._unsubscribe = useAppStore.subscribe((state) => {
+      this.employees = state.employees;
+    });
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    this._unsubscribe?.();
+  }
+
+  _handleEmployeeEdit(employee) {
+    console.log("Edit employee:", employee);
+  }
+
+  _handleEmployeeDelete(employee) {
+    console.log("Delete employee:", employee);
+  }
+
+  _handlePageChange(e) {
+    this.currentPage = e.detail.page;
+  }
+
+  _getItemsPerPage() {
+    return this.viewMode === "grid" ? 4 : 9;
+  }
+
+  _getPaginatedEmployees() {
+    const itemsPerPage = this._getItemsPerPage();
+    const startIndex = (this.currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    return this.employees.slice(startIndex, endIndex);
+  }
+
+  _getTotalPages() {
+    const itemsPerPage = this._getItemsPerPage();
+    return Math.ceil(this.employees.length / itemsPerPage);
   }
 
   render() {
     return html`
-        <ems-layout>
-            <ems-header slot="header"></ems-header>
-            <div class="page-header">
-                <ems-text variant="title" color="black">Employee List</ems-text>
-                <div class="view-mode-toggle">
-                <ems-button type="icon" @click="${() => (this.viewMode = "table")}" ?active="${this.viewMode === "table"}">
-                    <ems-icon name="table" slot="icon"></ems-icon>
-                </ems-button>
-                <ems-button type="icon" @click="${() => (this.viewMode = "grid")}" ?active="${this.viewMode === "grid"}">
-                    <ems-icon name="grid" slot="icon"></ems-icon>
-                </ems-button>
-                </div>
-            </div>
-            <div class="employee-list"></div>
-                ${
-                  this.viewMode === "table"
-                    ? html`<ems-employee-table .employees=${this.employees}></ems-employee-table>`
-                    : html`<div class="employees-grid">
-                        ${this.employees.map(
-                          (employee) => html`<ems-employee-card .employee=${employee}></ems-employee-card>`,
-                        )}
-                      </div>`
-                }
-            </div>
-        </ems-layout>
+      <ems-layout>
+        <ems-header slot="header"></ems-header>
+        <div class="page-header">
+          <ems-text variant="title" color="black">Employee List</ems-text>
+          <div class="view-mode-toggle">
+            <ems-button
+              type="icon"
+              @click="${() => {
+                this.viewMode = "table";
+                this.currentPage = 1;
+              }}"
+              ?active="${this.viewMode === "table"}"
+              variant="text"
+            >
+              <ems-icon name="table" slot="icon"></ems-icon>
+            </ems-button>
+            <ems-button
+              type="icon"
+              @click="${() => {
+                this.viewMode = "grid";
+                this.currentPage = 1;
+              }}"
+              ?active="${this.viewMode === "grid"}"
+              variant="text"
+            >
+              <ems-icon name="grid" slot="icon"></ems-icon>
+            </ems-button>
+          </div>
+        </div>
+        ${this.viewMode === "table"
+          ? html`<ems-employee-table
+              .employees=${this._getPaginatedEmployees()}
+              @employee-edit=${this._handleEmployeeEdit}
+              @employee-delete=${this._handleEmployeeDelete}
+            ></ems-employee-table>`
+          : html`<div class="employees-grid">
+              ${this._getPaginatedEmployees().map(
+                (employee) => html`<ems-employee-card .employee=${employee}></ems-employee-card>`,
+              )}
+            </div>`}
+        <ems-pagination
+          slot="footer"
+          .currentPage=${this.currentPage}
+          .totalPages=${this._getTotalPages()}
+          .siblingCount=${1}
+          @page-change=${this._handlePageChange}
+        ></ems-pagination>
+      </ems-layout>
     `;
   }
 }

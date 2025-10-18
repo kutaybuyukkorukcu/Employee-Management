@@ -15,6 +15,11 @@ export class EmsLayout extends LitElement {
       flex-shrink: 0;
     }
 
+    slot[name="footer"]::slotted(*) {
+      flex-shrink: 0;
+      background-color: var(--color-background-secondary);
+    }
+
     .main {
       flex: 1;
       overflow: auto;
@@ -29,6 +34,7 @@ export class EmsLayout extends LitElement {
       <div class="main">
         <slot></slot>
       </div>
+      <slot name="footer"></slot>
     `;
   }
 }

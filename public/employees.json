@@ -1,0 +1,3602 @@
+[
+  {
+    "firstName": "Luis",
+    "lastName": "Lowe",
+    "dateOfEmployment": "2028-07-17",
+    "dateOfBirth": "1993-10-26",
+    "phone": "905757664803",
+    "email": "luis.lowe@duran.biz",
+    "department": "Engineering",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Brittany",
+    "lastName": "Karadeniz",
+    "dateOfEmployment": "2013-12-28",
+    "dateOfBirth": "1983-09-19",
+    "phone": "905873244358",
+    "email": "brittany.karadeniz@sezer.org",
+    "department": "Product",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Nafii",
+    "lastName": "Durmuş",
+    "dateOfEmployment": "2006-10-10",
+    "dateOfBirth": "1973-05-24",
+    "phone": "905906731004",
+    "email": "nafii.durmuş@yuksel.com",
+    "department": "Operations",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Aran",
+    "lastName": "Türk",
+    "dateOfEmployment": "2009-08-03",
+    "dateOfBirth": "1983-11-01",
+    "phone": "905805575428",
+    "email": "aran.türk@johnson.com",
+    "department": "Engineering",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Donna",
+    "lastName": "Burton",
+    "dateOfEmployment": "2010-02-03",
+    "dateOfBirth": "1975-02-05",
+    "phone": "905720371673",
+    "email": "donna.burton@aselsan.com",
+    "department": "Customer Support",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Özlü",
+    "lastName": "Akgündüz",
+    "dateOfEmployment": "2045-03-25",
+    "dateOfBirth": "2003-01-28",
+    "phone": "905379192974",
+    "email": "özlü.akgündüz@cummings.net",
+    "department": "Human Resources",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Ashley",
+    "lastName": "İnönü",
+    "dateOfEmployment": "2014-08-20",
+    "dateOfBirth": "1985-06-30",
+    "phone": "905181964933",
+    "email": "ashley.i̇nönü@haley.org",
+    "department": "Design",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Curtis",
+    "lastName": "James",
+    "dateOfEmployment": "2015-08-19",
+    "dateOfBirth": "1975-12-05",
+    "phone": "905641251668",
+    "email": "curtis.james@yuksel.com",
+    "department": "Customer Support",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Sevla",
+    "lastName": "Demir",
+    "dateOfEmployment": "2034-03-04",
+    "dateOfBirth": "1998-01-19",
+    "phone": "905743847258",
+    "email": "sevla.demir@vargas.com",
+    "department": "Sales",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Brandon",
+    "lastName": "Frederick",
+    "dateOfEmployment": "2008-07-23",
+    "dateOfBirth": "1979-10-26",
+    "phone": "905873835606",
+    "email": "brandon.frederick@hawkins-hughes.info",
+    "department": "Engineering",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Ayşeana",
+    "lastName": "Gül",
+    "dateOfEmployment": "2012-09-27",
+    "dateOfBirth": "1972-10-10",
+    "phone": "905234136926",
+    "email": "ayşeana.gül@goodwin.com",
+    "department": "Product",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Jacob",
+    "lastName": "İnönü",
+    "dateOfEmployment": "2008-12-13",
+    "dateOfBirth": "1969-04-25",
+    "phone": "905237988826",
+    "email": "jacob.i̇nönü@tyler.com",
+    "department": "Operations",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Yıldız",
+    "lastName": "Walsh",
+    "dateOfEmployment": "1999-11-21",
+    "dateOfBirth": "1969-02-20",
+    "phone": "905615442761",
+    "email": "yıldız.walsh@bilgin.com",
+    "department": "Customer Support",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Rebekah",
+    "lastName": "Smith",
+    "dateOfEmployment": "2026-05-22",
+    "dateOfBirth": "1985-04-28",
+    "phone": "905885619290",
+    "email": "rebekah.smith@opet.com",
+    "department": "Product",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Toköz",
+    "lastName": "Miller",
+    "dateOfEmployment": "2036-04-06",
+    "dateOfBirth": "1996-12-16",
+    "phone": "905553720162",
+    "email": "toköz.miller@turk.biz",
+    "department": "Sales",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "David",
+    "lastName": "İhsanoğlu",
+    "dateOfEmployment": "2017-09-28",
+    "dateOfBirth": "1981-09-19",
+    "phone": "905899948258",
+    "email": "david.i̇hsanoğlu@guclu.com",
+    "department": "Engineering",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Seyyide",
+    "lastName": "Reid",
+    "dateOfEmployment": "2021-05-23",
+    "dateOfBirth": "1998-07-01",
+    "phone": "905755055520",
+    "email": "seyyide.reid@aselsan.com",
+    "department": "Analytics",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Carl",
+    "lastName": "Aslan",
+    "dateOfEmployment": "2046-08-19",
+    "dateOfBirth": "2004-02-09",
+    "phone": "905470134037",
+    "email": "carl.aslan@benson-graham.com",
+    "department": "Engineering",
+    "position": "VP"
+  },
+  {
+    "firstName": "Kopan",
+    "lastName": "Bilir",
+    "dateOfEmployment": "2011-09-11",
+    "dateOfBirth": "1984-10-01",
+    "phone": "905924879529",
+    "email": "kopan.bilir@migros.com",
+    "department": "Marketing",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Tükelalp",
+    "lastName": "Villegas",
+    "dateOfEmployment": "2023-04-08",
+    "dateOfBirth": "1999-10-27",
+    "phone": "905516770885",
+    "email": "tükelalp.villegas@arnold-suarez.net",
+    "department": "Human Resources",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "James",
+    "lastName": "Ergül",
+    "dateOfEmployment": "1995-05-08",
+    "dateOfBirth": "1970-12-12",
+    "phone": "905803676863",
+    "email": "james.ergül@vaughan.com",
+    "department": "Operations",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Jamie",
+    "lastName": "Hançer",
+    "dateOfEmployment": "2028-02-28",
+    "dateOfBirth": "1996-07-14",
+    "phone": "905335372039",
+    "email": "jamie.hançer@casey.com",
+    "department": "Operations",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Debra",
+    "lastName": "Wade",
+    "dateOfEmployment": "2015-03-17",
+    "dateOfBirth": "1978-03-03",
+    "phone": "905630792528",
+    "email": "debra.wade@seven.com",
+    "department": "Sales",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Oluş",
+    "lastName": "Kemp",
+    "dateOfEmployment": "2027-06-08",
+    "dateOfBirth": "1998-08-31",
+    "phone": "905530041583",
+    "email": "oluş.kemp@sener.com",
+    "department": "Operations",
+    "position": "VP"
+  },
+  {
+    "firstName": "Dursadiye",
+    "lastName": "Kısakürek",
+    "dateOfEmployment": "2030-04-07",
+    "dateOfBirth": "2000-03-09",
+    "phone": "905291473078",
+    "email": "dursadiye.kısakürek@ford.info",
+    "department": "Customer Support",
+    "position": "VP"
+  },
+  {
+    "firstName": "Rümeysa",
+    "lastName": "Akgündüz",
+    "dateOfEmployment": "1997-03-26",
+    "dateOfBirth": "1974-05-21",
+    "phone": "905357551874",
+    "email": "rümeysa.akgündüz@carpenter.com",
+    "department": "Product",
+    "position": "Director"
+  },
+  {
+    "firstName": "Zebirce",
+    "lastName": "Howard",
+    "dateOfEmployment": "1989-10-18",
+    "dateOfBirth": "1965-10-12",
+    "phone": "905103732647",
+    "email": "zebirce.howard@soylu.org",
+    "department": "Human Resources",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Sezer",
+    "dateOfEmployment": "2039-09-10",
+    "dateOfBirth": "2001-05-13",
+    "phone": "905622209987",
+    "email": "michael.sezer@manco.com",
+    "department": "Human Resources",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Tiffany",
+    "lastName": "Fırat",
+    "dateOfEmployment": "2034-04-25",
+    "dateOfBirth": "1992-01-17",
+    "phone": "905394311313",
+    "email": "tiffany.fırat@hancer.net",
+    "department": "Operations",
+    "position": "Director"
+  },
+  {
+    "firstName": "Jim",
+    "lastName": "Manço",
+    "dateOfEmployment": "2028-05-17",
+    "dateOfBirth": "1994-12-22",
+    "phone": "905148813788",
+    "email": "jim.manço@zhang.org",
+    "department": "Product",
+    "position": "Director"
+  },
+  {
+    "firstName": "Şehreban",
+    "lastName": "Henson",
+    "dateOfEmployment": "2021-04-28",
+    "dateOfBirth": "1983-03-16",
+    "phone": "905875117324",
+    "email": "şehreban.henson@wright.com",
+    "department": "Design",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Andrew",
+    "lastName": "Alemdar",
+    "dateOfEmployment": "1994-10-26",
+    "dateOfBirth": "1971-06-23",
+    "phone": "905736975546",
+    "email": "andrew.alemdar@petrol.biz",
+    "department": "Sales",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Utkucan",
+    "lastName": "Marshall",
+    "dateOfEmployment": "2037-12-27",
+    "dateOfBirth": "1994-05-04",
+    "phone": "905290880956",
+    "email": "utkucan.marshall@petrol.info",
+    "department": "Design",
+    "position": "Senior"
+  },
+  {
+    "firstName": "April",
+    "lastName": "Mccall",
+    "dateOfEmployment": "1992-03-05",
+    "dateOfBirth": "1966-11-11",
+    "phone": "905182750223",
+    "email": "april.mccall@jackson.com",
+    "department": "Design",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Teksoy",
+    "lastName": "Lam",
+    "dateOfEmployment": "2028-05-25",
+    "dateOfBirth": "1992-08-12",
+    "phone": "905891939028",
+    "email": "teksoy.lam@dennis.com",
+    "department": "Product",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Gülselin",
+    "lastName": "Şama",
+    "dateOfEmployment": "2014-09-11",
+    "dateOfBirth": "1972-12-26",
+    "phone": "905212916456",
+    "email": "gülselin.şama@vestel.net",
+    "department": "Design",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Yılmaz",
+    "dateOfEmployment": "2011-08-30",
+    "dateOfBirth": "1978-08-10",
+    "phone": "905941600401",
+    "email": "john.yılmaz@alemdar.com",
+    "department": "Product",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Karaca",
+    "lastName": "Pitts",
+    "dateOfEmployment": "2002-10-09",
+    "dateOfBirth": "1979-08-09",
+    "phone": "905178641953",
+    "email": "karaca.pitts@soylu.com",
+    "department": "Product",
+    "position": "Director"
+  },
+  {
+    "firstName": "Jessica",
+    "lastName": "Gonzalez",
+    "dateOfEmployment": "2023-09-10",
+    "dateOfBirth": "1987-01-14",
+    "phone": "905612334542",
+    "email": "jessica.gonzalez@ocalan.com",
+    "department": "Human Resources",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Jankat",
+    "lastName": "Yaman",
+    "dateOfEmployment": "2038-09-19",
+    "dateOfBirth": "2001-12-31",
+    "phone": "905968526978",
+    "email": "jankat.yaman@havelsan.org",
+    "department": "Marketing",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Cansin",
+    "lastName": "Korutürk",
+    "dateOfEmployment": "2006-08-10",
+    "dateOfBirth": "1981-05-19",
+    "phone": "905840542164",
+    "email": "cansin.korutürk@price.biz",
+    "department": "Product",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Özokçu",
+    "lastName": "Harris",
+    "dateOfEmployment": "2018-11-19",
+    "dateOfBirth": "1996-12-18",
+    "phone": "905707388520",
+    "email": "özokçu.harris@koruturk.biz",
+    "department": "Sales",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Rafia",
+    "lastName": "Ray",
+    "dateOfEmployment": "2017-07-23",
+    "dateOfBirth": "1977-11-16",
+    "phone": "905039416951",
+    "email": "rafia.ray@sanchez.com",
+    "department": "Finance",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Daniel",
+    "lastName": "Yıldırım",
+    "dateOfEmployment": "2025-01-09",
+    "dateOfBirth": "2001-09-03",
+    "phone": "905062569866",
+    "email": "daniel.yıldırım@demirel.com",
+    "department": "Analytics",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Süzer",
+    "lastName": "Akça",
+    "dateOfEmployment": "1999-04-05",
+    "dateOfBirth": "1971-06-03",
+    "phone": "905355869737",
+    "email": "süzer.akça@seven.com",
+    "department": "Product",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Hazrat",
+    "lastName": "Demirel",
+    "dateOfEmployment": "2016-02-29",
+    "dateOfBirth": "1975-02-17",
+    "phone": "905855119695",
+    "email": "hazrat.demirel@aslan.com",
+    "department": "Product",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Elizabeth",
+    "lastName": "Walsh",
+    "dateOfEmployment": "2007-10-10",
+    "dateOfBirth": "1969-10-19",
+    "phone": "905582470187",
+    "email": "elizabeth.walsh@akca.com",
+    "department": "Operations",
+    "position": "Director"
+  },
+  {
+    "firstName": "Fadile",
+    "lastName": "Reyes",
+    "dateOfEmployment": "2012-08-28",
+    "dateOfBirth": "1979-10-09",
+    "phone": "905414958436",
+    "email": "fadile.reyes@howell-garcia.info",
+    "department": "Marketing",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Übeydullah",
+    "lastName": "Chandler",
+    "dateOfEmployment": "2029-12-17",
+    "dateOfBirth": "1992-07-09",
+    "phone": "905262179959",
+    "email": "übeydullah.chandler@aksu.net",
+    "department": "Human Resources",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Michelle",
+    "lastName": "Fox",
+    "dateOfEmployment": "2008-06-03",
+    "dateOfBirth": "1972-05-19",
+    "phone": "905130842901",
+    "email": "michelle.fox@walters-taylor.com",
+    "department": "Design",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Gülay",
+    "lastName": "Rogers",
+    "dateOfEmployment": "2032-01-06",
+    "dateOfBirth": "1995-09-03",
+    "phone": "905444214408",
+    "email": "gülay.rogers@sok.com",
+    "department": "Operations",
+    "position": "Director"
+  },
+  {
+    "firstName": "Vecide",
+    "lastName": "Gül",
+    "dateOfEmployment": "2013-11-27",
+    "dateOfBirth": "1982-10-03",
+    "phone": "905194048246",
+    "email": "vecide.gül@cetin.net",
+    "department": "Customer Support",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Hasret",
+    "lastName": "Gülen",
+    "dateOfEmployment": "2010-05-24",
+    "dateOfBirth": "1988-02-01",
+    "phone": "905430067187",
+    "email": "hasret.gülen@gutierrez.info",
+    "department": "Design",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Donald",
+    "lastName": "Aksu",
+    "dateOfEmployment": "2023-11-30",
+    "dateOfBirth": "1982-08-23",
+    "phone": "905220314869",
+    "email": "donald.aksu@thomas.info",
+    "department": "Engineering",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Margaret",
+    "lastName": "Long",
+    "dateOfEmployment": "2033-11-30",
+    "dateOfBirth": "1992-02-01",
+    "phone": "905321413540",
+    "email": "margaret.long@turk.com",
+    "department": "Product",
+    "position": "VP"
+  },
+  {
+    "firstName": "Sherry",
+    "lastName": "Akçay",
+    "dateOfEmployment": "2005-05-30",
+    "dateOfBirth": "1981-10-29",
+    "phone": "905741959578",
+    "email": "sherry.akçay@vestel.net",
+    "department": "Engineering",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Shannon",
+    "lastName": "Türk",
+    "dateOfEmployment": "2006-08-28",
+    "dateOfBirth": "1972-01-17",
+    "phone": "905144754565",
+    "email": "shannon.türk@vestel.net",
+    "department": "Product",
+    "position": "Director"
+  },
+  {
+    "firstName": "Caroline",
+    "lastName": "Türk",
+    "dateOfEmployment": "2014-02-14",
+    "dateOfBirth": "1975-08-19",
+    "phone": "905073493935",
+    "email": "caroline.türk@ortiz-lawson.com",
+    "department": "Finance",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Joseph",
+    "lastName": "Hançer",
+    "dateOfEmployment": "2021-08-22",
+    "dateOfBirth": "1987-08-20",
+    "phone": "905026726378",
+    "email": "joseph.hançer@henry.com",
+    "department": "Human Resources",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Bayman",
+    "lastName": "Akçay",
+    "dateOfEmployment": "2020-01-14",
+    "dateOfBirth": "1986-06-25",
+    "phone": "905573356562",
+    "email": "bayman.akçay@ramirez-chavez.org",
+    "department": "Operations",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Cihandide",
+    "lastName": "James",
+    "dateOfEmployment": "2014-11-09",
+    "dateOfBirth": "1974-05-05",
+    "phone": "905805007743",
+    "email": "cihandide.james@reyes.com",
+    "department": "Finance",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Tyler",
+    "lastName": "Durmuş",
+    "dateOfEmployment": "2033-11-06",
+    "dateOfBirth": "1997-05-02",
+    "phone": "905325946463",
+    "email": "tyler.durmuş@hammond.com",
+    "department": "Human Resources",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Melihcan",
+    "lastName": "Dean",
+    "dateOfEmployment": "2033-06-26",
+    "dateOfBirth": "1996-05-02",
+    "phone": "905312270543",
+    "email": "melihcan.dean@sezer.com",
+    "department": "Customer Support",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Daniel",
+    "lastName": "Dean",
+    "dateOfEmployment": "2025-12-03",
+    "dateOfBirth": "1996-12-13",
+    "phone": "905031346405",
+    "email": "daniel.dean@peters.biz",
+    "department": "Marketing",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Şüküfe",
+    "lastName": "Seven",
+    "dateOfEmployment": "2025-07-19",
+    "dateOfBirth": "1987-02-11",
+    "phone": "905188271263",
+    "email": "şüküfe.seven@durmus.com",
+    "department": "Product",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Crystal",
+    "lastName": "Şensoy",
+    "dateOfEmployment": "2007-01-14",
+    "dateOfBirth": "1979-11-13",
+    "phone": "905112700167",
+    "email": "crystal.şensoy@koruturk.com",
+    "department": "Operations",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Nafii",
+    "lastName": "Galvan",
+    "dateOfEmployment": "2010-06-25",
+    "dateOfBirth": "1983-01-02",
+    "phone": "905429175267",
+    "email": "nafii.galvan@selcuk.com",
+    "department": "Finance",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Larry",
+    "lastName": "Eraslan",
+    "dateOfEmployment": "2033-05-24",
+    "dateOfBirth": "1990-01-06",
+    "phone": "905853128845",
+    "email": "larry.eraslan@toyota.net",
+    "department": "Customer Support",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Aktemür",
+    "lastName": "West",
+    "dateOfEmployment": "2009-03-19",
+    "dateOfBirth": "1983-01-22",
+    "phone": "905961500282",
+    "email": "aktemür.west@miranda-delgado.biz",
+    "department": "Product",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Aslan",
+    "dateOfEmployment": "2024-11-13",
+    "dateOfBirth": "1982-08-26",
+    "phone": "905988603717",
+    "email": "michael.aslan@ertas.biz",
+    "department": "Finance",
+    "position": "VP"
+  },
+  {
+    "firstName": "Akdora",
+    "lastName": "Smith",
+    "dateOfEmployment": "2022-01-26",
+    "dateOfBirth": "1979-06-05",
+    "phone": "905090841617",
+    "email": "akdora.smith@safak.com",
+    "department": "Sales",
+    "position": "VP"
+  },
+  {
+    "firstName": "Gül",
+    "lastName": "Lawson",
+    "dateOfEmployment": "2013-09-26",
+    "dateOfBirth": "1976-03-11",
+    "phone": "905344164564",
+    "email": "gül.lawson@yildirim.org",
+    "department": "Customer Support",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Masar",
+    "lastName": "Villarreal",
+    "dateOfEmployment": "2016-09-13",
+    "dateOfBirth": "1973-08-21",
+    "phone": "905357917715",
+    "email": "masar.villarreal@bilgin.com",
+    "department": "Finance",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Duruk",
+    "lastName": "Çorlu",
+    "dateOfEmployment": "2007-09-09",
+    "dateOfBirth": "1979-08-25",
+    "phone": "905301060564",
+    "email": "duruk.çorlu@wilson-shaw.com",
+    "department": "Analytics",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Verde",
+    "lastName": "Martin",
+    "dateOfEmployment": "2023-01-21",
+    "dateOfBirth": "1991-02-28",
+    "phone": "905660395517",
+    "email": "verde.martin@yildirim.com",
+    "department": "Customer Support",
+    "position": "Director"
+  },
+  {
+    "firstName": "Kristen",
+    "lastName": "Arsoy",
+    "dateOfEmployment": "1988-05-25",
+    "dateOfBirth": "1965-07-25",
+    "phone": "905258332062",
+    "email": "kristen.arsoy@bryan.com",
+    "department": "Design",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Ürfettin",
+    "lastName": "Dixon",
+    "dateOfEmployment": "2040-04-15",
+    "dateOfBirth": "1999-02-21",
+    "phone": "905065474363",
+    "email": "ürfettin.dixon@ballard-camacho.com",
+    "department": "Design",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Sarah",
+    "lastName": "Holland",
+    "dateOfEmployment": "2034-02-11",
+    "dateOfBirth": "1991-09-27",
+    "phone": "905226890730",
+    "email": "sarah.holland@powell.com",
+    "department": "Human Resources",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Daniel",
+    "lastName": "Carrillo",
+    "dateOfEmployment": "2015-04-15",
+    "dateOfBirth": "1992-03-01",
+    "phone": "905332410913",
+    "email": "daniel.carrillo@suarez-johnson.net",
+    "department": "Product",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Eflâtun",
+    "lastName": "Hançer",
+    "dateOfEmployment": "2009-11-09",
+    "dateOfBirth": "1975-03-30",
+    "phone": "905846331114",
+    "email": "eflâtun.hançer@jordan.com",
+    "department": "Finance",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Barsen",
+    "lastName": "Eraslan",
+    "dateOfEmployment": "2020-11-29",
+    "dateOfBirth": "1998-09-13",
+    "phone": "905664504058",
+    "email": "barsen.eraslan@stanley.com",
+    "department": "Customer Support",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Laurie",
+    "lastName": "Erdoğan",
+    "dateOfEmployment": "2027-11-20",
+    "dateOfBirth": "1986-11-10",
+    "phone": "905143611983",
+    "email": "laurie.erdoğan@ford.com",
+    "department": "Marketing",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Serhatmehmet",
+    "lastName": "Hayrioğlu",
+    "dateOfEmployment": "2045-03-11",
+    "dateOfBirth": "2002-04-27",
+    "phone": "905713845403",
+    "email": "serhatmehmet.hayrioğlu@king.net",
+    "department": "Operations",
+    "position": "VP"
+  },
+  {
+    "firstName": "Gökçe",
+    "lastName": "Ewing",
+    "dateOfEmployment": "1999-04-09",
+    "dateOfBirth": "1974-07-10",
+    "phone": "905232137413",
+    "email": "gökçe.ewing@dumanli.org",
+    "department": "Operations",
+    "position": "Director"
+  },
+  {
+    "firstName": "Aydinç",
+    "lastName": "Cobb",
+    "dateOfEmployment": "2019-01-08",
+    "dateOfBirth": "1985-02-08",
+    "phone": "905978505294",
+    "email": "aydinç.cobb@burton-higgins.org",
+    "department": "Human Resources",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Anthony",
+    "lastName": "Akar",
+    "dateOfEmployment": "1998-01-30",
+    "dateOfBirth": "1969-05-12",
+    "phone": "905293597663",
+    "email": "anthony.akar@sezgin.com",
+    "department": "Operations",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Ertan",
+    "lastName": "Blackwell",
+    "dateOfEmployment": "2037-05-18",
+    "dateOfBirth": "1997-01-28",
+    "phone": "905029080932",
+    "email": "ertan.blackwell@williams.biz",
+    "department": "Human Resources",
+    "position": "VP"
+  },
+  {
+    "firstName": "Derek",
+    "lastName": "Aksu",
+    "dateOfEmployment": "2010-02-12",
+    "dateOfBirth": "1971-11-26",
+    "phone": "905039099460",
+    "email": "derek.aksu@sama.com",
+    "department": "Customer Support",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Mary",
+    "lastName": "Çamurcuoğlu",
+    "dateOfEmployment": "2020-11-11",
+    "dateOfBirth": "1984-01-09",
+    "phone": "905762673904",
+    "email": "mary.çamurcuoğlu@griffin-king.com",
+    "department": "Sales",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Kutay",
+    "lastName": "Ülker",
+    "dateOfEmployment": "2008-04-08",
+    "dateOfBirth": "1972-12-09",
+    "phone": "905126504035",
+    "email": "kutay.ülker@ashley.com",
+    "department": "Operations",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Katherine",
+    "lastName": "Herring",
+    "dateOfEmployment": "2027-03-27",
+    "dateOfBirth": "1989-08-11",
+    "phone": "905970455641",
+    "email": "katherine.herring@martinez-aguilar.com",
+    "department": "Product",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Abigail",
+    "lastName": "Akça",
+    "dateOfEmployment": "2032-08-19",
+    "dateOfBirth": "1994-12-09",
+    "phone": "905960720414",
+    "email": "abigail.akça@tupras.info",
+    "department": "Analytics",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Casey",
+    "lastName": "Gardner",
+    "dateOfEmployment": "2028-10-03",
+    "dateOfBirth": "2004-04-22",
+    "phone": "905624016271",
+    "email": "casey.gardner@howard.net",
+    "department": "Engineering",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Ayvas",
+    "lastName": "Zengin",
+    "dateOfEmployment": "2021-11-13",
+    "dateOfBirth": "1979-02-11",
+    "phone": "905943798732",
+    "email": "ayvas.zengin@brown-bowers.com",
+    "department": "Operations",
+    "position": "Senior"
+  },
+  {
+    "firstName": "David",
+    "lastName": "Hudson",
+    "dateOfEmployment": "2026-08-21",
+    "dateOfBirth": "2000-07-13",
+    "phone": "905277868873",
+    "email": "david.hudson@molina-wheeler.com",
+    "department": "Engineering",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Bozerk",
+    "lastName": "Akgündüz",
+    "dateOfEmployment": "2031-12-23",
+    "dateOfBirth": "2001-06-24",
+    "phone": "905832828970",
+    "email": "bozerk.akgündüz@hayrioglu.org",
+    "department": "Customer Support",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Duran",
+    "dateOfEmployment": "2024-05-02",
+    "dateOfBirth": "2000-08-23",
+    "phone": "905142385285",
+    "email": "michael.duran@robertson.net",
+    "department": "Marketing",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Sevsevil",
+    "lastName": "Akdeniz",
+    "dateOfEmployment": "2029-11-25",
+    "dateOfBirth": "1989-08-05",
+    "phone": "905126031123",
+    "email": "sevsevil.akdeniz@whitney-schmitt.com",
+    "department": "Sales",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Biltaş",
+    "lastName": "Hodge",
+    "dateOfEmployment": "2029-04-05",
+    "dateOfBirth": "2001-01-31",
+    "phone": "905928886748",
+    "email": "biltaş.hodge@bim.net",
+    "department": "Design",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Craig",
+    "lastName": "Akça",
+    "dateOfEmployment": "2018-02-24",
+    "dateOfBirth": "1975-01-30",
+    "phone": "905990733529",
+    "email": "craig.akça@singleton.com",
+    "department": "Engineering",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Richard",
+    "lastName": "Montgomery",
+    "dateOfEmployment": "2010-01-14",
+    "dateOfBirth": "1986-05-02",
+    "phone": "905832514255",
+    "email": "richard.montgomery@crawford.com",
+    "department": "Human Resources",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Edgübay",
+    "lastName": "Soylu",
+    "dateOfEmployment": "2006-04-10",
+    "dateOfBirth": "1964-12-16",
+    "phone": "905404254192",
+    "email": "edgübay.soylu@ertas.biz",
+    "department": "Customer Support",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Anthony",
+    "lastName": "Sezgin",
+    "dateOfEmployment": "1998-10-04",
+    "dateOfBirth": "1974-04-03",
+    "phone": "905077722609",
+    "email": "anthony.sezgin@aguirre.biz",
+    "department": "Product",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Linda",
+    "lastName": "Gould",
+    "dateOfEmployment": "2023-04-19",
+    "dateOfBirth": "1991-11-16",
+    "phone": "905925275953",
+    "email": "linda.gould@carr-lawson.org",
+    "department": "Design",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Durmuş",
+    "dateOfEmployment": "2016-03-08",
+    "dateOfBirth": "1986-10-26",
+    "phone": "905828595326",
+    "email": "john.durmuş@duran.com",
+    "department": "Human Resources",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Melissa",
+    "lastName": "Şama",
+    "dateOfEmployment": "2022-11-15",
+    "dateOfBirth": "1999-01-06",
+    "phone": "905494617351",
+    "email": "melissa.şama@demirel.biz",
+    "department": "Operations",
+    "position": "VP"
+  },
+  {
+    "firstName": "Glen",
+    "lastName": "Durmuş",
+    "dateOfEmployment": "2044-09-14",
+    "dateOfBirth": "2001-05-15",
+    "phone": "905632959505",
+    "email": "glen.durmuş@turner.com",
+    "department": "Sales",
+    "position": "VP"
+  },
+  {
+    "firstName": "Nafii",
+    "lastName": "Webb",
+    "dateOfEmployment": "2024-10-05",
+    "dateOfBirth": "1999-06-12",
+    "phone": "905791628078",
+    "email": "nafii.webb@mansiz.net",
+    "department": "Human Resources",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Feraye",
+    "lastName": "Gülen",
+    "dateOfEmployment": "2010-03-08",
+    "dateOfBirth": "1984-10-20",
+    "phone": "905712052353",
+    "email": "feraye.gülen@sama.com",
+    "department": "Design",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Jesse",
+    "lastName": "Durmuş",
+    "dateOfEmployment": "1991-05-09",
+    "dateOfBirth": "1965-03-13",
+    "phone": "905854795950",
+    "email": "jesse.durmuş@moore-allen.com",
+    "department": "Human Resources",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Kevin",
+    "lastName": "Ergül",
+    "dateOfEmployment": "2010-06-30",
+    "dateOfBirth": "1976-12-01",
+    "phone": "905522084324",
+    "email": "kevin.ergül@sama.info",
+    "department": "Product",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Amre",
+    "lastName": "Hançer",
+    "dateOfEmployment": "1999-06-11",
+    "dateOfBirth": "1974-02-20",
+    "phone": "905825962707",
+    "email": "amre.hançer@craig.com",
+    "department": "Human Resources",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Eric",
+    "lastName": "Quinn",
+    "dateOfEmployment": "2014-03-21",
+    "dateOfBirth": "1982-01-27",
+    "phone": "905936656498",
+    "email": "eric.quinn@arslan.com",
+    "department": "Engineering",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Armahan",
+    "lastName": "Floyd",
+    "dateOfEmployment": "2014-12-13",
+    "dateOfBirth": "1988-08-07",
+    "phone": "905915318828",
+    "email": "armahan.floyd@smith-key.com",
+    "department": "Sales",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Brooke",
+    "lastName": "Bilge",
+    "dateOfEmployment": "2010-04-16",
+    "dateOfBirth": "1984-10-01",
+    "phone": "905563243288",
+    "email": "brooke.bilge@tarhan.net",
+    "department": "Sales",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Şemsettin",
+    "lastName": "Şafak",
+    "dateOfEmployment": "2015-05-22",
+    "dateOfBirth": "1987-10-25",
+    "phone": "905711915030",
+    "email": "şemsettin.şafak@tevetoglu.com",
+    "department": "Operations",
+    "position": "VP"
+  },
+  {
+    "firstName": "Karen",
+    "lastName": "Ertaş",
+    "dateOfEmployment": "2016-07-22",
+    "dateOfBirth": "1980-03-17",
+    "phone": "905071744841",
+    "email": "karen.ertaş@reilly-pena.net",
+    "department": "Design",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Heidi",
+    "lastName": "Çorlu",
+    "dateOfEmployment": "2021-03-22",
+    "dateOfBirth": "1992-09-15",
+    "phone": "905507259034",
+    "email": "heidi.çorlu@griffin-riley.com",
+    "department": "Product",
+    "position": "Senior"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Çamurcuoğlu",
+    "dateOfEmployment": "1996-10-12",
+    "dateOfBirth": "1970-02-02",
+    "phone": "905297961835",
+    "email": "john.çamurcuoğlu@yorulmaz.info",
+    "department": "Operations",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Amy",
+    "lastName": "Akar",
+    "dateOfEmployment": "2017-12-25",
+    "dateOfBirth": "1987-01-31",
+    "phone": "905630731740",
+    "email": "amy.akar@corlu.com",
+    "department": "Engineering",
+    "position": "VP"
+  },
+  {
+    "firstName": "Şevketfeza",
+    "lastName": "Brown",
+    "dateOfEmployment": "2036-10-23",
+    "dateOfBirth": "1996-10-09",
+    "phone": "905903753438",
+    "email": "şevketfeza.brown@blair.com",
+    "department": "Finance",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Cebesoy",
+    "lastName": "Erdoğan",
+    "dateOfEmployment": "1998-04-19",
+    "dateOfBirth": "1967-05-03",
+    "phone": "905949048505",
+    "email": "cebesoy.erdoğan@hogan-wall.net",
+    "department": "Finance",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Christopher",
+    "lastName": "Hançer",
+    "dateOfEmployment": "2027-06-24",
+    "dateOfBirth": "1992-11-04",
+    "phone": "905578331581",
+    "email": "christopher.hançer@henry.com",
+    "department": "Human Resources",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Songurkan",
+    "lastName": "Dumanlı",
+    "dateOfEmployment": "2017-09-09",
+    "dateOfBirth": "1995-08-30",
+    "phone": "905361790193",
+    "email": "songurkan.dumanlı@camurcuoglu.com",
+    "department": "Finance",
+    "position": "Director"
+  },
+  {
+    "firstName": "Telim",
+    "lastName": "Dumanlı",
+    "dateOfEmployment": "2011-05-07",
+    "dateOfBirth": "1982-05-15",
+    "phone": "905521168133",
+    "email": "telim.dumanlı@gardner.com",
+    "department": "Marketing",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Kaitlyn",
+    "lastName": "Bilgin",
+    "dateOfEmployment": "2044-03-09",
+    "dateOfBirth": "2003-04-27",
+    "phone": "905638967532",
+    "email": "kaitlyn.bilgin@durmus.com",
+    "department": "Engineering",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Benjamin",
+    "lastName": "Eraslan",
+    "dateOfEmployment": "2024-04-16",
+    "dateOfBirth": "1981-01-06",
+    "phone": "905348097452",
+    "email": "benjamin.eraslan@akgunduz.com",
+    "department": "Engineering",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Phillip",
+    "lastName": "Yorulmaz",
+    "dateOfEmployment": "2030-06-12",
+    "dateOfBirth": "2000-10-21",
+    "phone": "905819337118",
+    "email": "phillip.yorulmaz@corlu.com",
+    "department": "Marketing",
+    "position": "Director"
+  },
+  {
+    "firstName": "Mary",
+    "lastName": "Dominguez",
+    "dateOfEmployment": "2009-09-02",
+    "dateOfBirth": "1967-11-05",
+    "phone": "905991831071",
+    "email": "mary.dominguez@zorlu.biz",
+    "department": "Analytics",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Jeffrey",
+    "lastName": "Bilir",
+    "dateOfEmployment": "2031-09-08",
+    "dateOfBirth": "2001-09-18",
+    "phone": "905095030490",
+    "email": "jeffrey.bilir@salinas.com",
+    "department": "Customer Support",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Eşim",
+    "lastName": "Bird",
+    "dateOfEmployment": "2014-06-08",
+    "dateOfBirth": "1978-09-03",
+    "phone": "905191175049",
+    "email": "eşim.bird@webb.com",
+    "department": "Analytics",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Beste",
+    "lastName": "Yıldırım",
+    "dateOfEmployment": "2028-02-27",
+    "dateOfBirth": "1991-10-10",
+    "phone": "905094279401",
+    "email": "beste.yıldırım@oyak.com",
+    "department": "Finance",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Siper",
+    "lastName": "Güçlü",
+    "dateOfEmployment": "2023-07-05",
+    "dateOfBirth": "1995-09-01",
+    "phone": "905533443768",
+    "email": "siper.güçlü@davis-hancock.com",
+    "department": "Sales",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Özbay",
+    "lastName": "Yılmaz",
+    "dateOfEmployment": "2014-11-10",
+    "dateOfBirth": "1973-01-09",
+    "phone": "905777636673",
+    "email": "özbay.yılmaz@russell-vasquez.com",
+    "department": "Engineering",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Çıvgın",
+    "lastName": "Şener",
+    "dateOfEmployment": "2038-02-26",
+    "dateOfBirth": "1995-12-25",
+    "phone": "905820215624",
+    "email": "çıvgın.şener@ray-benson.net",
+    "department": "Operations",
+    "position": "Director"
+  },
+  {
+    "firstName": "Matthew",
+    "lastName": "Hayrioğlu",
+    "dateOfEmployment": "2002-08-21",
+    "dateOfBirth": "1971-11-18",
+    "phone": "905790229096",
+    "email": "matthew.hayrioğlu@howard.info",
+    "department": "Engineering",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Otay",
+    "lastName": "Park",
+    "dateOfEmployment": "2006-05-22",
+    "dateOfBirth": "1980-11-06",
+    "phone": "905140325583",
+    "email": "otay.park@durdu.com",
+    "department": "Customer Support",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Anka",
+    "lastName": "Ergül",
+    "dateOfEmployment": "1992-01-02",
+    "dateOfBirth": "1967-08-12",
+    "phone": "905067307196",
+    "email": "anka.ergül@garcia-berry.com",
+    "department": "Finance",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Barbara",
+    "lastName": "Hicks",
+    "dateOfEmployment": "2002-11-19",
+    "dateOfBirth": "1967-06-05",
+    "phone": "905473956280",
+    "email": "barbara.hicks@daniel-zhang.net",
+    "department": "Engineering",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Joshua",
+    "lastName": "Çorlu",
+    "dateOfEmployment": "2014-07-26",
+    "dateOfBirth": "1987-01-24",
+    "phone": "905855067693",
+    "email": "joshua.çorlu@brown-mccullough.com",
+    "department": "Design",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Melissa",
+    "lastName": "Hayrioğlu",
+    "dateOfEmployment": "2008-03-15",
+    "dateOfBirth": "1977-07-05",
+    "phone": "905519870341",
+    "email": "melissa.hayrioğlu@alemdar.com",
+    "department": "Finance",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Fetullah",
+    "lastName": "Brown",
+    "dateOfEmployment": "2008-11-11",
+    "dateOfBirth": "1986-10-06",
+    "phone": "905419811904",
+    "email": "fetullah.brown@martin-wise.com",
+    "department": "Finance",
+    "position": "VP"
+  },
+  {
+    "firstName": "Nazlihan",
+    "lastName": "Şensoy",
+    "dateOfEmployment": "2026-09-02",
+    "dateOfBirth": "1995-05-06",
+    "phone": "905686389910",
+    "email": "nazlihan.şensoy@wheeler.net",
+    "department": "Sales",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Umutcan",
+    "lastName": "Demir",
+    "dateOfEmployment": "2018-05-01",
+    "dateOfBirth": "1986-07-20",
+    "phone": "905055684315",
+    "email": "umutcan.demir@tofas.net",
+    "department": "Design",
+    "position": "VP"
+  },
+  {
+    "firstName": "Yağın",
+    "lastName": "Alemdar",
+    "dateOfEmployment": "2034-03-17",
+    "dateOfBirth": "1995-04-22",
+    "phone": "905580574350",
+    "email": "yağın.alemdar@yorulmaz.biz",
+    "department": "Analytics",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Sandra",
+    "lastName": "Weaver",
+    "dateOfEmployment": "1992-08-31",
+    "dateOfBirth": "1967-12-10",
+    "phone": "905517552816",
+    "email": "sandra.weaver@maynard.com",
+    "department": "Finance",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Besey",
+    "lastName": "Allison",
+    "dateOfEmployment": "2015-11-23",
+    "dateOfBirth": "1987-04-24",
+    "phone": "905840878518",
+    "email": "besey.allison@selcuk.net",
+    "department": "Product",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Sultane",
+    "lastName": "Jackson",
+    "dateOfEmployment": "2043-01-27",
+    "dateOfBirth": "2004-02-01",
+    "phone": "905464703433",
+    "email": "sultane.jackson@baxter-rowe.org",
+    "department": "Sales",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Maşide",
+    "lastName": "Sutton",
+    "dateOfEmployment": "2013-09-03",
+    "dateOfBirth": "1990-03-16",
+    "phone": "905463360050",
+    "email": "maşide.sutton@ertas.com",
+    "department": "Customer Support",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Ann",
+    "lastName": "Olsen",
+    "dateOfEmployment": "2032-09-17",
+    "dateOfBirth": "1989-02-28",
+    "phone": "905863953995",
+    "email": "ann.olsen@hale-willis.org",
+    "department": "Engineering",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Sehel",
+    "lastName": "Demirel",
+    "dateOfEmployment": "2021-10-13",
+    "dateOfBirth": "1992-05-04",
+    "phone": "905738732693",
+    "email": "sehel.demirel@james.com",
+    "department": "Sales",
+    "position": "Lead"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Stanley",
+    "dateOfEmployment": "1994-01-14",
+    "dateOfBirth": "1968-04-26",
+    "phone": "905000776316",
+    "email": "john.stanley@bim.com",
+    "department": "Finance",
+    "position": "Director"
+  },
+  {
+    "firstName": "Scott",
+    "lastName": "Akça",
+    "dateOfEmployment": "2013-01-09",
+    "dateOfBirth": "1980-07-15",
+    "phone": "905023796574",
+    "email": "scott.akça@miller-watkins.info",
+    "department": "Customer Support",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Julie",
+    "lastName": "Jenkins",
+    "dateOfEmployment": "2008-03-11",
+    "dateOfBirth": "1967-05-01",
+    "phone": "905392583346",
+    "email": "julie.jenkins@yildirim.biz",
+    "department": "Finance",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Verde",
+    "lastName": "Orozco",
+    "dateOfEmployment": "2022-12-01",
+    "dateOfBirth": "1981-12-12",
+    "phone": "905077297414",
+    "email": "verde.orozco@johnson-smith.net",
+    "department": "Design",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Jamie",
+    "lastName": "Thomas",
+    "dateOfEmployment": "2028-01-15",
+    "dateOfBirth": "1987-12-21",
+    "phone": "905492563707",
+    "email": "jamie.thomas@erdogan.com",
+    "department": "Customer Support",
+    "position": "VP"
+  },
+  {
+    "firstName": "Zebirce",
+    "lastName": "Rogers",
+    "dateOfEmployment": "2019-03-01",
+    "dateOfBirth": "1976-12-20",
+    "phone": "905176644587",
+    "email": "zebirce.rogers@sener.biz",
+    "department": "Engineering",
+    "position": "VP"
+  },
+  {
+    "firstName": "Gökay",
+    "lastName": "Sezgin",
+    "dateOfEmployment": "2035-04-22",
+    "dateOfBirth": "1995-03-21",
+    "phone": "905320259462",
+    "email": "gökay.sezgin@safak.com",
+    "department": "Design",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Bryan",
+    "lastName": "Roberts",
+    "dateOfEmployment": "2030-07-31",
+    "dateOfBirth": "1990-12-19",
+    "phone": "905934573902",
+    "email": "bryan.roberts@soylu.info",
+    "department": "Finance",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Vincent",
+    "lastName": "Khan",
+    "dateOfEmployment": "2024-05-07",
+    "dateOfBirth": "1987-06-09",
+    "phone": "905834841476",
+    "email": "vincent.khan@wheeler-kane.com",
+    "department": "Marketing",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Robert",
+    "lastName": "Güçlü",
+    "dateOfEmployment": "1997-05-30",
+    "dateOfBirth": "1967-09-13",
+    "phone": "905992739392",
+    "email": "robert.güçlü@wright.net",
+    "department": "Analytics",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Sara",
+    "lastName": "Foster",
+    "dateOfEmployment": "2006-03-13",
+    "dateOfBirth": "1965-10-07",
+    "phone": "905590827421",
+    "email": "sara.foster@gay.com",
+    "department": "Customer Support",
+    "position": "VP"
+  },
+  {
+    "firstName": "Tracey",
+    "lastName": "Abbott",
+    "dateOfEmployment": "2014-10-10",
+    "dateOfBirth": "1989-09-10",
+    "phone": "905482081800",
+    "email": "tracey.abbott@bridges.com",
+    "department": "Sales",
+    "position": "VP"
+  },
+  {
+    "firstName": "Sencar",
+    "lastName": "Şama",
+    "dateOfEmployment": "2006-01-12",
+    "dateOfBirth": "1982-03-07",
+    "phone": "905736377521",
+    "email": "sencar.şama@schmitt-smith.biz",
+    "department": "Human Resources",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Tunguç",
+    "lastName": "Adams",
+    "dateOfEmployment": "2029-08-23",
+    "dateOfBirth": "2000-10-20",
+    "phone": "905637604197",
+    "email": "tunguç.adams@duncan.com",
+    "department": "Finance",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Timurtaş",
+    "lastName": "Sutton",
+    "dateOfEmployment": "2019-07-22",
+    "dateOfBirth": "1984-07-04",
+    "phone": "905027892268",
+    "email": "timurtaş.sutton@gardner.org",
+    "department": "Analytics",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Edaviye",
+    "lastName": "Flowers",
+    "dateOfEmployment": "2019-10-15",
+    "dateOfBirth": "1982-05-16",
+    "phone": "905690036372",
+    "email": "edaviye.flowers@ortiz.biz",
+    "department": "Analytics",
+    "position": "Director"
+  },
+  {
+    "firstName": "Jenna",
+    "lastName": "Nguyen",
+    "dateOfEmployment": "2025-06-27",
+    "dateOfBirth": "1983-11-29",
+    "phone": "905187759632",
+    "email": "jenna.nguyen@lynch.org",
+    "department": "Sales",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Şazime",
+    "lastName": "Soylu",
+    "dateOfEmployment": "2030-06-18",
+    "dateOfBirth": "1998-04-04",
+    "phone": "905026508905",
+    "email": "şazime.soylu@bilge.com",
+    "department": "Analytics",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Hafıza",
+    "lastName": "Zorlu",
+    "dateOfEmployment": "2005-09-01",
+    "dateOfBirth": "1979-12-29",
+    "phone": "905611531271",
+    "email": "hafıza.zorlu@alemdar.com",
+    "department": "Design",
+    "position": "VP"
+  },
+  {
+    "firstName": "Gürcüye",
+    "lastName": "Sakarya",
+    "dateOfEmployment": "2034-03-08",
+    "dateOfBirth": "1999-10-02",
+    "phone": "905138096274",
+    "email": "gürcüye.sakarya@frederick-olson.com",
+    "department": "Analytics",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Turabi",
+    "lastName": "Bilir",
+    "dateOfEmployment": "2032-12-09",
+    "dateOfBirth": "2001-12-01",
+    "phone": "905748951035",
+    "email": "turabi.bilir@davis.net",
+    "department": "Product",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Richard",
+    "lastName": "Gray",
+    "dateOfEmployment": "2010-08-07",
+    "dateOfBirth": "1979-09-01",
+    "phone": "905439671944",
+    "email": "richard.gray@bim.com",
+    "department": "Marketing",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Kaşif",
+    "lastName": "Yüksel",
+    "dateOfEmployment": "2010-10-18",
+    "dateOfBirth": "1970-02-14",
+    "phone": "905369260197",
+    "email": "kaşif.yüksel@hamilton-hickman.net",
+    "department": "Marketing",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Masar",
+    "lastName": "Ramsey",
+    "dateOfEmployment": "2013-12-03",
+    "dateOfBirth": "1972-06-28",
+    "phone": "905656574285",
+    "email": "masar.ramsey@lc.biz",
+    "department": "Engineering",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Stacy",
+    "lastName": "Cook",
+    "dateOfEmployment": "2018-10-24",
+    "dateOfBirth": "1990-02-26",
+    "phone": "905320840616",
+    "email": "stacy.cook@rose.net",
+    "department": "Design",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Melissa",
+    "lastName": "Fisher",
+    "dateOfEmployment": "1999-06-08",
+    "dateOfBirth": "1971-02-08",
+    "phone": "905715827817",
+    "email": "melissa.fisher@garcia.info",
+    "department": "Operations",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Steven",
+    "lastName": "Knapp",
+    "dateOfEmployment": "2030-04-26",
+    "dateOfBirth": "1999-12-08",
+    "phone": "905408945888",
+    "email": "steven.knapp@hancer.biz",
+    "department": "Customer Support",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Holly",
+    "lastName": "Tevetoğlu",
+    "dateOfEmployment": "2030-01-10",
+    "dateOfBirth": "2003-09-05",
+    "phone": "905006876256",
+    "email": "holly.tevetoğlu@rivera.org",
+    "department": "Engineering",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Monique",
+    "lastName": "Wright",
+    "dateOfEmployment": "2014-01-06",
+    "dateOfBirth": "1991-08-17",
+    "phone": "905231646423",
+    "email": "monique.wright@shelton.net",
+    "department": "Sales",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Gençay",
+    "lastName": "Phillips",
+    "dateOfEmployment": "2033-06-21",
+    "dateOfBirth": "1994-02-07",
+    "phone": "905578135351",
+    "email": "gençay.phillips@kisakurek.info",
+    "department": "Finance",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Denkel",
+    "lastName": "Şama",
+    "dateOfEmployment": "1993-10-25",
+    "dateOfBirth": "1967-04-30",
+    "phone": "905342098525",
+    "email": "denkel.şama@petrol.biz",
+    "department": "Sales",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Gülgüzel",
+    "lastName": "Bilgin",
+    "dateOfEmployment": "2027-01-23",
+    "dateOfBirth": "1993-02-23",
+    "phone": "905016587944",
+    "email": "gülgüzel.bilgin@scott.biz",
+    "department": "Design",
+    "position": "Director"
+  },
+  {
+    "firstName": "Annak",
+    "lastName": "Akgündüz",
+    "dateOfEmployment": "2019-06-02",
+    "dateOfBirth": "1990-04-14",
+    "phone": "905328910245",
+    "email": "annak.akgündüz@ford.org",
+    "department": "Finance",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Alexandria",
+    "lastName": "Holt",
+    "dateOfEmployment": "2035-02-15",
+    "dateOfBirth": "1996-08-07",
+    "phone": "905250218601",
+    "email": "alexandria.holt@inonu.net",
+    "department": "Analytics",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Mengi",
+    "lastName": "Fuentes",
+    "dateOfEmployment": "2031-10-29",
+    "dateOfBirth": "1988-11-14",
+    "phone": "905385725429",
+    "email": "mengi.fuentes@cetin.org",
+    "department": "Human Resources",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Geray",
+    "lastName": "İhsanoğlu",
+    "dateOfEmployment": "2034-10-01",
+    "dateOfBirth": "1992-07-28",
+    "phone": "905449692295",
+    "email": "geray.i̇hsanoğlu@tupras.org",
+    "department": "Engineering",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Ayten",
+    "lastName": "Çorlu",
+    "dateOfEmployment": "2021-10-19",
+    "dateOfBirth": "1980-10-30",
+    "phone": "905107464131",
+    "email": "ayten.çorlu@wilson-carpenter.com",
+    "department": "Finance",
+    "position": "VP"
+  },
+  {
+    "firstName": "Gülnaziye",
+    "lastName": "Soylu",
+    "dateOfEmployment": "2027-07-07",
+    "dateOfBirth": "1998-05-02",
+    "phone": "905504504743",
+    "email": "gülnaziye.soylu@white-lambert.biz",
+    "department": "Human Resources",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Hoşkadem",
+    "lastName": "Mcguire",
+    "dateOfEmployment": "1997-12-18",
+    "dateOfBirth": "1970-04-17",
+    "phone": "905527031623",
+    "email": "hoşkadem.mcguire@sok.info",
+    "department": "Design",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Thomas",
+    "lastName": "Marshall",
+    "dateOfEmployment": "1994-05-28",
+    "dateOfBirth": "1966-04-02",
+    "phone": "905676788975",
+    "email": "thomas.marshall@arcelik.com",
+    "department": "Operations",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Jesus",
+    "lastName": "Harris",
+    "dateOfEmployment": "2018-06-12",
+    "dateOfBirth": "1987-01-11",
+    "phone": "905810628529",
+    "email": "jesus.harris@akcay.com",
+    "department": "Human Resources",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Kurt",
+    "lastName": "Ertaş",
+    "dateOfEmployment": "2024-01-31",
+    "dateOfBirth": "1985-03-23",
+    "phone": "905923952966",
+    "email": "kurt.ertaş@zengin.org",
+    "department": "Operations",
+    "position": "VP"
+  },
+  {
+    "firstName": "Blake",
+    "lastName": "Fırat",
+    "dateOfEmployment": "1990-12-13",
+    "dateOfBirth": "1968-05-12",
+    "phone": "905862357983",
+    "email": "blake.fırat@ryan-houston.com",
+    "department": "Sales",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Zahid",
+    "lastName": "Güçlü",
+    "dateOfEmployment": "2024-06-20",
+    "dateOfBirth": "1985-12-30",
+    "phone": "905292189447",
+    "email": "zahid.güçlü@bilir.com",
+    "department": "Human Resources",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Maria",
+    "lastName": "Gülen",
+    "dateOfEmployment": "2046-08-17",
+    "dateOfBirth": "2004-06-02",
+    "phone": "905715521403",
+    "email": "maria.gülen@blackwell.com",
+    "department": "Sales",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Ashley",
+    "lastName": "Zengin",
+    "dateOfEmployment": "2028-05-10",
+    "dateOfBirth": "2003-02-28",
+    "phone": "905515240667",
+    "email": "ashley.zengin@cooper.com",
+    "department": "Finance",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Güneri",
+    "lastName": "Pineda",
+    "dateOfEmployment": "1995-09-10",
+    "dateOfBirth": "1969-06-26",
+    "phone": "905097580383",
+    "email": "güneri.pineda@yildirim.com",
+    "department": "Product",
+    "position": "Director"
+  },
+  {
+    "firstName": "Demirok",
+    "lastName": "Pearson",
+    "dateOfEmployment": "2016-06-03",
+    "dateOfBirth": "1973-06-05",
+    "phone": "905011973233",
+    "email": "demirok.pearson@rodriguez.info",
+    "department": "Analytics",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Marco",
+    "lastName": "Lewis",
+    "dateOfEmployment": "2029-02-03",
+    "dateOfBirth": "1993-10-27",
+    "phone": "905338709520",
+    "email": "marco.lewis@montgomery.com",
+    "department": "Analytics",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Afife",
+    "lastName": "Stone",
+    "dateOfEmployment": "1997-07-06",
+    "dateOfBirth": "1974-06-05",
+    "phone": "905022646063",
+    "email": "afife.stone@ergul.biz",
+    "department": "Analytics",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Cevheri",
+    "lastName": "Ellis",
+    "dateOfEmployment": "2029-02-14",
+    "dateOfBirth": "2004-06-25",
+    "phone": "905897846774",
+    "email": "cevheri.ellis@havelsan.net",
+    "department": "Engineering",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Jerry",
+    "lastName": "Woods",
+    "dateOfEmployment": "2008-02-07",
+    "dateOfBirth": "1977-01-10",
+    "phone": "905053364404",
+    "email": "jerry.woods@toyota.net",
+    "department": "Operations",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Lisa",
+    "lastName": "Durmuş",
+    "dateOfEmployment": "2009-08-07",
+    "dateOfBirth": "1977-03-31",
+    "phone": "905069834438",
+    "email": "lisa.durmuş@stewart-smith.biz",
+    "department": "Customer Support",
+    "position": "Director"
+  },
+  {
+    "firstName": "Bruce",
+    "lastName": "Rowland",
+    "dateOfEmployment": "2034-05-08",
+    "dateOfBirth": "2001-10-26",
+    "phone": "905984754555",
+    "email": "bruce.rowland@hines.net",
+    "department": "Marketing",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Nura",
+    "lastName": "Yaman",
+    "dateOfEmployment": "2030-06-14",
+    "dateOfBirth": "2004-08-23",
+    "phone": "905809067437",
+    "email": "nura.yaman@akar.com",
+    "department": "Customer Support",
+    "position": "VP"
+  },
+  {
+    "firstName": "Akcivan",
+    "lastName": "Durdu",
+    "dateOfEmployment": "2012-06-15",
+    "dateOfBirth": "1984-03-07",
+    "phone": "905834869712",
+    "email": "akcivan.durdu@akcay.com",
+    "department": "Operations",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Ferhan",
+    "lastName": "Ingram",
+    "dateOfEmployment": "2003-07-28",
+    "dateOfBirth": "1971-08-05",
+    "phone": "905244856071",
+    "email": "ferhan.ingram@akdeniz.com",
+    "department": "Design",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Cody",
+    "lastName": "Watkins",
+    "dateOfEmployment": "2008-08-22",
+    "dateOfBirth": "1971-09-09",
+    "phone": "905208603457",
+    "email": "cody.watkins@gilmore.net",
+    "department": "Marketing",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Erşat",
+    "lastName": "Roberts",
+    "dateOfEmployment": "1998-11-28",
+    "dateOfBirth": "1969-12-15",
+    "phone": "905138044972",
+    "email": "erşat.roberts@anderson.com",
+    "department": "Operations",
+    "position": "VP"
+  },
+  {
+    "firstName": "Bulunç",
+    "lastName": "Tucker",
+    "dateOfEmployment": "2012-02-24",
+    "dateOfBirth": "1979-03-24",
+    "phone": "905381930492",
+    "email": "bulunç.tucker@tofas.biz",
+    "department": "Analytics",
+    "position": "Director"
+  },
+  {
+    "firstName": "Faize",
+    "lastName": "Manço",
+    "dateOfEmployment": "2026-05-09",
+    "dateOfBirth": "2003-01-22",
+    "phone": "905184194401",
+    "email": "faize.manço@ford.com",
+    "department": "Finance",
+    "position": "Director"
+  },
+  {
+    "firstName": "Görsev",
+    "lastName": "İnönü",
+    "dateOfEmployment": "2028-04-06",
+    "dateOfBirth": "1997-11-27",
+    "phone": "905507304553",
+    "email": "görsev.i̇nönü@safak.com",
+    "department": "Human Resources",
+    "position": "Director"
+  },
+  {
+    "firstName": "Zeride",
+    "lastName": "Alemdar",
+    "dateOfEmployment": "2024-10-19",
+    "dateOfBirth": "1992-11-05",
+    "phone": "905876762108",
+    "email": "zeride.alemdar@brooks.com",
+    "department": "Sales",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Steven",
+    "lastName": "Yüksel",
+    "dateOfEmployment": "2027-06-09",
+    "dateOfBirth": "1990-10-25",
+    "phone": "905655914515",
+    "email": "steven.yüksel@walker.com",
+    "department": "Design",
+    "position": "VP"
+  },
+  {
+    "firstName": "Hamiyet",
+    "lastName": "Cook",
+    "dateOfEmployment": "2030-06-04",
+    "dateOfBirth": "2001-10-23",
+    "phone": "905208738828",
+    "email": "hamiyet.cook@morgan.com",
+    "department": "Analytics",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Hudavent",
+    "lastName": "Johnson",
+    "dateOfEmployment": "2015-02-23",
+    "dateOfBirth": "1987-08-30",
+    "phone": "905775713513",
+    "email": "hudavent.johnson@safak.com",
+    "department": "Analytics",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Şadıman",
+    "lastName": "Kısakürek",
+    "dateOfEmployment": "1995-08-25",
+    "dateOfBirth": "1966-03-13",
+    "phone": "905918500083",
+    "email": "şadıman.kısakürek@hays.com",
+    "department": "Product",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Ticen",
+    "lastName": "Şensoy",
+    "dateOfEmployment": "2040-11-27",
+    "dateOfBirth": "2000-07-19",
+    "phone": "905004798997",
+    "email": "ticen.şensoy@lc.org",
+    "department": "Sales",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Yaşar",
+    "lastName": "Ergül",
+    "dateOfEmployment": "2018-12-18",
+    "dateOfBirth": "1995-09-23",
+    "phone": "905297073334",
+    "email": "yaşar.ergül@cetin.com",
+    "department": "Finance",
+    "position": "VP"
+  },
+  {
+    "firstName": "Elizabeth",
+    "lastName": "Akdeniz",
+    "dateOfEmployment": "2017-02-25",
+    "dateOfBirth": "1991-01-21",
+    "phone": "905748449764",
+    "email": "elizabeth.akdeniz@bilir.com",
+    "department": "Sales",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Arıel",
+    "lastName": "Coleman",
+    "dateOfEmployment": "2013-01-03",
+    "dateOfBirth": "1985-09-21",
+    "phone": "905194306204",
+    "email": "arıel.coleman@finley.biz",
+    "department": "Operations",
+    "position": "VP"
+  },
+  {
+    "firstName": "Çavuldur",
+    "lastName": "Brown",
+    "dateOfEmployment": "2001-03-09",
+    "dateOfBirth": "1975-12-20",
+    "phone": "905011835531",
+    "email": "çavuldur.brown@arslan.com",
+    "department": "Sales",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Necmettin",
+    "lastName": "Kısakürek",
+    "dateOfEmployment": "2026-03-28",
+    "dateOfBirth": "1999-04-17",
+    "phone": "905527552851",
+    "email": "necmettin.kısakürek@sisecam.com",
+    "department": "Finance",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Mandy",
+    "lastName": "Arslan",
+    "dateOfEmployment": "2028-05-21",
+    "dateOfBirth": "1986-05-17",
+    "phone": "905675896090",
+    "email": "mandy.arslan@young.com",
+    "department": "Operations",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Musafet",
+    "lastName": "Mansız",
+    "dateOfEmployment": "2036-04-03",
+    "dateOfBirth": "1993-04-28",
+    "phone": "905756808254",
+    "email": "musafet.mansız@calderon.com",
+    "department": "Human Resources",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Ergül",
+    "lastName": "Clark",
+    "dateOfEmployment": "2009-09-10",
+    "dateOfBirth": "1971-05-18",
+    "phone": "905772513337",
+    "email": "ergül.clark@king-wood.com",
+    "department": "Operations",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Tuğçe",
+    "lastName": "Jones",
+    "dateOfEmployment": "2005-06-29",
+    "dateOfBirth": "1971-12-04",
+    "phone": "905529067187",
+    "email": "tuğçe.jones@torres.info",
+    "department": "Operations",
+    "position": "Director"
+  },
+  {
+    "firstName": "İlbek",
+    "lastName": "Yaman",
+    "dateOfEmployment": "2012-03-13",
+    "dateOfBirth": "1977-07-28",
+    "phone": "905186529836",
+    "email": "i̇lbek.yaman@ford.com",
+    "department": "Design",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Gülüs",
+    "lastName": "Cox",
+    "dateOfEmployment": "2031-06-11",
+    "dateOfBirth": "1991-05-03",
+    "phone": "905143029763",
+    "email": "gülüs.cox@inonu.com",
+    "department": "Product",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Kopan",
+    "lastName": "Ertaş",
+    "dateOfEmployment": "1997-08-15",
+    "dateOfBirth": "1965-04-27",
+    "phone": "905306806712",
+    "email": "kopan.ertaş@tevetoglu.com",
+    "department": "Product",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Brian",
+    "lastName": "Gül",
+    "dateOfEmployment": "2004-12-19",
+    "dateOfBirth": "1968-07-17",
+    "phone": "905392824067",
+    "email": "brian.gül@akca.com",
+    "department": "Finance",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Risalet",
+    "lastName": "Perez",
+    "dateOfEmployment": "2021-04-24",
+    "dateOfBirth": "1997-06-03",
+    "phone": "905644991516",
+    "email": "risalet.perez@ulker.com",
+    "department": "Operations",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Eriş",
+    "lastName": "Mcdowell",
+    "dateOfEmployment": "2014-03-11",
+    "dateOfBirth": "1987-07-22",
+    "phone": "905629358229",
+    "email": "eriş.mcdowell@frazier.net",
+    "department": "Design",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Güldam",
+    "lastName": "Lopez",
+    "dateOfEmployment": "2023-09-16",
+    "dateOfBirth": "1999-02-15",
+    "phone": "905044882223",
+    "email": "güldam.lopez@sensoy.org",
+    "department": "Operations",
+    "position": "Director"
+  },
+  {
+    "firstName": "Carl",
+    "lastName": "Durmuş",
+    "dateOfEmployment": "2015-10-07",
+    "dateOfBirth": "1988-11-26",
+    "phone": "905213873233",
+    "email": "carl.durmuş@benton.biz",
+    "department": "Customer Support",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Victoria",
+    "lastName": "Mooney",
+    "dateOfEmployment": "2023-11-11",
+    "dateOfBirth": "1995-09-05",
+    "phone": "905410630980",
+    "email": "victoria.mooney@wallace.info",
+    "department": "Sales",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Güngördü",
+    "lastName": "Jones",
+    "dateOfEmployment": "2015-08-07",
+    "dateOfBirth": "1979-02-21",
+    "phone": "905950905215",
+    "email": "güngördü.jones@tofas.com",
+    "department": "Engineering",
+    "position": "VP"
+  },
+  {
+    "firstName": "Sadat",
+    "lastName": "Yüksel",
+    "dateOfEmployment": "2023-11-26",
+    "dateOfBirth": "1981-11-24",
+    "phone": "905575230662",
+    "email": "sadat.yüksel@sama.com",
+    "department": "Operations",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Gelengül",
+    "lastName": "Akgündüz",
+    "dateOfEmployment": "2033-04-12",
+    "dateOfBirth": "2003-08-31",
+    "phone": "905978178222",
+    "email": "gelengül.akgündüz@sener.org",
+    "department": "Finance",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Todd",
+    "lastName": "Ferguson",
+    "dateOfEmployment": "2016-10-15",
+    "dateOfBirth": "1992-06-26",
+    "phone": "905208560277",
+    "email": "todd.ferguson@tofas.com",
+    "department": "Product",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Açıkel",
+    "lastName": "Patel",
+    "dateOfEmployment": "2030-09-15",
+    "dateOfBirth": "1999-12-09",
+    "phone": "905309027556",
+    "email": "açıkel.patel@ford.com",
+    "department": "Human Resources",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Şafii",
+    "lastName": "Şama",
+    "dateOfEmployment": "2005-04-12",
+    "dateOfBirth": "1973-06-01",
+    "phone": "905548557603",
+    "email": "şafii.şama@taylor-hayes.org",
+    "department": "Sales",
+    "position": "VP"
+  },
+  {
+    "firstName": "Birgit",
+    "lastName": "Pearson",
+    "dateOfEmployment": "2016-05-10",
+    "dateOfBirth": "1983-03-29",
+    "phone": "905486246562",
+    "email": "birgit.pearson@king-castillo.com",
+    "department": "Marketing",
+    "position": "Director"
+  },
+  {
+    "firstName": "Melihcan",
+    "lastName": "Şama",
+    "dateOfEmployment": "2020-08-18",
+    "dateOfBirth": "1982-05-16",
+    "phone": "905548587928",
+    "email": "melihcan.şama@bilge.com",
+    "department": "Human Resources",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Mestur",
+    "lastName": "Nichols",
+    "dateOfEmployment": "2042-07-24",
+    "dateOfBirth": "2001-06-01",
+    "phone": "905809860297",
+    "email": "mestur.nichols@arslan.org",
+    "department": "Human Resources",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Kelly",
+    "lastName": "Cook",
+    "dateOfEmployment": "1999-09-04",
+    "dateOfBirth": "1964-11-25",
+    "phone": "905647368919",
+    "email": "kelly.cook@petrol.net",
+    "department": "Engineering",
+    "position": "VP"
+  },
+  {
+    "firstName": "David",
+    "lastName": "Gallagher",
+    "dateOfEmployment": "2033-01-26",
+    "dateOfBirth": "1995-02-17",
+    "phone": "905751661511",
+    "email": "david.gallagher@ulker.com",
+    "department": "Operations",
+    "position": "VP"
+  },
+  {
+    "firstName": "George",
+    "lastName": "Cantu",
+    "dateOfEmployment": "2036-10-31",
+    "dateOfBirth": "1996-12-06",
+    "phone": "905722436649",
+    "email": "george.cantu@cervantes-fitzgerald.com",
+    "department": "Marketing",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Amanda",
+    "lastName": "Demirel",
+    "dateOfEmployment": "2016-07-17",
+    "dateOfBirth": "1990-02-26",
+    "phone": "905740346938",
+    "email": "amanda.demirel@sanchez.com",
+    "department": "Marketing",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Jennifer",
+    "lastName": "Tarhan",
+    "dateOfEmployment": "2030-12-31",
+    "dateOfBirth": "1990-11-26",
+    "phone": "905113513916",
+    "email": "jennifer.tarhan@karadeniz.biz",
+    "department": "Engineering",
+    "position": "Director"
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Şafak",
+    "dateOfEmployment": "2008-07-25",
+    "dateOfBirth": "1985-06-01",
+    "phone": "905462236191",
+    "email": "michael.şafak@wilson.com",
+    "department": "Customer Support",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Christopher",
+    "lastName": "Fırat",
+    "dateOfEmployment": "2003-02-24",
+    "dateOfBirth": "1969-11-03",
+    "phone": "905489281649",
+    "email": "christopher.fırat@hicks-garcia.com",
+    "department": "Sales",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Elijah",
+    "lastName": "Yıldırım",
+    "dateOfEmployment": "2010-01-22",
+    "dateOfBirth": "1973-12-25",
+    "phone": "905980322677",
+    "email": "elijah.yıldırım@wilkins-lawrence.info",
+    "department": "Engineering",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Vildane",
+    "lastName": "Watkins",
+    "dateOfEmployment": "2023-08-02",
+    "dateOfBirth": "1997-04-28",
+    "phone": "905371880893",
+    "email": "vildane.watkins@castro.com",
+    "department": "Marketing",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Enfes",
+    "lastName": "Garner",
+    "dateOfEmployment": "2027-08-03",
+    "dateOfBirth": "1997-10-01",
+    "phone": "905727490879",
+    "email": "enfes.garner@aksu.com",
+    "department": "Finance",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Jonathon",
+    "lastName": "Aslan",
+    "dateOfEmployment": "2002-08-23",
+    "dateOfBirth": "1970-08-03",
+    "phone": "905828746301",
+    "email": "jonathon.aslan@thomas.biz",
+    "department": "Analytics",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Zülgarni",
+    "lastName": "Sakarya",
+    "dateOfEmployment": "2029-08-06",
+    "dateOfBirth": "1991-10-09",
+    "phone": "905695754240",
+    "email": "zülgarni.sakarya@ocalan.com",
+    "department": "Finance",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Erbil",
+    "lastName": "Martinez",
+    "dateOfEmployment": "2021-12-01",
+    "dateOfBirth": "1995-07-07",
+    "phone": "905864251338",
+    "email": "erbil.martinez@gulen.com",
+    "department": "Human Resources",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Angelica",
+    "lastName": "Öcalan",
+    "dateOfEmployment": "2016-02-29",
+    "dateOfBirth": "1986-12-19",
+    "phone": "905684624874",
+    "email": "angelica.öcalan@sullivan.com",
+    "department": "Human Resources",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Shelly",
+    "lastName": "Davis",
+    "dateOfEmployment": "2011-02-17",
+    "dateOfBirth": "1989-02-27",
+    "phone": "905035831094",
+    "email": "shelly.davis@campbell-smith.info",
+    "department": "Engineering",
+    "position": "VP"
+  },
+  {
+    "firstName": "Enfes",
+    "lastName": "Mansız",
+    "dateOfEmployment": "2001-09-17",
+    "dateOfBirth": "1976-08-23",
+    "phone": "905738005919",
+    "email": "enfes.mansız@andrews.net",
+    "department": "Design",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Danny",
+    "lastName": "Yılmaz",
+    "dateOfEmployment": "2020-12-29",
+    "dateOfBirth": "1998-08-24",
+    "phone": "905243469458",
+    "email": "danny.yılmaz@manco.com",
+    "department": "Customer Support",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Ahter",
+    "lastName": "Nguyen",
+    "dateOfEmployment": "2024-11-04",
+    "dateOfBirth": "1985-03-03",
+    "phone": "905078886051",
+    "email": "ahter.nguyen@cohen.net",
+    "department": "Design",
+    "position": "VP"
+  },
+  {
+    "firstName": "James",
+    "lastName": "Arsoy",
+    "dateOfEmployment": "1993-02-12",
+    "dateOfBirth": "1969-05-08",
+    "phone": "905809977408",
+    "email": "james.arsoy@safak.org",
+    "department": "Marketing",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Jennifer",
+    "lastName": "Johnson",
+    "dateOfEmployment": "2012-05-31",
+    "dateOfBirth": "1987-06-22",
+    "phone": "905195091490",
+    "email": "jennifer.johnson@baker.com",
+    "department": "Marketing",
+    "position": "VP"
+  },
+  {
+    "firstName": "Luis",
+    "lastName": "Dumanlı",
+    "dateOfEmployment": "2008-12-11",
+    "dateOfBirth": "1985-07-16",
+    "phone": "905236478886",
+    "email": "luis.dumanlı@rodriguez.net",
+    "department": "Customer Support",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Samuel",
+    "lastName": "Gonzalez",
+    "dateOfEmployment": "2004-01-16",
+    "dateOfBirth": "1969-08-23",
+    "phone": "905978216604",
+    "email": "samuel.gonzalez@akdeniz.org",
+    "department": "Analytics",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Christina",
+    "lastName": "Akçay",
+    "dateOfEmployment": "2024-07-27",
+    "dateOfBirth": "1995-09-26",
+    "phone": "905130881028",
+    "email": "christina.akçay@ocalan.com",
+    "department": "Design",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Veronica",
+    "lastName": "Dorsey",
+    "dateOfEmployment": "2017-08-20",
+    "dateOfBirth": "1994-09-07",
+    "phone": "905317703532",
+    "email": "veronica.dorsey@a101.net",
+    "department": "Sales",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Jennifer",
+    "lastName": "Demirel",
+    "dateOfEmployment": "2003-05-26",
+    "dateOfBirth": "1966-10-24",
+    "phone": "905852061659",
+    "email": "jennifer.demirel@sisecam.com",
+    "department": "Human Resources",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Carol",
+    "lastName": "Marquez",
+    "dateOfEmployment": "2020-09-26",
+    "dateOfBirth": "1989-04-13",
+    "phone": "905765755729",
+    "email": "carol.marquez@sanders.biz",
+    "department": "Design",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Idık",
+    "lastName": "Harris",
+    "dateOfEmployment": "2028-11-10",
+    "dateOfBirth": "1990-08-25",
+    "phone": "905638699055",
+    "email": "idık.harris@safak.com",
+    "department": "Engineering",
+    "position": "Senior"
+  },
+  {
+    "firstName": "İslime",
+    "lastName": "Demir",
+    "dateOfEmployment": "2018-08-18",
+    "dateOfBirth": "1986-02-18",
+    "phone": "905478839580",
+    "email": "i̇slime.demir@mullins.biz",
+    "department": "Design",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Maksur",
+    "lastName": "White",
+    "dateOfEmployment": "2025-09-29",
+    "dateOfBirth": "1997-01-31",
+    "phone": "905531024925",
+    "email": "maksur.white@aksu.biz",
+    "department": "Product",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "İnönü",
+    "dateOfEmployment": "2033-10-27",
+    "dateOfBirth": "1995-01-09",
+    "phone": "905619855045",
+    "email": "michael.i̇nönü@corlu.com",
+    "department": "Finance",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Koldan",
+    "lastName": "Yorulmaz",
+    "dateOfEmployment": "2006-10-16",
+    "dateOfBirth": "1967-10-01",
+    "phone": "905462721376",
+    "email": "koldan.yorulmaz@turkcell.com",
+    "department": "Design",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Belkize",
+    "lastName": "Zengin",
+    "dateOfEmployment": "2027-02-16",
+    "dateOfBirth": "1986-11-13",
+    "phone": "905634259822",
+    "email": "belkize.zengin@cetin.org",
+    "department": "Product",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Christy",
+    "lastName": "Brock",
+    "dateOfEmployment": "2024-04-30",
+    "dateOfBirth": "1996-08-20",
+    "phone": "905295862702",
+    "email": "christy.brock@thompson.com",
+    "department": "Analytics",
+    "position": "VP"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Akçay",
+    "dateOfEmployment": "2023-04-10",
+    "dateOfBirth": "1998-10-18",
+    "phone": "905407047017",
+    "email": "john.akçay@petkim.org",
+    "department": "Human Resources",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Ashlee",
+    "lastName": "Çamurcuoğlu",
+    "dateOfEmployment": "2036-07-24",
+    "dateOfBirth": "2001-01-17",
+    "phone": "905265798450",
+    "email": "ashlee.çamurcuoğlu@griffin-patterson.com",
+    "department": "Engineering",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Özaslan",
+    "lastName": "Çamurcuoğlu",
+    "dateOfEmployment": "2030-07-01",
+    "dateOfBirth": "1997-11-19",
+    "phone": "905053402173",
+    "email": "özaslan.çamurcuoğlu@gonzalez-ballard.com",
+    "department": "Human Resources",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Nathan",
+    "lastName": "Lowery",
+    "dateOfEmployment": "2017-04-20",
+    "dateOfBirth": "1983-11-06",
+    "phone": "905026607433",
+    "email": "nathan.lowery@gulen.com",
+    "department": "Engineering",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Ergün",
+    "lastName": "Gibson",
+    "dateOfEmployment": "2007-12-25",
+    "dateOfBirth": "1974-06-13",
+    "phone": "905420559867",
+    "email": "ergün.gibson@tevetoglu.biz",
+    "department": "Design",
+    "position": "VP"
+  },
+  {
+    "firstName": "Birgit",
+    "lastName": "Mcdonald",
+    "dateOfEmployment": "1998-07-24",
+    "dateOfBirth": "1971-01-18",
+    "phone": "905075260925",
+    "email": "birgit.mcdonald@gulen.biz",
+    "department": "Product",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Rachel",
+    "lastName": "Ellison",
+    "dateOfEmployment": "2043-06-21",
+    "dateOfBirth": "2003-12-21",
+    "phone": "905757996923",
+    "email": "rachel.ellison@akar.info",
+    "department": "Design",
+    "position": "VP"
+  },
+  {
+    "firstName": "Wesley",
+    "lastName": "Arslan",
+    "dateOfEmployment": "2000-09-21",
+    "dateOfBirth": "1971-10-09",
+    "phone": "905221691212",
+    "email": "wesley.arslan@opet.net",
+    "department": "Marketing",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Jeffrey",
+    "lastName": "Pena",
+    "dateOfEmployment": "2007-08-28",
+    "dateOfBirth": "1981-12-26",
+    "phone": "905252759058",
+    "email": "jeffrey.pena@reed-gonzalez.com",
+    "department": "Human Resources",
+    "position": "VP"
+  },
+  {
+    "firstName": "William",
+    "lastName": "Öcalan",
+    "dateOfEmployment": "2015-03-19",
+    "dateOfBirth": "1974-01-08",
+    "phone": "905126975513",
+    "email": "william.öcalan@opet.biz",
+    "department": "Design",
+    "position": "VP"
+  },
+  {
+    "firstName": "Omaca",
+    "lastName": "Seven",
+    "dateOfEmployment": "2009-08-21",
+    "dateOfBirth": "1975-12-20",
+    "phone": "905172940989",
+    "email": "omaca.seven@saunders.com",
+    "department": "Engineering",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Server",
+    "lastName": "Clements",
+    "dateOfEmployment": "2001-04-02",
+    "dateOfBirth": "1971-03-14",
+    "phone": "905949826996",
+    "email": "server.clements@nguyen.net",
+    "department": "Operations",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Joshua",
+    "lastName": "Alemdar",
+    "dateOfEmployment": "2021-08-10",
+    "dateOfBirth": "1987-07-09",
+    "phone": "905196658107",
+    "email": "joshua.alemdar@arslan.net",
+    "department": "Customer Support",
+    "position": "Director"
+  },
+  {
+    "firstName": "Jose",
+    "lastName": "Durdu",
+    "dateOfEmployment": "2029-12-31",
+    "dateOfBirth": "1989-11-26",
+    "phone": "905984795683",
+    "email": "jose.durdu@nelson-wall.com",
+    "department": "Product",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Jonathan",
+    "lastName": "Soylu",
+    "dateOfEmployment": "2012-03-05",
+    "dateOfBirth": "1970-03-02",
+    "phone": "905490386898",
+    "email": "jonathan.soylu@erdogan.com",
+    "department": "Marketing",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Fatigül",
+    "lastName": "Yıldırım",
+    "dateOfEmployment": "2018-05-24",
+    "dateOfBirth": "1986-04-05",
+    "phone": "905439809568",
+    "email": "fatigül.yıldırım@ergul.com",
+    "department": "Finance",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Pirahmet",
+    "lastName": "Alemdar",
+    "dateOfEmployment": "2004-06-13",
+    "dateOfBirth": "1973-07-01",
+    "phone": "905634529349",
+    "email": "pirahmet.alemdar@peterson-lewis.com",
+    "department": "Marketing",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Hezniye",
+    "lastName": "Şensoy",
+    "dateOfEmployment": "2026-05-17",
+    "dateOfBirth": "1991-08-16",
+    "phone": "905383290118",
+    "email": "hezniye.şensoy@robles.com",
+    "department": "Human Resources",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Behiza",
+    "lastName": "Şener",
+    "dateOfEmployment": "2026-01-11",
+    "dateOfBirth": "2001-01-20",
+    "phone": "905069848699",
+    "email": "behiza.şener@sezgin.net",
+    "department": "Engineering",
+    "position": "Director"
+  },
+  {
+    "firstName": "Nevise",
+    "lastName": "Akçay",
+    "dateOfEmployment": "2019-10-14",
+    "dateOfBirth": "1986-12-10",
+    "phone": "905790540212",
+    "email": "nevise.akçay@sok.com",
+    "department": "Engineering",
+    "position": "Director"
+  },
+  {
+    "firstName": "Andrea",
+    "lastName": "Martinez",
+    "dateOfEmployment": "2036-08-24",
+    "dateOfBirth": "1995-07-10",
+    "phone": "905618788685",
+    "email": "andrea.martinez@sanchez-tucker.com",
+    "department": "Customer Support",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Hafıza",
+    "lastName": "Proctor",
+    "dateOfEmployment": "1995-09-05",
+    "dateOfBirth": "1964-10-19",
+    "phone": "905303987883",
+    "email": "hafıza.proctor@akca.info",
+    "department": "Finance",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Nicole",
+    "lastName": "Perry",
+    "dateOfEmployment": "2008-12-03",
+    "dateOfBirth": "1973-12-22",
+    "phone": "905478983580",
+    "email": "nicole.perry@akdeniz.com",
+    "department": "Sales",
+    "position": "VP"
+  },
+  {
+    "firstName": "Jennifer",
+    "lastName": "Becker",
+    "dateOfEmployment": "1994-09-17",
+    "dateOfBirth": "1966-02-13",
+    "phone": "905040924836",
+    "email": "jennifer.becker@cabrera-may.org",
+    "department": "Product",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Erica",
+    "lastName": "Castaneda",
+    "dateOfEmployment": "2031-06-18",
+    "dateOfBirth": "2001-05-17",
+    "phone": "905697168567",
+    "email": "erica.castaneda@schneider-chang.com",
+    "department": "Engineering",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Melissa",
+    "lastName": "Sakarya",
+    "dateOfEmployment": "2020-02-16",
+    "dateOfBirth": "1988-05-15",
+    "phone": "905344408686",
+    "email": "melissa.sakarya@blackwell-lowe.info",
+    "department": "Customer Support",
+    "position": "VP"
+  },
+  {
+    "firstName": "Ruhugül",
+    "lastName": "Harrell",
+    "dateOfEmployment": "2012-12-11",
+    "dateOfBirth": "1989-08-03",
+    "phone": "905886998078",
+    "email": "ruhugül.harrell@cooley.com",
+    "department": "Engineering",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Paul",
+    "lastName": "Hill",
+    "dateOfEmployment": "2013-05-21",
+    "dateOfBirth": "1974-07-23",
+    "phone": "905987682895",
+    "email": "paul.hill@lc.com",
+    "department": "Finance",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Ledün",
+    "lastName": "Huff",
+    "dateOfEmployment": "2000-05-02",
+    "dateOfBirth": "1970-05-01",
+    "phone": "905567593850",
+    "email": "ledün.huff@lc.net",
+    "department": "Analytics",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Haluk",
+    "lastName": "Armstrong",
+    "dateOfEmployment": "2013-02-19",
+    "dateOfBirth": "1982-04-30",
+    "phone": "905610712736",
+    "email": "haluk.armstrong@wilson-davis.com",
+    "department": "Operations",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Nicole",
+    "lastName": "Casey",
+    "dateOfEmployment": "2028-02-17",
+    "dateOfBirth": "1998-02-07",
+    "phone": "905821924173",
+    "email": "nicole.casey@karadeniz.com",
+    "department": "Customer Support",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Abdulbekir",
+    "lastName": "Kısakürek",
+    "dateOfEmployment": "1999-11-24",
+    "dateOfBirth": "1973-05-25",
+    "phone": "905848641482",
+    "email": "abdulbekir.kısakürek@ho-clark.com",
+    "department": "Finance",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Kifaye",
+    "lastName": "Campbell",
+    "dateOfEmployment": "2016-04-05",
+    "dateOfBirth": "1985-05-16",
+    "phone": "905831319833",
+    "email": "kifaye.campbell@arnold.com",
+    "department": "Customer Support",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Mary",
+    "lastName": "Hayes",
+    "dateOfEmployment": "1996-11-07",
+    "dateOfBirth": "1971-12-07",
+    "phone": "905723693720",
+    "email": "mary.hayes@allen.com",
+    "department": "Product",
+    "position": "VP"
+  },
+  {
+    "firstName": "Carly",
+    "lastName": "Sosa",
+    "dateOfEmployment": "2002-06-02",
+    "dateOfBirth": "1976-04-30",
+    "phone": "905332798295",
+    "email": "carly.sosa@seven.org",
+    "department": "Customer Support",
+    "position": "VP"
+  },
+  {
+    "firstName": "Angela",
+    "lastName": "Taylor",
+    "dateOfEmployment": "2015-02-15",
+    "dateOfBirth": "1973-05-10",
+    "phone": "905383837123",
+    "email": "angela.taylor@safak.net",
+    "department": "Analytics",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Julie",
+    "lastName": "Kim",
+    "dateOfEmployment": "2030-04-03",
+    "dateOfBirth": "2004-07-06",
+    "phone": "905171422944",
+    "email": "julie.kim@soto.com",
+    "department": "Product",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Andrew",
+    "lastName": "Sakarya",
+    "dateOfEmployment": "2018-11-07",
+    "dateOfBirth": "1990-03-08",
+    "phone": "905215480159",
+    "email": "andrew.sakarya@walls.biz",
+    "department": "Product",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Dilfeza",
+    "lastName": "Brown",
+    "dateOfEmployment": "2018-01-11",
+    "dateOfBirth": "1974-05-30",
+    "phone": "905911016257",
+    "email": "dilfeza.brown@guclu.biz",
+    "department": "Finance",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Susan",
+    "lastName": "Zengin",
+    "dateOfEmployment": "2008-06-29",
+    "dateOfBirth": "1981-07-11",
+    "phone": "905700262834",
+    "email": "susan.zengin@alvarado-singleton.net",
+    "department": "Marketing",
+    "position": "VP"
+  },
+  {
+    "firstName": "Sanavber",
+    "lastName": "Gül",
+    "dateOfEmployment": "1999-04-10",
+    "dateOfBirth": "1975-11-11",
+    "phone": "905349921186",
+    "email": "sanavber.gül@holder-brown.info",
+    "department": "Design",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Rebecca",
+    "lastName": "Dumanlı",
+    "dateOfEmployment": "2022-08-02",
+    "dateOfBirth": "1982-12-03",
+    "phone": "905411782328",
+    "email": "rebecca.dumanlı@corlu.com",
+    "department": "Customer Support",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "David",
+    "lastName": "Fırat",
+    "dateOfEmployment": "2032-01-21",
+    "dateOfBirth": "2002-03-19",
+    "phone": "905804271840",
+    "email": "david.fırat@rowe-hill.com",
+    "department": "Sales",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Deborah",
+    "lastName": "Akdeniz",
+    "dateOfEmployment": "2006-03-09",
+    "dateOfBirth": "1976-11-28",
+    "phone": "905215538680",
+    "email": "deborah.akdeniz@a101.com",
+    "department": "Engineering",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Kalgay",
+    "lastName": "Korutürk",
+    "dateOfEmployment": "2032-02-25",
+    "dateOfBirth": "1997-04-01",
+    "phone": "905839421717",
+    "email": "kalgay.korutürk@mcdonald.org",
+    "department": "Customer Support",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Jasmine",
+    "lastName": "Mitchell",
+    "dateOfEmployment": "2016-07-09",
+    "dateOfBirth": "1985-05-14",
+    "phone": "905926926737",
+    "email": "jasmine.mitchell@anadolu.biz",
+    "department": "Human Resources",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Justin",
+    "lastName": "Cook",
+    "dateOfEmployment": "2014-08-19",
+    "dateOfBirth": "1973-05-27",
+    "phone": "905130977490",
+    "email": "justin.cook@harris.info",
+    "department": "Design",
+    "position": "Senior"
+  },
+  {
+    "firstName": "Berksay",
+    "lastName": "Eraslan",
+    "dateOfEmployment": "2033-07-10",
+    "dateOfBirth": "1993-11-02",
+    "phone": "905354266420",
+    "email": "berksay.eraslan@smith.biz",
+    "department": "Product",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Catherine",
+    "lastName": "Mcmahon",
+    "dateOfEmployment": "2016-06-19",
+    "dateOfBirth": "1993-04-04",
+    "phone": "905911418273",
+    "email": "catherine.mcmahon@jimenez.com",
+    "department": "Analytics",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Stephanie",
+    "lastName": "Çetin",
+    "dateOfEmployment": "2028-04-17",
+    "dateOfBirth": "1990-12-07",
+    "phone": "905495489519",
+    "email": "stephanie.çetin@sama.com",
+    "department": "Human Resources",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Frank",
+    "lastName": "Sparks",
+    "dateOfEmployment": "2000-09-06",
+    "dateOfBirth": "1964-12-07",
+    "phone": "905686708858",
+    "email": "frank.sparks@zorlu.com",
+    "department": "Operations",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Akgündüz",
+    "dateOfEmployment": "2024-08-09",
+    "dateOfBirth": "1994-12-02",
+    "phone": "905287001879",
+    "email": "michael.akgündüz@thompson.com",
+    "department": "Product",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Alexander",
+    "lastName": "Stark",
+    "dateOfEmployment": "1989-11-20",
+    "dateOfBirth": "1965-02-10",
+    "phone": "905441322330",
+    "email": "alexander.stark@alexander.info",
+    "department": "Human Resources",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Brooke",
+    "lastName": "Gül",
+    "dateOfEmployment": "2032-04-30",
+    "dateOfBirth": "1989-07-21",
+    "phone": "905876499759",
+    "email": "brooke.gül@mckinney-burns.com",
+    "department": "Human Resources",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Raven",
+    "lastName": "Suarez",
+    "dateOfEmployment": "2015-02-05",
+    "dateOfBirth": "1980-02-26",
+    "phone": "905294880317",
+    "email": "raven.suarez@manco.net",
+    "department": "Product",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Beray",
+    "lastName": "Matthews",
+    "dateOfEmployment": "2033-11-18",
+    "dateOfBirth": "2004-09-27",
+    "phone": "905233229491",
+    "email": "beray.matthews@harris.org",
+    "department": "Sales",
+    "position": "VP"
+  },
+  {
+    "firstName": "Tamara",
+    "lastName": "Şama",
+    "dateOfEmployment": "2045-05-13",
+    "dateOfBirth": "2004-08-28",
+    "phone": "905549895134",
+    "email": "tamara.şama@inonu.com",
+    "department": "Product",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Rebecca",
+    "lastName": "Larsen",
+    "dateOfEmployment": "1995-09-19",
+    "dateOfBirth": "1969-07-18",
+    "phone": "905742709697",
+    "email": "rebecca.larsen@akca.biz",
+    "department": "Human Resources",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Yosma",
+    "lastName": "Eraslan",
+    "dateOfEmployment": "2032-12-12",
+    "dateOfBirth": "1997-06-11",
+    "phone": "905735872878",
+    "email": "yosma.eraslan@durmus.com",
+    "department": "Finance",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "David",
+    "lastName": "Zorlu",
+    "dateOfEmployment": "2039-01-23",
+    "dateOfBirth": "2004-04-06",
+    "phone": "905548034635",
+    "email": "david.zorlu@sandoval.info",
+    "department": "Design",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Kâmil",
+    "lastName": "Yılmaz",
+    "dateOfEmployment": "2022-04-07",
+    "dateOfBirth": "1981-11-01",
+    "phone": "905102832961",
+    "email": "kâmil.yılmaz@green.biz",
+    "department": "Analytics",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Larry",
+    "lastName": "Day",
+    "dateOfEmployment": "2015-07-04",
+    "dateOfBirth": "1982-12-08",
+    "phone": "905404835130",
+    "email": "larry.day@morales.com",
+    "department": "Sales",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Shelley",
+    "lastName": "Şafak",
+    "dateOfEmployment": "2022-06-15",
+    "dateOfBirth": "1992-11-05",
+    "phone": "905330576547",
+    "email": "shelley.şafak@brown.biz",
+    "department": "Operations",
+    "position": "Director"
+  },
+  {
+    "firstName": "Dürrüşehvar",
+    "lastName": "Demirel",
+    "dateOfEmployment": "2000-07-06",
+    "dateOfBirth": "1975-07-06",
+    "phone": "905662557858",
+    "email": "dürrüşehvar.demirel@jordan.info",
+    "department": "Sales",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Laura",
+    "lastName": "Lyons",
+    "dateOfEmployment": "2017-06-29",
+    "dateOfBirth": "1979-08-13",
+    "phone": "905888768888",
+    "email": "laura.lyons@campbell.com",
+    "department": "Analytics",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Shawn",
+    "lastName": "Fırat",
+    "dateOfEmployment": "2001-07-04",
+    "dateOfBirth": "1968-07-13",
+    "phone": "905373117380",
+    "email": "shawn.fırat@lopez.com",
+    "department": "Finance",
+    "position": "VP"
+  },
+  {
+    "firstName": "Güçal",
+    "lastName": "Bilir",
+    "dateOfEmployment": "2025-08-05",
+    "dateOfBirth": "1994-06-09",
+    "phone": "905102563285",
+    "email": "güçal.bilir@williams.com",
+    "department": "Product",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Razı",
+    "lastName": "Harris",
+    "dateOfEmployment": "1998-11-28",
+    "dateOfBirth": "1975-04-30",
+    "phone": "905812469672",
+    "email": "razı.harris@arsoy.com",
+    "department": "Analytics",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Kenneth",
+    "lastName": "Molina",
+    "dateOfEmployment": "2027-06-30",
+    "dateOfBirth": "1992-03-20",
+    "phone": "905236706102",
+    "email": "kenneth.molina@bailey.com",
+    "department": "Customer Support",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Durdu",
+    "dateOfEmployment": "2016-03-31",
+    "dateOfBirth": "1993-07-10",
+    "phone": "905146879098",
+    "email": "emily.durdu@cortez.org",
+    "department": "Design",
+    "position": "Intern"
+  },
+  {
+    "firstName": "Dennis",
+    "lastName": "York",
+    "dateOfEmployment": "2013-04-29",
+    "dateOfBirth": "1986-04-12",
+    "phone": "905580778267",
+    "email": "dennis.york@arsoy.com",
+    "department": "Product",
+    "position": "Mid-Level"
+  },
+  {
+    "firstName": "Özertem",
+    "lastName": "Arslan",
+    "dateOfEmployment": "2040-03-29",
+    "dateOfBirth": "2001-02-10",
+    "phone": "905041618745",
+    "email": "özertem.arslan@porter-johnson.com",
+    "department": "Marketing",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "İzgü",
+    "lastName": "Çorlu",
+    "dateOfEmployment": "2016-01-24",
+    "dateOfBirth": "1985-12-11",
+    "phone": "905949748565",
+    "email": "i̇zgü.çorlu@martinez.com",
+    "department": "Engineering",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Feyha",
+    "lastName": "Mckay",
+    "dateOfEmployment": "1995-08-22",
+    "dateOfBirth": "1973-05-03",
+    "phone": "905134261650",
+    "email": "feyha.mckay@davis.net",
+    "department": "Marketing",
+    "position": "Manager"
+  },
+  {
+    "firstName": "Jessica",
+    "lastName": "Hernandez",
+    "dateOfEmployment": "1991-02-18",
+    "dateOfBirth": "1966-05-14",
+    "phone": "905746337729",
+    "email": "jessica.hernandez@erdogan.org",
+    "department": "Customer Support",
+    "position": "Specialist"
+  },
+  {
+    "firstName": "Marvin",
+    "lastName": "Zengin",
+    "dateOfEmployment": "2032-07-11",
+    "dateOfBirth": "2003-10-12",
+    "phone": "905174463544",
+    "email": "marvin.zengin@ergul.info",
+    "department": "Operations",
+    "position": "VP"
+  },
+  {
+    "firstName": "Victoria",
+    "lastName": "Mansız",
+    "dateOfEmployment": "1998-02-05",
+    "dateOfBirth": "1964-11-18",
+    "phone": "905206521730",
+    "email": "victoria.mansız@baker.com",
+    "department": "Product",
+    "position": "Junior"
+  },
+  {
+    "firstName": "Jessica",
+    "lastName": "Grant",
+    "dateOfEmployment": "2016-03-19",
+    "dateOfBirth": "1982-07-11",
+    "phone": "905172090259",
+    "email": "jessica.grant@zengin.com",
+    "department": "Operations",
+    "position": "VP"
+  },
+  {
+    "firstName": "Amy",
+    "lastName": "Gülen",
+    "dateOfEmployment": "2026-11-17",
+    "dateOfBirth": "1992-07-02",
+    "phone": "905591113840",
+    "email": "amy.gülen@arsoy.biz",
+    "department": "Finance",
+    "position": "Lead"
+  },
+  {
+    "firstName": "Aysuna",
+    "lastName": "Barron",
+    "dateOfEmployment": "2012-01-23",
+    "dateOfBirth": "1988-12-18",
+    "phone": "905702977003",
+    "email": "aysuna.barron@strong-jackson.com",
+    "department": "Sales",
+    "position": "Consultant"
+  },
+  {
+    "firstName": "Amy",
+    "lastName": "Moore",
+    "dateOfEmployment": "2008-07-07",
+    "dateOfBirth": "1970-04-30",
+    "phone": "905013917772",
+    "email": "amy.moore@gutierrez-anderson.com",
+    "department": "Product",
+    "position": "Intern"
+  }
+]
