@@ -3,6 +3,7 @@ import "../icon/index.js";
 
 import { LitElement, css, html } from "lit";
 
+// TODO: I should carry this over to patterns because it's domain specific. I can create a simple skeleton for header to keep under components later on.
 export class EmsHeader extends LitElement {
   static properties = {
     title: { type: String },

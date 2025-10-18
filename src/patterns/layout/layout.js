@@ -18,13 +18,14 @@ export class EmsLayout extends LitElement {
     slot[name="footer"]::slotted(*) {
       flex-shrink: 0;
       background-color: var(--color-background-secondary);
+      padding: var(--spacing-medium);
     }
 
     .main {
       flex: 1;
       overflow: auto;
       background-color: var(--color-background-secondary);
-      padding: var(--spacing-medium);
+      padding: var(--spacing-medium) var(--spacing-large);
     }
   `;
 

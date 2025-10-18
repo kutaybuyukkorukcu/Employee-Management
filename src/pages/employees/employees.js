@@ -22,11 +22,25 @@ export class EmsEmployeesPage extends LitElement {
       gap: var(--spacing-small);
     }
 
+    .view-mode-toggle ems-button:not([active]) {
+      opacity: 0.5;
+    }
+
+    .view-mode-toggle ems-button[active] {
+      opacity: 1;
+    }
+
     .employees-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: var(--spacing-medium);
-      margin-top: var(--spacing-medium);
+    }
+
+    .page-container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      gap: var(--spacing-large);
     }
 
     @media (max-width: 768px) {
@@ -89,44 +103,46 @@ export class EmsEmployeesPage extends LitElement {
     return html`
       <ems-layout>
         <ems-header slot="header"></ems-header>
-        <div class="page-header">
-          <ems-text variant="title" color="black">Employee List</ems-text>
-          <div class="view-mode-toggle">
-            <ems-button
-              type="icon"
-              @click="${() => {
-                this.viewMode = "table";
-                this.currentPage = 1;
-              }}"
-              ?active="${this.viewMode === "table"}"
-              variant="text"
-            >
-              <ems-icon name="table" slot="icon"></ems-icon>
-            </ems-button>
-            <ems-button
-              type="icon"
-              @click="${() => {
-                this.viewMode = "grid";
-                this.currentPage = 1;
-              }}"
-              ?active="${this.viewMode === "grid"}"
-              variant="text"
-            >
-              <ems-icon name="grid" slot="icon"></ems-icon>
-            </ems-button>
+        <div class="page-container">
+          <div class="page-header">
+            <ems-text variant="title" color="primary">Employee List</ems-text>
+            <div class="view-mode-toggle">
+              <ems-button
+                type="icon"
+                @click="${() => {
+                  this.viewMode = "table";
+                  this.currentPage = 1;
+                }}"
+                ?active="${this.viewMode === "table"}"
+                variant="text"
+              >
+                <ems-icon name="table" slot="icon" size="medium"></ems-icon>
+              </ems-button>
+              <ems-button
+                type="icon"
+                @click="${() => {
+                  this.viewMode = "grid";
+                  this.currentPage = 1;
+                }}"
+                ?active="${this.viewMode === "grid"}"
+                variant="text"
+              >
+                <ems-icon name="grid" slot="icon" size="medium"></ems-icon>
+              </ems-button>
+            </div>
           </div>
+          ${this.viewMode === "table"
+            ? html`<ems-employee-table
+                .employees=${this._getPaginatedEmployees()}
+                @employee-edit=${this._handleEmployeeEdit}
+                @employee-delete=${this._handleEmployeeDelete}
+              ></ems-employee-table>`
+            : html`<div class="employees-grid">
+                ${this._getPaginatedEmployees().map(
+                  (employee) => html`<ems-employee-card .employee=${employee}></ems-employee-card>`,
+                )}
+              </div>`}
         </div>
-        ${this.viewMode === "table"
-          ? html`<ems-employee-table
-              .employees=${this._getPaginatedEmployees()}
-              @employee-edit=${this._handleEmployeeEdit}
-              @employee-delete=${this._handleEmployeeDelete}
-            ></ems-employee-table>`
-          : html`<div class="employees-grid">
-              ${this._getPaginatedEmployees().map(
-                (employee) => html`<ems-employee-card .employee=${employee}></ems-employee-card>`,
-              )}
-            </div>`}
         <ems-pagination
           slot="footer"
           .currentPage=${this.currentPage}

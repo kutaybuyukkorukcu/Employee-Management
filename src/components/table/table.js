@@ -1,5 +1,6 @@
 import { LitElement, css, html } from "lit";
 
+// TODO: Height jumps happen due to pagination and data difference.
 export class EmsTable extends LitElement {
   static properties = {
     columns: { type: Array },
@@ -12,20 +13,22 @@ export class EmsTable extends LitElement {
     :host {
       display: block;
       width: 100%;
+      height: 100%;
     }
 
     .table-wrapper {
       width: 100%;
+      height: 100%;
       overflow-x: auto;
       background-color: var(--color-white);
-      border-radius: var(--radius-medium);
       box-shadow: var(--shadow-small);
     }
 
     table {
       width: 100%;
+      height: 100%;
       border-collapse: collapse;
-      table-layout: auto;
+      table-layout: fixed;
     }
 
     thead {
@@ -37,6 +40,7 @@ export class EmsTable extends LitElement {
       text-align: left;
       font-weight: var(--font-weight-medium);
       white-space: nowrap;
+      text-align: center;
     }
 
     th:first-child {
@@ -46,6 +50,7 @@ export class EmsTable extends LitElement {
 
     tbody tr {
       border-bottom: 1px solid var(--color-background-secondary);
+      text-align: center;
     }
 
     tbody tr:last-child {
@@ -57,8 +62,11 @@ export class EmsTable extends LitElement {
     }
 
     td {
-      padding: var(--spacing-medium);
+      padding: var(--spacing-x-small) var(--spacing-medium);
       vertical-align: middle;
+      white-space: nowrap;
+      max-width: 250px;
+      text-wrap: wrap;
     }
 
     td:first-child {
@@ -72,7 +80,6 @@ export class EmsTable extends LitElement {
 
     .actions-cell {
       display: flex;
-      gap: var(--spacing-x-small);
       align-items: center;
     }
 
@@ -189,7 +196,9 @@ export class EmsTable extends LitElement {
                     </th>
                   `
                 : null}
-              ${this.columns.map((column) => html`<th>${column.label}</th>`)}
+              ${this.columns.map(
+                (column) => html`<th><ems-text variant="caption" color="primary">${column.label}</ems-text></th>`,
+              )}
             </tr>
           </thead>
           <tbody>
@@ -205,7 +214,12 @@ export class EmsTable extends LitElement {
                         />
                       </td>`
                     : null}
-                  ${this.columns.map((column) => html`<td>${this._renderCell(row, column, rowIndex)}</td>`)}
+                  ${this.columns.map(
+                    (column) =>
+                      html`<td>
+                        <ems-text variant="caption" color="black">${this._renderCell(row, column, rowIndex)}</ems-text>
+                      </td>`,
+                  )}
                 </tr>
               `,
             )}
