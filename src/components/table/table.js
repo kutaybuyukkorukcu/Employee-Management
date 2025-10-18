@@ -41,6 +41,11 @@ export class EmsTable extends LitElement {
       font-weight: var(--font-weight-medium);
       white-space: nowrap;
       text-align: center;
+
+      * {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     }
 
     th:first-child {
@@ -65,8 +70,12 @@ export class EmsTable extends LitElement {
       padding: var(--spacing-x-small) var(--spacing-medium);
       vertical-align: middle;
       white-space: nowrap;
-      max-width: 250px;
-      text-wrap: wrap;
+      max-width: 15rem;
+
+      * {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     }
 
     td:first-child {

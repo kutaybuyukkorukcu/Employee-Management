@@ -14,12 +14,14 @@ export class EmsEmployeeCard extends LitElement {
     :host {
       display: block;
       box-sizing: border-box;
+      height: 100%;
     }
 
     .employee-card-content {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: var(--spacing-medium);
+      min-height: 15rem;
     }
 
     .employee-field {

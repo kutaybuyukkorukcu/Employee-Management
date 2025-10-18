@@ -7,12 +7,15 @@
   --space-5: 1.5rem;
   --space-6: 2rem;
   --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 8rem;
   --space-max: 99rem;
 
   --spacing-x-small: var(--space-1);
   --spacing-small: var(--space-2);
   --spacing-medium: var(--space-4);
   --spacing-large: var(--space-6);
+  --spacing-x-large: var(--space-9);
 
   --gap-small: var(--space-1);
   --gap-medium: var(--space-2);

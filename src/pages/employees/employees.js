@@ -32,8 +32,10 @@ export class EmsEmployeesPage extends LitElement {
 
     .employees-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: var(--spacing-medium);
+      grid-template-columns: repeat(2, minmax(18.75rem, 35rem));
+      grid-template-rows: repeat(2, auto);
+      gap: var(--spacing-large) var(--spacing-x-large);
+      justify-content: center;
     }
 
     .page-container {

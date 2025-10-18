@@ -28,7 +28,7 @@ export class EmsHeader extends LitElement {
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      gap: var(--spacing-small);
+      gap: var(--spacing-medium);
     }
 
     .menu-items {
