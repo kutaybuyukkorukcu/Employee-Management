@@ -23,18 +23,21 @@ export class EmsButton extends LitElement {
       background: var(--color-primary);
       color: var(--color-white);
       border: 1px solid transparent;
+      border-radius: var(--radius-small);
     }
 
     :host([variant="filled"][color="secondary"]) button {
       background: var(--color-secondary);
       color: var(--color-white);
       border: 1px solid transparent;
+      border-radius: var(--radius-small);
     }
 
     :host([variant="filled"][color="tertiary"]) button {
       background: var(--color-tertiary);
       color: var(--color-white);
       border: 1px solid transparent;
+      border-radius: var(--radius-small);
     }
 
     :host([variant="outlined"][color="primary"]) button {

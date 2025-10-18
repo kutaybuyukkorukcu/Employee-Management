@@ -20,5 +20,7 @@
   --gap-x-large: var(--space-4);
 
   --radius-small: var(--space-1);
+  --radius-medium: var(--space-2);
+  --radius-large: var(--space-3);
   --radius-max: var(--space-max);
 }

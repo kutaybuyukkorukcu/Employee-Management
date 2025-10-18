@@ -15,17 +15,20 @@ export class EmsLayout extends LitElement {
       flex-shrink: 0;
     }
 
-    slot:not([name])::slotted(*) {
+    .main {
       flex: 1;
       overflow: auto;
       background-color: var(--color-background-secondary);
+      padding: var(--spacing-medium);
     }
   `;
 
   render() {
     return html`
       <slot name="header"></slot>
-      <slot></slot>
+      <div class="main">
+        <slot></slot>
+      </div>
     `;
   }
 }

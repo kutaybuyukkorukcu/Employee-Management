@@ -11,6 +11,10 @@ export class EmsText extends LitElement {
     :host {
       display: inline-block;
       font-family: var(--font-family-sans);
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      max-width: 100%;
     }
 
     :host([variant="title"]) {
@@ -63,6 +67,10 @@ export class EmsText extends LitElement {
 
     :host([weight]) {
       font-weight: var(--font-weight-bold);
+    }
+
+    :host([disabled]) {
+      color: var(--color-disabled);
     }
   `;
 

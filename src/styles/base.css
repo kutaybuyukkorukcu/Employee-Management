@@ -1,5 +1,10 @@
 @import "node_modules/modern-normalize/modern-normalize.css";
 
+:root {
+  --z-index-dropdown: 100;
+  --z-index-dialog: 200;
+}
+
 html,
 body {
   width: 100vw;
