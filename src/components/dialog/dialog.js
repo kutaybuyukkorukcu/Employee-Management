@@ -21,11 +21,9 @@ export class EmsDialog extends LitElement {
       outline: none;
       border: none;
       border-radius: var(--radius-small);
-      box-shadow:
-        0 20px 25px -5px rgba(0, 0, 0, 0.1),
-        0 10px 10px -5px rgba(0, 0, 0, 0.04);
-      min-width: 400px;
-      max-width: 480px;
+      box-shadow: var(--shadow-medium);
+      min-width: 25rem;
+      max-width: 30rem;
       padding: var(--spacing-medium);
     }
 

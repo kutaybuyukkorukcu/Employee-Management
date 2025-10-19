@@ -49,7 +49,7 @@ export class EmsSelect extends LitElement {
   willUpdate() {
     this.internals.setFormValue(this.value);
     if (this.required && !this.value) {
-      this.internals.setValidity({ valueMissing: true }, "This field is required", this);
+      this.internals.setValidity({ valueMissing: true }, "This field is required");
       return;
     }
     this.internals.setValidity({});

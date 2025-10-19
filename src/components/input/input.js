@@ -52,20 +52,20 @@ export class EmsInput extends LitElement {
     this.internals.setFormValue(this.value);
 
     if (this.required && !this.value) {
-      this.internals.setValidity({ valueMissing: true }, "This field is required", this);
+      this.internals.setValidity({ valueMissing: true }, "This field is required");
       return;
     }
     if (this.type === "email" && this.value) {
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailPattern.test(this.value)) {
-        this.internals.setValidity({ typeMismatch: true }, "Please enter a valid email address", this);
+        this.internals.setValidity({ typeMismatch: true }, "Please enter a valid email address");
         return;
       }
     }
     if (this.type === "date" && this.value) {
       const datePattern = /^\d{4}-\d{2}-\d{2}$/;
       if (!datePattern.test(this.value)) {
-        this.internals.setValidity({ typeMismatch: true }, "Please enter a valid date", this);
+        this.internals.setValidity({ typeMismatch: true }, "Please enter a valid date");
         return;
       }
     }
@@ -74,7 +74,7 @@ export class EmsInput extends LitElement {
       // const phonePattern = /^(?:\d{10}|0\d{10}|90\d{9})$/;
       const phonePattern = /^(?:\s*(?:90|0)?\s*\d{3}\s*\d{3}\s*\d{2}\s*\d{2}\s*)$/;
       if (!phonePattern.test(digits)) {
-        this.internals.setValidity({ typeMismatch: true }, "Please enter a valid phone number", this);
+        this.internals.setValidity({ typeMismatch: true }, "Please enter a valid phone number");
         return;
       }
     }

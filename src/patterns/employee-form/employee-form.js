@@ -24,7 +24,7 @@ export class EmsEmployeeForm extends LitElement {
       gap: var(--spacing-x-large) var(--spacing-xx-large);
       background: #fff;
       padding: var(--spacing-x-large);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      box-shadow: var(--shadow-medium);
       max-width: 100%;
       box-sizing: border-box;
       grid-auto-rows: min-content;
@@ -41,6 +41,12 @@ export class EmsEmployeeForm extends LitElement {
         max-width: 20rem;
         width: 100%;
       }
+    }
+
+    .employee-information {
+      position: absolute;
+      padding-left: var(--spacing-medium);
+      padding-top: var(--spacing-medium);
     }
 
     @media (max-width: 1024px) {
@@ -107,6 +113,16 @@ export class EmsEmployeeForm extends LitElement {
 
   render() {
     return html`
+      ${this.employee
+        ? html`
+            <ems-text class="employee-information" variant="body" color="black" weight>
+              ${this.i18n.t("employee.edit.caption", {
+                firstName: this.employee?.firstName,
+                lastName: this.employee?.lastName,
+              })}
+            </ems-text>
+          `
+        : ""}
       <form>
         <ems-input
           label="${this.i18n.t("employee.details.firstName")}"
