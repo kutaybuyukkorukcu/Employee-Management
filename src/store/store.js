@@ -36,9 +36,9 @@ export const useAppStore = createStore(
         return get().employees;
       },
 
-      getEmployeeByIndex: (index) => {
+      getEmployeeById: (id) => {
         const { employees } = get();
-        return employees[index] || null;
+        return employees.find((employee) => employee.id === id) || null;
       },
 
       addEmployee: (employee) => {
@@ -47,15 +47,17 @@ export const useAppStore = createStore(
         }));
       },
 
-      updateEmployee: (index, updatedEmployee) => {
+      updateEmployee: (id, updatedEmployee) => {
         set((state) => ({
-          employees: state.employees.map((emp, i) => (i === index ? { ...emp, ...updatedEmployee } : emp)),
+          employees: state.employees.map((employee) =>
+            employee.id === id ? { ...employee, ...updatedEmployee } : employee,
+          ),
         }));
       },
 
-      deleteEmployee: (index) => {
+      deleteEmployee: (id) => {
         set((state) => ({
-          employees: state.employees.filter((_, i) => i !== index),
+          employees: state.employees.filter((employee) => employee.id !== id),
         }));
       },
     }),
