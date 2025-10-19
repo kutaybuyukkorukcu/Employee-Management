@@ -12,6 +12,7 @@ export const useAppStore = createStore(
       setLoading: (loading) => set({ loading }),
       setError: (error) => set({ error }),
 
+      selectedEmployee: null,
       employees: [],
       fetchEmployees: async () => {
         const { employees } = get();
@@ -31,22 +32,23 @@ export const useAppStore = createStore(
           throw error;
         }
       },
-
       getEmployees: () => {
         return get().employees;
       },
-
-      getEmployeeById: (id) => {
+      getEmployeeById: async (id) => {
         const { employees } = get();
-        return employees.find((employee) => employee.id === id) || null;
+        if (employees.length === 0) {
+          await get().fetchEmployees();
+        }
+        const { employees: updatedEmployees } = get();
+        const employee = updatedEmployees.find((employee) => employee.id === id) || null;
+        set({ selectedEmployee: employee });
       },
-
       addEmployee: (employee) => {
         set((state) => ({
           employees: [employee, ...state.employees],
         }));
       },
-
       updateEmployee: (id, updatedEmployee) => {
         set((state) => ({
           employees: state.employees.map((employee) =>
@@ -54,7 +56,6 @@ export const useAppStore = createStore(
           ),
         }));
       },
-
       deleteEmployee: (id) => {
         set((state) => ({
           employees: state.employees.filter((employee) => employee.id !== id),

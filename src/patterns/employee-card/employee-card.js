@@ -2,7 +2,7 @@ import "../../components/card/card.js";
 import "../../components/text/text.js";
 import "../../components/button/button.js";
 import "../../components/icon/icon.js";
-import { formatDate, formatPhoneNumber } from "../../utils/utils.js";
+import { formatDate, formatPhoneNumber, formatText } from "../../utils/utils.js";
 
 import { LitElement, css, html } from "lit";
 
@@ -42,7 +42,7 @@ export class EmsEmployeeCard extends LitElement {
 
   _handleEdit() {
     this.dispatchEvent(
-      new CustomEvent("edit", {
+      new CustomEvent("employee-edit", {
         detail: { employee: this.employee },
       }),
     );
@@ -50,7 +50,7 @@ export class EmsEmployeeCard extends LitElement {
 
   _handleDelete() {
     this.dispatchEvent(
-      new CustomEvent("delete", {
+      new CustomEvent("employee-delete", {
         detail: { employee: this.employee },
       }),
     );
@@ -64,12 +64,12 @@ export class EmsEmployeeCard extends LitElement {
         <div class="employee-card-content">
           <div class="employee-field">
             <ems-text variant="caption" disabled>First Name</ems-text>
-            <ems-text variant="body" color="black">${this.employee.firstName}</ems-text>
+            <ems-text variant="body" color="black">${formatText(this.employee.firstName)}</ems-text>
           </div>
 
           <div class="employee-field">
             <ems-text variant="caption" disabled>Last Name</ems-text>
-            <ems-text variant="body" color="black">${this.employee.lastName}</ems-text>
+            <ems-text variant="body" color="black">${formatText(this.employee.lastName)}</ems-text>
           </div>
 
           <div class="employee-field">
@@ -94,12 +94,12 @@ export class EmsEmployeeCard extends LitElement {
 
           <div class="employee-field">
             <ems-text variant="caption" disabled>Department</ems-text>
-            <ems-text variant="body" color="black">${this.employee.department}</ems-text>
+            <ems-text variant="body" color="black">${formatText(this.employee.department)}</ems-text>
           </div>
 
           <div class="employee-field">
             <ems-text variant="caption" disabled>Position</ems-text>
-            <ems-text variant="body" color="black">${this.employee.position}</ems-text>
+            <ems-text variant="body" color="black">${formatText(this.employee.position)}</ems-text>
           </div>
         </div>
 

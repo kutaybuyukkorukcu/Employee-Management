@@ -59,7 +59,15 @@ export class EmsInput extends LitElement {
     if (this.type === "date" && this.value) {
       const datePattern = /^\d{4}-\d{2}-\d{2}$/;
       if (!datePattern.test(this.value)) {
-        this.internals.setValidity({ typeMismatch: true }, "Please enter a valid date in DD-MM-YYYY format", this);
+        this.internals.setValidity({ typeMismatch: true }, "Please enter a valid date", this);
+        return;
+      }
+    }
+    if (this.type === "tel" && this.value) {
+      const digits = this.value.replace(/\D/g, "");
+      const phonePattern = /^(?:\d{10}|0\d{10}|90\d{9})$/;
+      if (!phonePattern.test(digits)) {
+        this.internals.setValidity({ typeMismatch: true }, "Please enter a valid Turkish phone number", this);
         return;
       }
     }

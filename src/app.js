@@ -14,6 +14,7 @@ import "./patterns/employee-table/index.js";
 import "./patterns/employee-form/index.js";
 import "./pages/employees/index.js";
 import "./pages/employee-add/index.js";
+import "./pages/employee-edit/index.js";
 import { i18n } from "./i18n/setup.js";
 
 import { LitElement, css, html } from "lit";

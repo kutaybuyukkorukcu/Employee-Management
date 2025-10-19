@@ -1,5 +1,6 @@
 import { LitElement, css, html } from "lit";
 import { useAppStore } from "../../store/store.js";
+import { Router } from "@vaadin/router";
 
 export class EmsEmployeesPage extends LitElement {
   static properties = {
@@ -73,8 +74,9 @@ export class EmsEmployeesPage extends LitElement {
     this._unsubscribe?.();
   }
 
-  _handleEmployeeEdit(employee) {
-    console.log("Edit employee:", employee);
+  _handleEmployeeEdit(e) {
+    const { employee } = e.detail;
+    Router.go(`/employee/edit/${employee.id}`);
   }
 
   _handleEmployeeDelete(employee) {
@@ -141,7 +143,12 @@ export class EmsEmployeesPage extends LitElement {
               ></ems-employee-table>`
             : html`<div class="employees-grid">
                 ${this._getPaginatedEmployees().map(
-                  (employee) => html`<ems-employee-card .employee=${employee}></ems-employee-card>`,
+                  (employee) =>
+                    html`<ems-employee-card
+                      .employee=${employee}
+                      @employee-edit=${this._handleEmployeeEdit}
+                      @employee-delete=${this._handleEmployeeDelete}
+                    ></ems-employee-card>`,
                 )}
               </div>`}
         </div>

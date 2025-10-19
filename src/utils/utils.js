@@ -5,7 +5,13 @@ export const formatDate = (dateString) => {
 };
 
 export const formatPhoneNumber = (phoneNumber) => {
-  const digits = phoneNumber.toString().replace(/\D/g, "");
+  let digits = phoneNumber.toString().replace(/\D/g, "");
+
+  if (digits.length === 10) {
+    digits = "90" + digits;
+  } else if (digits.startsWith("0")) {
+    digits = "90" + digits.slice(1);
+  }
 
   const match = digits.match(/^90(\d{3})(\d{3})(\d{2})(\d{2})$/);
   if (!match) return phoneNumber;
@@ -13,8 +19,15 @@ export const formatPhoneNumber = (phoneNumber) => {
   return `+(${90}) ${match[1]} ${match[2]} ${match[3]} ${match[4]}`;
 };
 
+export const formatDateForInput = (dateString) => {
+  if (!dateString) return "";
+  const [day, month, year] = dateString.split("-");
+  return `${year}-${month}-${day}`;
+};
+
 export const formatText = (text) => {
   if (typeof text !== "string") return text;
+  if (text === text.toUpperCase()) return text;
   return text
     .toLowerCase()
     .split(" ")

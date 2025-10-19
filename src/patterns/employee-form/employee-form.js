@@ -1,5 +1,5 @@
 import { css, html, LitElement } from "lit";
-import { parseDate, parsePhoneNumber } from "../../utils";
+import { parseDate, parsePhoneNumber, formatDateForInput } from "../../utils";
 
 export class EmsEmployeeForm extends LitElement {
   static properties = {
@@ -66,7 +66,17 @@ export class EmsEmployeeForm extends LitElement {
       return;
     }
     const formData = new FormData(form);
+    const department = formData.get("department");
+    if (department !== "Analytics" && department !== "Tech") {
+      const deptInput = this.shadowRoot.querySelector('ems-input[name="department"]');
+      if (deptInput) {
+        deptInput.internals.setValidity({ typeMismatch: true }, "Department must be Analytics or Tech", deptInput);
+        deptInput.focus();
+      }
+      return;
+    }
     const employee = {
+      id: this.employee?.id || crypto.randomUUID(),
       firstName: formData.get("firstName"),
       lastName: formData.get("lastName"),
       dateOfEmployment: parseDate(formData.get("dateOfEmployment")),
@@ -105,14 +115,14 @@ export class EmsEmployeeForm extends LitElement {
           label="Date of Employment"
           name="dateOfEmployment"
           type="date"
-          .value=${this.employee?.dateOfEmployment || ""}
+          .value=${formatDateForInput(this.employee?.dateOfEmployment) || ""}
           required
         ></ems-input>
         <ems-input
           label="Date of Birth"
           name="dateOfBirth"
           type="date"
-          .value=${this.employee?.dateOfBirth || ""}
+          .value=${formatDateForInput(this.employee?.dateOfBirth) || ""}
           required
         ></ems-input>
         <ems-input label="Phone" name="phone" type="tel" .value=${this.employee?.phone || ""} required></ems-input>
@@ -129,9 +139,9 @@ export class EmsEmployeeForm extends LitElement {
           name="position"
           .value=${this.employee?.position || ""}
           .options=${[
-            { value: "manager", label: "Manager" },
-            { value: "developer", label: "Developer" },
-            { value: "designer", label: "Designer" },
+            { value: "junior", label: "Junior" },
+            { value: "medior", label: "Medior" },
+            { value: "senior", label: "Senior" },
           ]}
           placeholder="Select Position"
           required
