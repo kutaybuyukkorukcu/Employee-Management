@@ -31,7 +31,14 @@
             "dateOfBirth": "Date of Birth",
             "phone": "Phone",
             "email": "Email",
-            "department": "Department",
+            "department": {
+                "label": "Department",
+                "options": {
+                    "Analytics": "Analytics",
+                    "Tech": "Tech"
+                },
+                "placeholder": "Select Department"
+            },
             "position": {
                 "label": "Position",
                 "options": {

@@ -16,6 +16,12 @@ export class EmsEmployeeAdd extends LitElement {
       gap: var(--spacing-large);
       height: 100%;
     }
+
+    @media (max-width: 768px) {
+      .page-container {
+        height: unset;
+      }
+    }
   `;
 
   constructor() {

@@ -58,6 +58,14 @@ export class EmsEmployeeForm extends LitElement {
     @media (max-width: 768px) {
       form {
         grid-template-columns: 1fr;
+        padding: var(--spacing-large);
+      }
+
+      .employee-information {
+        position: unset;
+        padding-bottom: var(--spacing-medium);
+        padding-left: unset;
+        padding-top: unset;
       }
     }
   `;
@@ -83,15 +91,6 @@ export class EmsEmployeeForm extends LitElement {
       return;
     }
     const formData = new FormData(form);
-    const department = formData.get("department");
-    if (department !== "Analytics" && department !== "Tech") {
-      const deptInput = this.shadowRoot.querySelector('ems-input[name="department"]');
-      if (deptInput) {
-        deptInput.internals.setValidity({ typeMismatch: true }, "Department must be Analytics or Tech", deptInput);
-        deptInput.focus();
-      }
-      return;
-    }
     const employee = {
       id: this.employee?.id || crypto.randomUUID(),
       firstName: formData.get("firstName"),
@@ -166,13 +165,17 @@ export class EmsEmployeeForm extends LitElement {
           .value=${this.employee?.email || ""}
           required
         ></ems-input>
-        <ems-input
-          label="${this.i18n.t("employee.details.department")}"
+        <ems-select
+          label="${this.i18n.t("employee.details.department.label")}"
           name="department"
-          type="text"
           .value=${this.employee?.department || ""}
+          .options=${[
+            { value: "Analytics", label: "Analytics" },
+            { value: "Tech", label: "Tech" },
+          ]}
+          placeholder="${this.i18n.t("employee.details.department.placeholder")}"
           required
-        ></ems-input>
+        ></ems-select>
         <ems-select
           label="${this.i18n.t("employee.details.position.label")}"
           name="position"

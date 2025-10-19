@@ -100,7 +100,7 @@ export class EmsEmployeeCard extends LitElement {
           </div>
 
           <div class="employee-field">
-            <ems-text variant="caption" disabled>${this.i18n.t("employee.details.department")}</ems-text>
+            <ems-text variant="caption" disabled>${this.i18n.t("employee.details.department.label")}</ems-text>
             <ems-text variant="body" color="black">${formatText(this.employee.department)}</ems-text>
           </div>
 

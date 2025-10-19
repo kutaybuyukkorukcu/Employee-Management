@@ -31,7 +31,14 @@
             "dateOfBirth": "Doğum Tarihi",
             "phone": "Telefon",
             "email": "E-posta",
-            "department": "Departman",
+            "department": {
+                "label": "Departman",
+                "options": {
+                    "Analytics": "Analytics",
+                    "Tech": "Tech"
+                },
+                "placeholder": "Departman Seçin"
+            },
             "position": {
                 "label": "Pozisyon",
                 "options": {
