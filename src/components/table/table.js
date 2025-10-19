@@ -159,7 +159,7 @@ export class EmsTable extends LitElement {
   }
 
   _renderCell(row, column, rowIndex) {
-    if (column.key === "action") {
+    if (column.type === "action") {
       return html`
         <div class="actions-cell">
           <ems-button

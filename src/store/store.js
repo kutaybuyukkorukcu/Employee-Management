@@ -54,6 +54,7 @@ export const useAppStore = createStore(
     {
       name: "app-storage",
       partialize: (state) => ({
+        language: state.language,
         employees: state.employees,
       }),
     },

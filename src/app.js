@@ -11,7 +11,10 @@ import "./components/table/index.js";
 import "./patterns/layout/index.js";
 import "./patterns/employee-card/index.js";
 import "./patterns/employee-table/index.js";
+import "./patterns/employee-form/index.js";
 import "./pages/employees/index.js";
+import "./pages/employee-add/index.js";
+import { i18n } from "./i18n/setup.js";
 
 import { LitElement, css, html } from "lit";
 import { Router } from "@vaadin/router";
@@ -31,7 +34,7 @@ export class EmsApp extends LitElement {
 
   _initApp() {
     this._initRouter();
-    // TODO: Will add i18n setup here later
+    // i18n();
   }
 
   _initRouter() {
@@ -48,6 +51,18 @@ export class EmsApp extends LitElement {
         component: "ems-employees-page",
         action: async () => {
           await useAppStore.getState().getEmployees();
+        },
+      },
+      {
+        path: "/employee/add",
+        component: "ems-employee-add-page",
+      },
+      {
+        path: "/employee/edit/:id",
+        component: "ems-employee-edit-page",
+        action: async (context) => {
+          const { id } = context.params;
+          await useAppStore.getState().getEmployeeById(id);
         },
       },
     ]);

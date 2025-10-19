@@ -1,16 +1,16 @@
 import i18next from "i18next";
 import HttpBackend from "i18next-http-backend";
+import { useAppStore } from "../store/store.js";
 
 export async function initI18n() {
+  const storedLanguage = useAppStore.getState().language;
+
   await i18next.use(HttpBackend).init({
-    lng: "tr",
+    lng: storedLanguage,
     fallbackLng: "tr",
-    debug: false,
     backend: {
-      loadPath: "/i18n/{{lng}}.json",
+      loadPath: "/public/i18n/resources/{{lng}}.json",
     },
-    ns: ["translation"],
-    defaultNS: "translation",
     interpolation: {
       escapeValue: false,
     },
@@ -20,3 +20,5 @@ export async function initI18n() {
 }
 
 export const i18n = initI18n();
+
+export { i18next };

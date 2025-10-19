@@ -14,7 +14,8 @@ export class EmsInput extends LitElement {
     :host {
       display: flex;
       flex-direction: column;
-      gap: var(--space-1);
+      gap: var(--spacing-small);
+      justify-content: space-between;
     }
 
     .ems-input {
@@ -33,7 +34,9 @@ export class EmsInput extends LitElement {
   }
 
   render() {
-    return html` <label ?hidden=${!this.label} for=${this.name}>${this.label}</label>
+    return html` <label ?hidden=${!this.label} for=${this.name}>
+        <ems-text variant="body" color="black">${this.label}</ems-text></label
+      >
       <input
         class="ems-input"
         type=${this.type}

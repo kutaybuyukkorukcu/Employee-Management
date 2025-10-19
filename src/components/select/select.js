@@ -19,8 +19,7 @@ export class EmsSelect extends LitElement {
 
     select {
       padding: var(--spacing-small);
-      border: 1px solid #ccc;
-      font-size: var(--font-size-small);
+      font-size: var(--font-size-regular);
       border-radius: var(--radius-small);
       outline: none;
     }
@@ -44,7 +43,9 @@ export class EmsSelect extends LitElement {
 
   render() {
     return html`
-      <label ?hidden=${!this.label} for=${this.name}>${this.label}</label>
+      <label ?hidden=${!this.label} for=${this.name}
+        ><ems-text variant="body" color="black">${this.label}</ems-text></label
+      >
       <select name=${this.name} ?disabled=${this.disabled} ?required=${this.required} @change="${this._onChange}">
         <option value="" disabled selected hidden>${this.placeholder}</option>
         ${this.options.map(

@@ -26,6 +26,7 @@ export class EmsLayout extends LitElement {
       overflow: auto;
       background-color: var(--color-background-secondary);
       padding: var(--spacing-medium) var(--spacing-large);
+      box-sizing: border-box;
     }
   `;
 

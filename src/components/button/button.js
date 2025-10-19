@@ -23,35 +23,42 @@ export class EmsButton extends LitElement {
       background: var(--color-primary);
       color: var(--color-white);
       border: 1px solid transparent;
-      border-radius: var(--radius-small);
+      border-radius: var(--radius-medium);
     }
 
     :host([variant="filled"][color="secondary"]) button {
       background: var(--color-secondary);
       color: var(--color-white);
       border: 1px solid transparent;
-      border-radius: var(--radius-small);
+      border-radius: var(--radius-medium);
     }
 
     :host([variant="filled"][color="tertiary"]) button {
       background: var(--color-tertiary);
       color: var(--color-white);
       border: 1px solid transparent;
-      border-radius: var(--radius-small);
+      border-radius: var(--radius-medium);
     }
 
     :host([variant="outlined"][color="primary"]) button {
       background: var(--color-white);
       color: var(--color-black);
       border: 1px solid var(--color-black);
-      border-radius: var(--radius-small);
+      border-radius: var(--radius-medium);
     }
 
     :host([variant="outlined"][color="secondary"]) button {
       background: var(--color-white);
       color: var(--color-secondary);
-      border: 1px solid var(--color-black);
-      border-radius: var(--radius-small);
+      border: 1px solid var(--color-secondary);
+      border-radius: var(--radius-medium);
+    }
+
+    :host([variant="outlined"][color="tertiary"]) button {
+      background: var(--color-white);
+      color: var(--color-tertiary);
+      border: 1px solid var(--color-tertiary);
+      border-radius: var(--radius-medium);
     }
 
     :host([variant="text"]) button {
