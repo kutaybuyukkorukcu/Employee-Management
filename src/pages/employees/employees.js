@@ -1,4 +1,5 @@
 import { LitElement, css, html } from "lit";
+import { createRef, ref } from "lit/directives/ref.js";
 import { useAppStore } from "../../store/store.js";
 import { Router } from "@vaadin/router";
 
@@ -8,6 +9,7 @@ export class EmsEmployeesPage extends LitElement {
     viewMode: { type: String }, // table or grid
     currentPage: { type: Number },
     itemsPerPage: { type: Number },
+    selectedEmployee: { type: Object, state: true },
   };
 
   static styles = css`
@@ -46,6 +48,12 @@ export class EmsEmployeesPage extends LitElement {
       gap: var(--spacing-large);
     }
 
+    @media (max-width: 1024px) {
+      .employees-grid {
+        gap: var(--spacing-large);
+      }
+    }
+
     @media (max-width: 768px) {
       .employees-grid {
         grid-template-columns: 1fr;
@@ -59,6 +67,8 @@ export class EmsEmployeesPage extends LitElement {
     this.viewMode = "table";
     this.currentPage = 1;
     this.itemsPerPage = 9;
+    this.selectedEmployee = null;
+    this._dialogRef = createRef();
   }
 
   connectedCallback() {
@@ -79,8 +89,12 @@ export class EmsEmployeesPage extends LitElement {
     Router.go(`/employee/edit/${employee.id}`);
   }
 
-  _handleEmployeeDelete(employee) {
-    console.log("Delete employee:", employee);
+  _handleEmployeeDelete(e) {
+    const { employee } = e.detail;
+    this.selectedEmployee = employee;
+    this.updateComplete.then(() => {
+      this._dialogRef.value?.show();
+    });
   }
 
   _handlePageChange(e) {
@@ -101,6 +115,17 @@ export class EmsEmployeesPage extends LitElement {
   _getTotalPages() {
     const itemsPerPage = this._getItemsPerPage();
     return Math.ceil(this.employees.length / itemsPerPage);
+  }
+
+  _handleDialogProceed() {
+    useAppStore.getState().deleteEmployee(this.selectedEmployee.id);
+    this._dialogRef.value?.close();
+    this.selectedEmployee = null;
+  }
+
+  _handleDialogCancel() {
+    this._dialogRef.value?.close();
+    this.selectedEmployee = null;
   }
 
   render() {
@@ -160,6 +185,23 @@ export class EmsEmployeesPage extends LitElement {
           @page-change=${this._handlePageChange}
         ></ems-pagination>
       </ems-layout>
+      <ems-dialog
+        ${ref(this._dialogRef)}
+        .title=${"Are you sure?"}
+        @dialog-close=${() => {
+          this.selectedEmployee = null;
+        }}
+      >
+        <ems-text variant="body" color="black">
+          Are you sure you want to delete ${this.selectedEmployee?.firstName} ${this.selectedEmployee?.lastName}?
+        </ems-text>
+        <ems-button slot="footer" variant="filled" color="primary" @click=${this._handleDialogProceed}>
+          <ems-text variant="body" color="white">Proceed</ems-text>
+        </ems-button>
+        <ems-button slot="footer" type="button" variant="outlined" color="secondary" @click=${this._handleDialogCancel}>
+          <ems-text variant="body" color="secondary">Cancel</ems-text>
+        </ems-button>
+      </ems-dialog>
     `;
   }
 }

@@ -57,17 +57,14 @@ export class EmsDialog extends LitElement {
       gap: var(--spacing-small);
       justify-content: flex-end;
       align-items: center;
+      margin-top: var(--spacing-medium);
     }
 
     .dialog-footer:empty {
       display: none;
     }
 
-    /* Style the slotted footer content */
-    .dialog-footer::slotted(*) {
-      display: flex;
-      flex-direction: column;
-      gap: var(--spacing-small);
+    slot[name="footer"]::slotted(*) {
       width: 100%;
     }
   `;
@@ -113,7 +110,7 @@ export class EmsDialog extends LitElement {
           <div class="dialog-header">
             <ems-text variant="subtitle">${this.title}</ems-text>
             <ems-button type="menu" variant="text" @click=${this.close}>
-              <ems-icon slot="icon" name="add-record" size="medium"></ems-icon>
+              <ems-icon slot="icon" name="close" size="medium"></ems-icon>
             </ems-button>
           </div>
           <div class="dialog-content">

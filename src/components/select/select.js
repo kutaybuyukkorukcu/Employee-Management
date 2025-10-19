@@ -23,6 +23,7 @@ export class EmsSelect extends LitElement {
       font-size: var(--font-size-regular);
       border-radius: var(--radius-small);
       outline: none;
+      cursor: pointer;
     }
 
     select:disabled {

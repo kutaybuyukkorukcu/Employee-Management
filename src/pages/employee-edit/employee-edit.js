@@ -1,10 +1,12 @@
 import { Router } from "@vaadin/router";
 import { html, LitElement, css } from "lit";
 import { useAppStore } from "../../store/store.js";
+import { createRef, ref } from "lit/directives/ref.js";
 
 export class EmsEmployeeEdit extends LitElement {
   static properties = {
     employee: { type: Object },
+    updatedEmployee: { type: Object, state: true },
   };
 
   static styles = css`
@@ -16,6 +18,11 @@ export class EmsEmployeeEdit extends LitElement {
     }
   `;
 
+  constructor() {
+    super();
+    this._dialogRef = createRef();
+  }
+
   connectedCallback() {
     super.connectedCallback();
     this.employee = useAppStore.getState().selectedEmployee;
@@ -23,12 +30,21 @@ export class EmsEmployeeEdit extends LitElement {
 
   _handleSave(e) {
     const { employee } = e.detail;
-    useAppStore.getState().updateEmployee(employee.id, employee);
-    Router.go("/");
+    this.updatedEmployee = employee;
+    this._dialogRef.value?.show();
   }
 
   _handleCancel() {
     Router.go("/");
+  }
+
+  _handleDialogProceed() {
+    useAppStore.getState().updateEmployee(this.updatedEmployee.id, this.updatedEmployee);
+    Router.go("/");
+  }
+
+  _handleDialogCancel() {
+    this._dialogRef.value?.close();
   }
 
   render() {
@@ -44,6 +60,17 @@ export class EmsEmployeeEdit extends LitElement {
           ></ems-employee-form>
         </div>
       </ems-layout>
+      <ems-dialog ${ref(this._dialogRef)} .title=${"Are you sure?"}>
+        <ems-text variant="body" color="black">
+          Are you sure you want to update ${this.employee?.firstName} ${this.employee?.lastName}?
+        </ems-text>
+        <ems-button slot="footer" variant="filled" color="primary" @click=${this._handleDialogProceed}>
+          <ems-text variant="body" color="white">Proceed</ems-text>
+        </ems-button>
+        <ems-button slot="footer" type="button" variant="outlined" color="secondary" @click=${this._handleDialogCancel}>
+          <ems-text variant="body" color="secondary">Cancel</ems-text>
+        </ems-button>
+      </ems-dialog>
     `;
   }
 }
