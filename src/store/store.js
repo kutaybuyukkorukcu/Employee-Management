@@ -13,7 +13,11 @@ export const useAppStore = createStore(
       setError: (error) => set({ error }),
 
       employees: [],
-      getEmployees: async () => {
+      fetchEmployees: async () => {
+        const { employees } = get();
+        if (employees.length > 0) {
+          return;
+        }
         set({ loading: true, error: null });
         try {
           const response = await fetch("/public/employees.json");
@@ -28,6 +32,10 @@ export const useAppStore = createStore(
         }
       },
 
+      getEmployees: () => {
+        return get().employees;
+      },
+
       getEmployeeByIndex: (index) => {
         const { employees } = get();
         return employees[index] || null;
@@ -35,7 +43,7 @@ export const useAppStore = createStore(
 
       addEmployee: (employee) => {
         set((state) => ({
-          employees: [...state.employees, employee],
+          employees: [employee, ...state.employees],
         }));
       },
 

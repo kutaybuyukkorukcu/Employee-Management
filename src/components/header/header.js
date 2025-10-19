@@ -3,6 +3,7 @@ import "../icon/index.js";
 import "../text/index.js";
 
 import { LitElement, css, html } from "lit";
+import { Router } from "@vaadin/router";
 import { I18nController } from "../../controllers/i18n-controller.js";
 import { useAppStore } from "../../store/store.js";
 
@@ -16,6 +17,7 @@ export class EmsHeader extends LitElement {
   static properties = {
     title: { type: String },
     currentLanguage: { type: String, state: true },
+    currentPath: { type: String, state: true },
   };
 
   static styles = css`
@@ -47,16 +49,31 @@ export class EmsHeader extends LitElement {
       justify-content: center;
       gap: var(--spacing-small);
     }
+
+    .route-menu[active] {
+      opacity: 1;
+    }
+
+    .route-menu:not([active]) {
+      opacity: 0.5;
+    }
   `;
 
   constructor() {
     super();
     this.title = "ING";
     this.currentLanguage = useAppStore.getState().language || LANGUAGE_CODE.TR;
+    this.currentPath = window.location.pathname;
+  }
+
+  _navigateTo(path) {
+    Router.go(path);
   }
 
   connectedCallback() {
     super.connectedCallback();
+    this.currentPath = window.location.pathname;
+    window.addEventListener("popstate", this._onRouteChange);
     this._unsubscribe = useAppStore.subscribe((state) => {
       this.currentLanguage = state.language;
     });
@@ -64,8 +81,14 @@ export class EmsHeader extends LitElement {
 
   disconnectedCallback() {
     super.disconnectedCallback();
+    window.removeEventListener("popstate", this._onRouteChange);
     this._unsubscribe?.();
   }
+
+  _onRouteChange = () => {
+    this.currentPath = window.location.pathname;
+    this.requestUpdate();
+  };
 
   async _handleLanguageToggle() {
     const newLanguage = this.currentLanguage === LANGUAGE_CODE.TR ? LANGUAGE_CODE.EN : LANGUAGE_CODE.TR;
@@ -80,11 +103,25 @@ export class EmsHeader extends LitElement {
         <ems-text variant="body" color="black">${this.title}</ems-text>
       </div>
       <div class="menu-items">
-        <ems-button type="menu" variant="text" color="primary">
+        <ems-button
+          type="menu"
+          variant="text"
+          color="primary"
+          class="route-menu"
+          ?active=${this.currentPath === "/"}
+          @click=${() => this._navigateTo("/")}
+        >
           <ems-icon slot="icon" name="employee-badge" size="medium"></ems-icon>
           <ems-text variant="body" color="primary">Employees</ems-text>
         </ems-button>
-        <ems-button type="menu" variant="text" color="secondary">
+        <ems-button
+          type="menu"
+          variant="text"
+          color="secondary"
+          class="route-menu"
+          ?active=${this.currentPath === "/employee/add"}
+          @click=${() => this._navigateTo("/employee/add")}
+        >
           <ems-icon slot="icon" name="add-record" size="medium" color="primary"></ems-icon>
           <ems-text variant="body" color="primary">Add new</ems-text>
         </ems-button>

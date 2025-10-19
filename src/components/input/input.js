@@ -8,6 +8,7 @@ export class EmsInput extends LitElement {
     disabled: { type: Boolean },
     required: { type: Boolean },
     label: { type: String },
+    value: { type: String },
   };
 
   static styles = css`
@@ -23,6 +24,12 @@ export class EmsInput extends LitElement {
     }
   `;
 
+  static get formAssociated() {
+    return true;
+  }
+
+  static shadowRootOptions = { mode: "open", delegatesFocus: true };
+
   constructor() {
     super();
     /** @type {'text'|'password'|'email'|'number'|'tel'|'url'|'search'|'date'|'time'|'datetime-local'|'month'|'week'|'color'|'checkbox'|'radio'|'file'|'hidden'|'range'} */
@@ -31,10 +38,58 @@ export class EmsInput extends LitElement {
     this.placeholder = "";
     this.disabled = false;
     this.required = false;
+    this.value = "";
+    this.internals = this.attachInternals();
+  }
+
+  willUpdate() {
+    this.internals.setFormValue(this.value);
+
+    if (this.required && !this.value) {
+      this.internals.setValidity({ valueMissing: true }, "This field is required", this);
+      return;
+    }
+    if (this.type === "email" && this.value) {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(this.value)) {
+        this.internals.setValidity({ typeMismatch: true }, "Please enter a valid email address", this);
+        return;
+      }
+    }
+    if (this.type === "date" && this.value) {
+      const datePattern = /^\d{4}-\d{2}-\d{2}$/;
+      if (!datePattern.test(this.value)) {
+        this.internals.setValidity({ typeMismatch: true }, "Please enter a valid date in DD-MM-YYYY format", this);
+        return;
+      }
+    }
+    this.internals.setValidity({});
+  }
+
+  get validationMessage() {
+    return this.internals.validationMessage;
+  }
+
+  get validity() {
+    return this.internals.validity;
+  }
+
+  checkValidity() {
+    return this.validity.valid;
+  }
+
+  focus() {
+    this.shadowRoot.querySelector("input").focus();
+  }
+
+  _onInput(event) {
+    this.value = event.target.value;
+    this.internals.setFormValue(this.value);
   }
 
   render() {
-    return html` <label ?hidden=${!this.label} for=${this.name}>
+    return html`
+      <label ?hidden=${!this.label} for=${this.name}>
         <ems-text variant="body" color="black">${this.label}</ems-text></label
       >
       <input
@@ -44,7 +99,11 @@ export class EmsInput extends LitElement {
         placeholder=${this.placeholder}
         ?disabled=${this.disabled}
         ?required=${this.required}
-      />`;
+        .value=${this.value}
+        @input=${this._onInput}
+        @change=${this._onInput}
+      />
+    `;
   }
 }
 

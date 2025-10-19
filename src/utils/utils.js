@@ -1,8 +1,6 @@
-export const formatDate = (date) => {
-  const dateObj = new Date(date);
-  const day = String(dateObj.getDate()).padStart(2, "0");
-  const month = String(dateObj.getMonth() + 1).padStart(2, "0");
-  const year = dateObj.getFullYear();
+export const formatDate = (dateString) => {
+  if (!dateString) return "";
+  const [day, month, year] = dateString.split("-");
   return `${day}/${month}/${year}`;
 };
 
@@ -22,4 +20,16 @@ export const formatText = (text) => {
     .split(" ")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
+};
+
+export const parseDate = (dateString) => {
+  if (!dateString) return "";
+  const [year, month, day] = dateString.split("-");
+  return `${day}-${month}-${year}`;
+};
+
+export const parsePhoneNumber = (formattedPhoneNumber) => {
+  if (!formattedPhoneNumber) return "";
+  const digits = formattedPhoneNumber.toString().replace(/\D/g, "");
+  return digits.startsWith("0") ? digits.slice(1) : digits;
 };

@@ -50,7 +50,7 @@ export class EmsApp extends LitElement {
         path: "/",
         component: "ems-employees-page",
         action: async () => {
-          await useAppStore.getState().getEmployees();
+          await useAppStore.getState().fetchEmployees();
         },
       },
       {

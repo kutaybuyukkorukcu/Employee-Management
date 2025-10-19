@@ -1,4 +1,6 @@
 import { LitElement, css, html } from "lit";
+import { useAppStore } from "../../store/store.js";
+import { Router } from "@vaadin/router";
 
 export class EmsEmployeeAdd extends LitElement {
   static styles = css`
@@ -10,13 +12,23 @@ export class EmsEmployeeAdd extends LitElement {
     }
   `;
 
+  _handleSave(e) {
+    const { employee } = e.detail;
+    useAppStore.getState().addEmployee(employee);
+    Router.go("/");
+  }
+
+  _handleCancel() {
+    Router.go("/");
+  }
+
   render() {
     return html`
       <ems-layout>
         <ems-header slot="header"></ems-header>
         <div class="page-container">
           <ems-text variant="title" color="primary">Add Employee</ems-text>
-          <ems-employee-form></ems-employee-form>
+          <ems-employee-form @save=${this._handleSave} @cancel=${this._handleCancel}></ems-employee-form>
         </div>
       </ems-layout>
     `;
