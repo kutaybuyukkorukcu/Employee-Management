@@ -103,12 +103,12 @@ export class EmsEmployeeCard extends LitElement {
           </div>
         </div>
 
-        <ems-button slot="footer" variant="filled" color="secondary" @click=${this._handleEdit}>
+        <ems-button slot="footer" variant="filled" color="secondary" size="medium" @click=${this._handleEdit}>
           <ems-icon slot="icon" name="edit-record" size="small" color="white"></ems-icon>
           <ems-text variant="body" color="white">Edit</ems-text>
         </ems-button>
 
-        <ems-button slot="footer" variant="filled" color="tertiary" @click=${this._handleDelete}>
+        <ems-button slot="footer" variant="filled" color="tertiary" size="medium" @click=${this._handleDelete}>
           <ems-icon slot="icon" name="delete-record" size="small" color="white"></ems-icon>
           <ems-text variant="body" color="white">Delete</ems-text>
         </ems-button>

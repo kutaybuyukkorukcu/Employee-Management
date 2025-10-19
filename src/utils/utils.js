@@ -43,6 +43,12 @@ export const parseDate = (dateString) => {
 
 export const parsePhoneNumber = (formattedPhoneNumber) => {
   if (!formattedPhoneNumber) return "";
-  const digits = formattedPhoneNumber.toString().replace(/\D/g, "");
-  return digits.startsWith("0") ? digits.slice(1) : digits;
+  let digits = formattedPhoneNumber.toString().replace(/\D/g, "");
+  const pattern = /^(?:90|0)?\d{10}$/;
+
+  if (!pattern.test(digits)) return "";
+  if (digits.startsWith("0")) digits = digits.slice(1);
+  if (!digits.startsWith("90")) digits = `90${digits}`;
+
+  return digits;
 };

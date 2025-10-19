@@ -1,5 +1,5 @@
 :root {
-  --font-family-sans: sans-serif;
+  --font-family-sans: "Helvetica Neue", Helvetica, Arial, "Roboto", sans-serif;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 600;

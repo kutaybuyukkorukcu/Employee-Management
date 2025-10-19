@@ -7,6 +7,7 @@ export class EmsButton extends LitElement {
     color: { type: String, reflect: true }, // primary, secondary, tertiary
     maxWidth: { type: Boolean, reflect: true },
     disabled: { type: Boolean, reflect: true },
+    size: { type: String, reflect: true }, // small, medium
   };
 
   static styles = css`
@@ -72,6 +73,14 @@ export class EmsButton extends LitElement {
       cursor: not-allowed;
     }
 
+    :host([size="small"]) button {
+      padding: var(--spacing-x-small);
+    }
+
+    :host([size="medium"]) button {
+      padding: var(--spacing-x-small) var(--spacing-medium);
+    }
+
     button {
       display: flex;
       flex-direction: row;
@@ -79,7 +88,6 @@ export class EmsButton extends LitElement {
       justify-content: center;
       cursor: pointer;
       gap: var(--gap-small);
-      padding: var(--spacing-x-small);
       width: 100%;
       height: 100%;
     }
@@ -91,6 +99,7 @@ export class EmsButton extends LitElement {
     this.type = "button";
     this.color = "primary";
     this.variant = "filled";
+    this.size = "small";
   }
 
   render() {

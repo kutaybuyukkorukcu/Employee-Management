@@ -71,9 +71,10 @@ export class EmsInput extends LitElement {
     }
     if (this.type === "tel" && this.value) {
       const digits = this.value.replace(/\D/g, "");
-      const phonePattern = /^(?:\d{10}|0\d{10}|90\d{9})$/;
+      // const phonePattern = /^(?:\d{10}|0\d{10}|90\d{9})$/;
+      const phonePattern = /^(?:\s*(?:90|0)?\s*\d{3}\s*\d{3}\s*\d{2}\s*\d{2}\s*)$/;
       if (!phonePattern.test(digits)) {
-        this.internals.setValidity({ typeMismatch: true }, "Please enter a valid Turkish phone number", this);
+        this.internals.setValidity({ typeMismatch: true }, "Please enter a valid phone number", this);
         return;
       }
     }
