@@ -1,9 +1,11 @@
-import { css, html, LitElement } from "lit";
-import { parseDate, parsePhoneNumber, formatDateForInput } from "../../utils";
-
 import "../../components/input";
 import "../../components/select";
 import "../../components/button";
+
+import { LitElement, css, html } from "lit";
+import { formatDateForInput, parseDate, parsePhoneNumber } from "../../utils";
+
+import { I18nController } from "../../controllers";
 
 export class EmsEmployeeForm extends LitElement {
   static properties = {
@@ -54,6 +56,11 @@ export class EmsEmployeeForm extends LitElement {
     }
   `;
 
+  constructor() {
+    super();
+    this.i18n = new I18nController(this);
+  }
+
   _handleEmployeeSubmit(e) {
     e.preventDefault();
     const form = this.shadowRoot.querySelector("form");
@@ -102,44 +109,56 @@ export class EmsEmployeeForm extends LitElement {
     return html`
       <form>
         <ems-input
-          label="First Name"
+          label="${this.i18n.t("employee.details.firstName")}"
           name="firstName"
           type="text"
           .value=${this.employee?.firstName || ""}
           required
         ></ems-input>
         <ems-input
-          label="Last Name"
+          label="${this.i18n.t("employee.details.lastName")}"
           name="lastName"
           type="text"
           .value=${this.employee?.lastName || ""}
           required
         ></ems-input>
         <ems-input
-          label="Date of Employment"
+          label="${this.i18n.t("employee.details.dateOfEmployment")}"
           name="dateOfEmployment"
           type="date"
           .value=${formatDateForInput(this.employee?.dateOfEmployment) || ""}
           required
         ></ems-input>
         <ems-input
-          label="Date of Birth"
+          label="${this.i18n.t("employee.details.dateOfBirth")}"
           name="dateOfBirth"
           type="date"
           .value=${formatDateForInput(this.employee?.dateOfBirth) || ""}
           required
         ></ems-input>
-        <ems-input label="Phone" name="phone" type="tel" .value=${this.employee?.phone || ""} required></ems-input>
-        <ems-input label="Email" name="email" type="email" .value=${this.employee?.email || ""} required></ems-input>
         <ems-input
-          label="Department"
+          label="${this.i18n.t("employee.details.phone")}"
+          name="phone"
+          type="tel"
+          .value=${this.employee?.phone || ""}
+          required
+        ></ems-input>
+        <ems-input
+          label="${this.i18n.t("employee.details.email")}"
+          name="email"
+          type="email"
+          .value=${this.employee?.email || ""}
+          required
+        ></ems-input>
+        <ems-input
+          label="${this.i18n.t("employee.details.department")}"
           name="department"
           type="text"
           .value=${this.employee?.department || ""}
           required
         ></ems-input>
         <ems-select
-          label="Position"
+          label="${this.i18n.t("employee.details.position.label")}"
           name="position"
           .value=${this.employee?.position || ""}
           .options=${[
@@ -147,15 +166,15 @@ export class EmsEmployeeForm extends LitElement {
             { value: "medior", label: "Medior" },
             { value: "senior", label: "Senior" },
           ]}
-          placeholder="Select Position"
+          placeholder="${this.i18n.t("employee.details.position.placeholder")}"
           required
         ></ems-select>
         <div class="form-actions">
           <ems-button type="button" color="primary" variant="filled" @click=${this._handleEmployeeSubmit}>
-            Save
+            ${this.i18n.t("common.save")}
           </ems-button>
           <ems-button type="button" color="secondary" variant="outlined" @click=${this._handleCancel}>
-            Cancel
+            ${this.i18n.t("common.cancel")}
           </ems-button>
         </div>
       </form>

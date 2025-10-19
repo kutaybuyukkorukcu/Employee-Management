@@ -1,0 +1,66 @@
+{
+    "header": {
+        "employees": "Çalışanlar",
+        "addNew": "Yeni Ekle"
+    },
+    "employee": {
+        "page": {
+            "title": "Çalışan Listesi"
+        },
+        "add": {
+            "title": "Çalışan Ekle"
+        },
+        "edit": {
+            "title": "Çalışan Düzenle",
+            "caption": "{{firstName}} {{lastName}} düzenleniyor",
+            "dialog": {
+                "title": "Emin misiniz?",
+                "message": "{{firstName}} {{lastName}} çalışan kaydı güncellenecek."
+            }
+        },
+        "delete": {
+            "dialog": {
+                "title": "Emin misiniz?",
+                "message": "{{firstName}} {{lastName}} çalışan kaydı silinecek."
+            }
+        },
+        "details": {
+            "firstName": "Ad",
+            "lastName": "Soyad",
+            "dateOfEmployment": "İşe Başlama Tarihi",
+            "dateOfBirth": "Doğum Tarihi",
+            "phone": "Telefon",
+            "email": "E-posta",
+            "department": "Departman",
+            "position": {
+                "label": "Pozisyon",
+                "options": {
+                    "junior": "Junior",
+                    "medior": "Medior",
+                    "senior": "Senior"
+                },
+                "placeholder": "Pozisyon Seçin"
+            }
+        },
+        "columns": {
+            "firstName": "Ad",
+            "lastName": "Soyad",
+            "dateOfEmployment": "İşe Başlama Tarihi",
+            "dateOfBirth": "Doğum Tarihi",
+            "phone": "Telefon",
+            "email": "E-posta",
+            "department": "Departman",
+            "position": "Pozisyon",
+            "actions": "İşlemler"
+        }
+    },
+    "common": {
+        "edit": "Düzenle",
+        "delete": "Sil",
+        "save": "Kaydet",
+        "cancel": "İptal",
+        "submit": "Gönder",
+        "close": "Kapat",
+        "proceed": "Devam Et"
+    }
+}

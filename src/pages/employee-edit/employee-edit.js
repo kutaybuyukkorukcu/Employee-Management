@@ -1,11 +1,13 @@
-import { Router } from "@vaadin/router";
-import { html, LitElement, css } from "lit";
-import { useAppStore } from "../../store";
-import { createRef, ref } from "lit/directives/ref.js";
-
 import "../../components/header";
 import "../../patterns/layout";
 import "../../patterns/employee-form";
+
+import { LitElement, css, html } from "lit";
+import { createRef, ref } from "lit/directives/ref.js";
+
+import { I18nController } from "../../controllers";
+import { Router } from "@vaadin/router";
+import { useAppStore } from "../../store";
 
 export class EmsEmployeeEdit extends LitElement {
   static properties = {
@@ -25,6 +27,7 @@ export class EmsEmployeeEdit extends LitElement {
   constructor() {
     super();
     this._dialogRef = createRef();
+    this.i18n = new I18nController(this);
   }
 
   connectedCallback() {
@@ -56,7 +59,7 @@ export class EmsEmployeeEdit extends LitElement {
       <ems-layout>
         <ems-header slot="header"></ems-header>
         <div class="page-container">
-          <ems-text variant="title" color="primary">Edit Employee</ems-text>
+          <ems-text variant="title" color="primary">${this.i18n.t("employee.edit.title")}</ems-text>
           <ems-employee-form
             .employee=${this.employee}
             @save=${this._handleSave}
@@ -64,15 +67,18 @@ export class EmsEmployeeEdit extends LitElement {
           ></ems-employee-form>
         </div>
       </ems-layout>
-      <ems-dialog ${ref(this._dialogRef)} .title=${"Are you sure?"}>
+      <ems-dialog ${ref(this._dialogRef)} .title=${this.i18n.t("employee.edit.dialog.title")}>
         <ems-text variant="body" color="black">
-          Are you sure you want to update ${this.employee?.firstName} ${this.employee?.lastName}?
+          ${this.i18n.t("employee.edit.dialog.message", {
+            firstName: this.employee?.firstName,
+            lastName: this.employee?.lastName,
+          })}
         </ems-text>
         <ems-button slot="footer" variant="filled" color="primary" @click=${this._handleDialogProceed}>
-          <ems-text variant="body" color="white">Proceed</ems-text>
+          <ems-text variant="body" color="white">${this.i18n.t("common.proceed")}</ems-text>
         </ems-button>
         <ems-button slot="footer" type="button" variant="outlined" color="secondary" @click=${this._handleDialogCancel}>
-          <ems-text variant="body" color="secondary">Cancel</ems-text>
+          <ems-text variant="body" color="secondary">${this.i18n.t("common.cancel")}</ems-text>
         </ems-button>
       </ems-dialog>
     `;

@@ -1,10 +1,12 @@
-import { LitElement, css, html } from "lit";
-import { useAppStore } from "../../store";
-import { Router } from "@vaadin/router";
-
 import "../../components/header";
 import "../../patterns/layout";
 import "../../patterns/employee-form";
+
+import { LitElement, css, html } from "lit";
+
+import { I18nController } from "../../controllers";
+import { Router } from "@vaadin/router";
+import { useAppStore } from "../../store";
 
 export class EmsEmployeeAdd extends LitElement {
   static styles = css`
@@ -15,6 +17,11 @@ export class EmsEmployeeAdd extends LitElement {
       height: 100%;
     }
   `;
+
+  constructor() {
+    super();
+    this.i18n = new I18nController(this);
+  }
 
   _handleSave(e) {
     const { employee } = e.detail;
@@ -31,7 +38,7 @@ export class EmsEmployeeAdd extends LitElement {
       <ems-layout>
         <ems-header slot="header"></ems-header>
         <div class="page-container">
-          <ems-text variant="title" color="primary">Add Employee</ems-text>
+          <ems-text variant="title" color="primary">${this.i18n.t("employee.add.title")}</ems-text>
           <ems-employee-form @save=${this._handleSave} @cancel=${this._handleCancel}></ems-employee-form>
         </div>
       </ems-layout>

@@ -1,0 +1,66 @@
+{
+    "header": {
+        "employees": "Employees",
+        "addNew": "Add new"
+    },
+    "employee": {
+        "page": {
+            "title": "Employee List"
+        },
+        "add": {
+            "title": "Add Employee"
+        },
+        "edit": {
+            "title": "Edit Employee",
+            "caption": "You are editing {{firstName}} {{lastName}}",
+            "dialog": {
+                "title": "Are you sure?",
+                "message": "Selected employee record of {{firstName}} {{lastName}} will be updated."
+            }
+        },
+        "delete": {
+            "dialog": {
+                "title": "Are you sure?",
+                "message": "Selected employee record of {{firstName}} {{lastName}} will be deleted."
+            }
+        },
+        "details": {
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "dateOfEmployment": "Date of Employment",
+            "dateOfBirth": "Date of Birth",
+            "phone": "Phone",
+            "email": "Email",
+            "department": "Department",
+            "position": {
+                "label": "Position",
+                "options": {
+                    "junior": "Junior",
+                    "medior": "Medior",
+                    "senior": "Senior"
+                },
+                "placeholder": "Select Position"
+            }
+        },
+        "columns": {
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "dateOfEmployment": "Date of Employment",
+            "dateOfBirth": "Date of Birth",
+            "phone": "Phone",
+            "email": "Email",
+            "department": "Department",
+            "position": "Position",
+            "actions": "Actions"
+        }
+    },
+    "common": {
+        "edit": "Edit",
+        "delete": "Delete",
+        "save": "Save",
+        "cancel": "Cancel",
+        "submit": "Submit",
+        "close": "Close",
+        "proceed": "Proceed"
+    }
+}

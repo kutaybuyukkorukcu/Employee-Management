@@ -65,6 +65,7 @@ export class EmsHeader extends LitElement {
     this.title = "ING";
     this.currentLanguage = useAppStore.getState().language || LANGUAGE_CODE.TR;
     this.currentPath = window.location.pathname;
+    this.i18n = new I18nController(this);
   }
 
   _navigateTo(path) {
@@ -113,7 +114,7 @@ export class EmsHeader extends LitElement {
           @click=${() => this._navigateTo("/")}
         >
           <ems-icon slot="icon" name="employee-badge" size="medium"></ems-icon>
-          <ems-text variant="body" color="primary">Employees</ems-text>
+          <ems-text variant="body" color="primary">${this.i18n.t("header.employees")}</ems-text>
         </ems-button>
         <ems-button
           type="menu"
@@ -124,7 +125,7 @@ export class EmsHeader extends LitElement {
           @click=${() => this._navigateTo("/employee/add")}
         >
           <ems-icon slot="icon" name="add-record" size="medium" color="primary"></ems-icon>
-          <ems-text variant="body" color="primary">Add new</ems-text>
+          <ems-text variant="body" color="primary">${this.i18n.t("header.addNew")}</ems-text>
         </ems-button>
         <ems-button type="menu" variant="text" color="primary" @click=${this._handleLanguageToggle}>
           ${this.currentLanguage === LANGUAGE_CODE.TR

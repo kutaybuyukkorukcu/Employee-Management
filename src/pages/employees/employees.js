@@ -1,14 +1,16 @@
-import { LitElement, css, html } from "lit";
-import { createRef, ref } from "lit/directives/ref.js";
-import { useAppStore } from "../../store";
-import { Router } from "@vaadin/router";
-
 import "../../components/dialog";
 import "../../components/pagination";
 import "../../components/header";
 import "../../patterns/layout";
 import "../../patterns/employee-card";
 import "../../patterns/employee-table";
+
+import { LitElement, css, html } from "lit";
+import { createRef, ref } from "lit/directives/ref.js";
+
+import { I18nController } from "../../controllers";
+import { Router } from "@vaadin/router";
+import { useAppStore } from "../../store";
 
 export class EmsEmployeesPage extends LitElement {
   static properties = {
@@ -76,6 +78,7 @@ export class EmsEmployeesPage extends LitElement {
     this.itemsPerPage = 9;
     this.selectedEmployee = null;
     this._dialogRef = createRef();
+    this.i18n = new I18nController(this);
   }
 
   connectedCallback() {
@@ -141,7 +144,7 @@ export class EmsEmployeesPage extends LitElement {
         <ems-header slot="header"></ems-header>
         <div class="page-container">
           <div class="page-header">
-            <ems-text variant="title" color="primary">Employee List</ems-text>
+            <ems-text variant="title" color="primary">${this.i18n.t("employee.page.title")}</ems-text>
             <div class="view-mode-toggle">
               <ems-button
                 type="icon"
@@ -194,19 +197,22 @@ export class EmsEmployeesPage extends LitElement {
       </ems-layout>
       <ems-dialog
         ${ref(this._dialogRef)}
-        .title=${"Are you sure?"}
+        .title=${this.i18n.t("employee.delete.dialog.title")}
         @dialog-close=${() => {
           this.selectedEmployee = null;
         }}
       >
         <ems-text variant="body" color="black">
-          Are you sure you want to delete ${this.selectedEmployee?.firstName} ${this.selectedEmployee?.lastName}?
+          ${this.i18n.t("employee.delete.dialog.message", {
+            firstName: this.selectedEmployee?.firstName,
+            lastName: this.selectedEmployee?.lastName,
+          })}
         </ems-text>
         <ems-button slot="footer" variant="filled" color="primary" @click=${this._handleDialogProceed}>
-          <ems-text variant="body" color="white">Proceed</ems-text>
+          <ems-text variant="body" color="white">${this.i18n.t("common.proceed")}</ems-text>
         </ems-button>
         <ems-button slot="footer" type="button" variant="outlined" color="secondary" @click=${this._handleDialogCancel}>
-          <ems-text variant="body" color="secondary">Cancel</ems-text>
+          <ems-text variant="body" color="secondary">${this.i18n.t("common.cancel")}</ems-text>
         </ems-button>
       </ems-dialog>
     `;

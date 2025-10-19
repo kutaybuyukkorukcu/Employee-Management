@@ -1,9 +1,11 @@
-import { LitElement, css, html } from "lit";
-import { formatDate, formatPhoneNumber, formatText } from "../../utils";
-
 import "../text";
 import "../button";
 import "../icon";
+
+import { LitElement, css, html } from "lit";
+import { formatDate, formatPhoneNumber, formatText } from "../../utils";
+
+import { I18nController } from "../../controllers";
 
 export class EmsTable extends LitElement {
   static properties = {
@@ -111,6 +113,7 @@ export class EmsTable extends LitElement {
     this.selectable = false;
     this.data = [];
     this.selectedRows = [];
+    this.i18n = new I18nController(this);
   }
 
   _handleSelectRow(e, rowIndex) {
@@ -224,7 +227,12 @@ export class EmsTable extends LitElement {
                   `
                 : null}
               ${this.columns.map(
-                (column) => html`<th><ems-text variant="caption" color="primary">${column.label}</ems-text></th>`,
+                (column) =>
+                  html`<th>
+                    <ems-text variant="caption" color="primary"
+                      >${this.i18n.t(`employee.columns.${column.key}`)}</ems-text
+                    >
+                  </th>`,
               )}
             </tr>
           </thead>

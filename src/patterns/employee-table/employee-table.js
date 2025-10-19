@@ -1,6 +1,6 @@
-import { LitElement, css, html } from "lit";
-
 import "../../components/table";
+
+import { LitElement, css, html } from "lit";
 
 export class EmsEmployeeTable extends LitElement {
   static properties = {
@@ -18,15 +18,15 @@ export class EmsEmployeeTable extends LitElement {
     super();
     this.employees = [];
     this.columns = [
-      { key: "firstName", label: "First Name", type: "text" },
-      { key: "lastName", label: "Last Name", type: "text" },
-      { key: "dateOfEmployment", label: "Date of Employment", type: "date" },
-      { key: "dateOfBirth", label: "Date of Birth", type: "date" },
-      { key: "phone", label: "Phone", type: "phone" },
-      { key: "email", label: "Email", type: "email" },
-      { key: "department", label: "Department", type: "text" },
-      { key: "position", label: "Position", type: "text" },
-      { key: "actions", label: "Actions", type: "action" },
+      { key: "firstName", type: "text" },
+      { key: "lastName", type: "text" },
+      { key: "dateOfEmployment", type: "date" },
+      { key: "dateOfBirth", type: "date" },
+      { key: "phone", type: "phone" },
+      { key: "email", type: "email" },
+      { key: "department", type: "text" },
+      { key: "position", type: "text" },
+      { key: "actions", type: "action" },
     ];
   }
 

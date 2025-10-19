@@ -1,6 +1,8 @@
 import { LitElement, css, html } from "lit";
+
 import { Router } from "@vaadin/router";
-import { useAppStore } from "./store/store.js";
+import { i18n } from "./i18n";
+import { useAppStore } from "./store";
 
 export class EmsApp extends LitElement {
   static styles = css`
@@ -14,9 +16,9 @@ export class EmsApp extends LitElement {
     this._initApp();
   }
 
-  _initApp() {
+  async _initApp() {
+    await i18n;
     this._initRouter();
-    // i18n();
   }
 
   _initRouter() {
