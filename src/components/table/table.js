@@ -1,7 +1,10 @@
 import { LitElement, css, html } from "lit";
-import { formatDate, formatPhoneNumber, formatText } from "../../utils/index.js";
+import { formatDate, formatPhoneNumber, formatText } from "../../utils";
 
-// TODO: Height jumps happen due to pagination and data difference.
+import "../text";
+import "../button";
+import "../icon";
+
 export class EmsTable extends LitElement {
   static properties = {
     columns: { type: Array },

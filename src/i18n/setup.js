@@ -1,6 +1,6 @@
 import i18next from "i18next";
 import HttpBackend from "i18next-http-backend";
-import { useAppStore } from "../store/store.js";
+import { useAppStore } from "../store";
 
 export async function initI18n() {
   const storedLanguage = useAppStore.getState().language;

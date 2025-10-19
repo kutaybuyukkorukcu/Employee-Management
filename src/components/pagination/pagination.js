@@ -1,5 +1,5 @@
-import "../button/button.js";
-import "../text/text.js";
+import "../button";
+import "../text";
 
 import { LitElement, css, html } from "lit";
 

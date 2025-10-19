@@ -1,10 +1,10 @@
-import "../../components/card/card.js";
-import "../../components/text/text.js";
-import "../../components/button/button.js";
-import "../../components/icon/icon.js";
-import { formatDate, formatPhoneNumber, formatText } from "../../utils/utils.js";
-
+import { formatDate, formatPhoneNumber, formatText } from "../../utils";
 import { LitElement, css, html } from "lit";
+
+import "../../components/card";
+import "../../components/text";
+import "../../components/button";
+import "../../components/icon";
 
 export class EmsEmployeeCard extends LitElement {
   static properties = {

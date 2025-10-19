@@ -1,6 +1,10 @@
 import { css, html, LitElement } from "lit";
 import { parseDate, parsePhoneNumber, formatDateForInput } from "../../utils";
 
+import "../../components/input";
+import "../../components/select";
+import "../../components/button";
+
 export class EmsEmployeeForm extends LitElement {
   static properties = {
     employee: { type: Object },

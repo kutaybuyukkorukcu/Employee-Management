@@ -1,6 +1,10 @@
 import { LitElement, css, html } from "lit";
-import { useAppStore } from "../../store/store.js";
+import { useAppStore } from "../../store";
 import { Router } from "@vaadin/router";
+
+import "../../components/header";
+import "../../patterns/layout";
+import "../../patterns/employee-form";
 
 export class EmsEmployeeAdd extends LitElement {
   static styles = css`

@@ -1,9 +1,6 @@
-import "../../components/table/table.js";
-import "../../components/text/text.js";
-import "../../components/button/button.js";
-import "../../components/icon/icon.js";
-
 import { LitElement, css, html } from "lit";
+
+import "../../components/table";
 
 export class EmsEmployeeTable extends LitElement {
   static properties = {

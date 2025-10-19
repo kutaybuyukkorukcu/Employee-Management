@@ -1,11 +1,12 @@
-import "../button/index.js";
-import "../icon/index.js";
-import "../text/index.js";
+import "../button";
+import "../icon";
+import "../text";
 
 import { LitElement, css, html } from "lit";
+
+import { I18nController } from "../../controllers";
 import { Router } from "@vaadin/router";
-import { I18nController } from "../../controllers/i18n-controller.js";
-import { useAppStore } from "../../store/store.js";
+import { useAppStore } from "../../store";
 
 const LANGUAGE_CODE = {
   TR: "tr",

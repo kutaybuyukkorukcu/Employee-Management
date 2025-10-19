@@ -1,7 +1,11 @@
 import { Router } from "@vaadin/router";
 import { html, LitElement, css } from "lit";
-import { useAppStore } from "../../store/store.js";
+import { useAppStore } from "../../store";
 import { createRef, ref } from "lit/directives/ref.js";
+
+import "../../components/header";
+import "../../patterns/layout";
+import "../../patterns/employee-form";
 
 export class EmsEmployeeEdit extends LitElement {
   static properties = {

@@ -1,22 +1,3 @@
-import "./components/input/index.js";
-import "./components/icon/index.js";
-import "./components/button/index.js";
-import "./components/header/index.js";
-import "./components/text/index.js";
-import "./components/select/index.js";
-import "./components/dialog/index.js";
-import "./components/pagination/index.js";
-import "./components/card/index.js";
-import "./components/table/index.js";
-import "./patterns/layout/index.js";
-import "./patterns/employee-card/index.js";
-import "./patterns/employee-table/index.js";
-import "./patterns/employee-form/index.js";
-import "./pages/employees/index.js";
-import "./pages/employee-add/index.js";
-import "./pages/employee-edit/index.js";
-import { i18n } from "./i18n/setup.js";
-
 import { LitElement, css, html } from "lit";
 import { Router } from "@vaadin/router";
 import { useAppStore } from "./store/store.js";
@@ -52,11 +33,15 @@ export class EmsApp extends LitElement {
         component: "ems-employees-page",
         action: async () => {
           await useAppStore.getState().fetchEmployees();
+          await import("./pages/employees/employees");
         },
       },
       {
         path: "/employee/add",
         component: "ems-employee-add-page",
+        action: async () => {
+          await import("./pages/employee-add/employee-add");
+        },
       },
       {
         path: "/employee/edit/:id",
@@ -64,6 +49,7 @@ export class EmsApp extends LitElement {
         action: async (context) => {
           const { id } = context.params;
           await useAppStore.getState().getEmployeeById(id);
+          await import("./pages/employee-edit/employee-edit");
         },
       },
     ]);

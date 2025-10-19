@@ -1,7 +1,14 @@
 import { LitElement, css, html } from "lit";
 import { createRef, ref } from "lit/directives/ref.js";
-import { useAppStore } from "../../store/store.js";
+import { useAppStore } from "../../store";
 import { Router } from "@vaadin/router";
+
+import "../../components/dialog";
+import "../../components/pagination";
+import "../../components/header";
+import "../../patterns/layout";
+import "../../patterns/employee-card";
+import "../../patterns/employee-table";
 
 export class EmsEmployeesPage extends LitElement {
   static properties = {

@@ -1,4 +1,4 @@
-import { i18next } from "../i18n/setup.js";
+import { i18next } from "../i18n";
 
 export class I18nController {
   static instances = new Set();
